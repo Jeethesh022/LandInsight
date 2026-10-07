@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction History | LandInsight</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f7f6;
+            color: #1f2937;
+            min-height: 100vh;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            width: 100%;
+            background: #14532d;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .logout-btn {
+            background: white;
+            color: #14532d !important;
+            padding: 9px 16px;
+            border-radius: 8px;
+        }
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        .container {
+            width: 92%;
+            max-width: 1250px;
+            margin: 45px auto;
+        }
+
+        h1 {
+            font-size: 34px;
+            color: #14532d;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        /* =========================
+           TABLE
+        ========================= */
+
+        .table-box {
+            background: white;
+            border-radius: 16px;
+            padding: 22px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1150px;
+        }
+
+        thead {
+            background: #14532d;
+            color: white;
+        }
+
+        th {
+            padding: 15px 13px;
+            text-align: left;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 15px 13px;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        tbody tr:hover {
+            background: #f8faf9;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* =========================
+           PRICE
+        ========================= */
+
+        .price {
+            font-weight: 700;
+            color: #14532d;
+            white-space: nowrap;
+        }
+
+        .total-price {
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .guideline {
+            white-space: nowrap;
+        }
+
+        /* =========================
+           TYPE BADGE
+        ========================= */
+
+        .type-badge {
+            display: inline-block;
+            padding: 6px 11px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .quick {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .advanced {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        /* =========================
+           DELETE BUTTON
+        ========================= */
+
+        .delete-form {
+            display: inline;
+        }
+
+        .delete-btn {
+            border: none;
+            background: #fee2e2;
+            color: #b91c1c;
+            padding: 8px 12px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .delete-btn:hover {
+            background: #fecaca;
+        }
+
+        /* =========================
+           WHY THIS PRICE (SHAP)
+        ========================= */
+
+        details.why summary {
+            cursor: pointer;
+            color: #1d4ed8;
+            font-weight: 700;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        details.why .why-body {
+            margin-top: 8px;
+            min-width: 260px;
+            max-width: 340px;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #475569;
+        }
+
+        details.why .why-line {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 2px 0;
+        }
+
+        .why-up { color: #15803d; font-weight: 700; white-space: nowrap; }
+        .why-down { color: #b91c1c; font-weight: 700; white-space: nowrap; }
+
+        /* =========================
+           EMPTY STATE
+        ========================= */
+
+        .empty {
+            text-align: center;
+            padding: 65px 20px;
+            color: #6b7280;
+            font-size: 16px;
+        }
+
+        .empty-title {
+            color: #374151;
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .predict-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 11px 18px;
+            background: #14532d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .predict-btn:hover {
+            background: #166534;
+        }
+
+        /* =========================
+           BACK BUTTON
+        ========================= */
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            color: #14532d;
+            font-weight: 600;
+        }
+
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+            text-align: center;
+            background: #14532d;
+            color: white;
+            font-size: 13px;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                padding: 18px 5%;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .container {
+                width: 95%;
+                margin-top: 30px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .table-box {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav>
+
+        <div class="logo">
+            LandInsight
+        </div>
+
+        <div class="nav-links">
+
+            <a href="{{ url_for('dashboard') }}">
+                Home
+            </a>
+
+            <a href="{{ url_for('quick') }}">
+                Quick Prediction
+            </a>
+
+            <a href="{{ url_for('advanced') }}">
+                Advanced
+            </a>
+
+            <a href="{{ url_for('history') }}">
+                History
+            </a>
+
+            <a
+                href="{{ url_for('logout') }}"
+                class="logout-btn"
+            >
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <div class="container">
+
+        <h1>
+            Prediction History
+        </h1>
+
+        <p class="subtitle">
+            Previous predictions of {{ username }}
+        </p>
+
+
+        <div class="table-box">
+
+            {% if history_data and history_data|length > 0 %}
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            S.No
+                        </th>
+
+                        <th>
+                            Prediction Type
+                        </th>
+
+                        <th>
+                            Location
+                        </th>
+
+                        <th>
+                            Area
+                        </th>
+
+                        <th>
+                            Land Area
+                        </th>
+
+                        <th>
+                            Price / sq.ft
+                        </th>
+
+                        <th>
+                            Total Price
+                        </th>
+
+                        <th>
+                            Guideline Value
+                        </th>
+
+                        <th>
+                            Date & Time
+                        </th>
+
+                        <th>
+                            Why this price?
+                        </th>
+
+                        <th>
+                            Action
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    {% for item in history_data %}
+
+                    <tr>
+
+                        <!-- S.NO -->
+
+                        <td>
+                            {{ loop.index }}
+                        </td>
+
+
+                        <!-- PREDICTION TYPE -->
+
+                        <td>
+
+                            {% if item["prediction_type"] == "Advanced" %}
+
+                                <span class="type-badge advanced">
+                                    Advanced
+                                </span>
+
+                            {% else %}
+
+                                <span class="type-badge quick">
+                                    Quick
+                                </span>
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- LOCATION -->
+
+                        <td>
+                            {{ item["location"] or "-" }}
+                        </td>
+
+
+                        <!-- AREA -->
+
+                        <td>
+                            {{ item["area"] or "-" }}
+                        </td>
+
+
+                        <!-- LAND AREA -->
+
+                        <td>
+
+                            {% if item["land_area"] is not none %}
+
+                                {{ "{:,.0f}".format(
+                                    item["land_area"]|float
+                                ) }}
+
+                                sq.ft
+
+                            {% else %}
+
+                                -
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- PREDICTED PRICE -->
+
+                        <td class="price">
+
+                            {% if item["predicted_price"] is not none %}
+
+                                ₹{{ "{:,.2f}".format(
+                                    item["predicted_price"]|float
+                                ) }}
+
+                            {% else %}
+
+                                -
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- TOTAL PRICE -->
+
+                        <td class="total-price">
+
+                            {% if item["total_price"] is not none %}
+
+                                ₹{{ "{:,.2f}".format(
+                                    item["total_price"]|float
+                                ) }}
+
+                            {% else %}
+
+                                -
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- GUIDELINE VALUE -->
+
+                        <td class="guideline">
+
+                            {% if item["guideline_value"] is not none %}
+
+                                ₹{{ "{:,.2f}".format(
+                                    item["guideline_value"]|float
+                                ) }}
+
+                            {% else %}
+
+                                -
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- DATE & TIME -->
+
+                        <td>
+
+                            {% if item["created_at"] %}
+
+                                {{ item["created_at"] }}
+
+                            {% else %}
+
+                                -
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- WHY THIS PRICE -->
+
+                        <td>
+
+                            {% if item["explanation"] %}
+
+                            <details class="why">
+
+                                <summary>View</summary>
+
+                                <div class="why-body">
+
+                                    <div>
+                                        {{ item["explanation"]["summary"] }}
+                                    </div>
+
+                                    <div style="margin-top:6px;">
+
+                                        {% for f in item["explanation"]["top"] %}
+
+                                        <div class="why-line">
+
+                                            <span>
+                                                {{ f["label"] }}
+                                                {% if f["display_value"] %}
+                                                ({{ f["display_value"] }})
+                                                {% endif %}
+                                            </span>
+
+                                            <span class="{{ 'why-up' if f['impact'] >= 0 else 'why-down' }}">
+                                                {{ "+" if f["impact"] >= 0 else "-" }}₹{{ "{:,.0f}".format(f["impact"]|abs) }}
+                                            </span>
+
+                                        </div>
+
+                                        {% endfor %}
+
+                                    </div>
+
+                                </div>
+
+                            </details>
+
+                            {% else %}
+
+                                -
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- DELETE -->
+
+                        <td>
+
+                            <form
+                                method="POST"
+                                action="{{
+                                    url_for(
+                                        'delete_history',
+                                        prediction_id=item['id']
+                                    )
+                                }}"
+                                class="delete-form"
+                                onsubmit="
+                                    return confirm(
+                                        'Delete this prediction?'
+                                    );
+                                "
+                            >
+
+                                <button
+                                    type="submit"
+                                    class="delete-btn"
+                                >
+                                    Delete
+                                </button>
+
+                            </form>
+
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+
+            {% else %}
+
+            <!-- =========================
+                 EMPTY HISTORY
+            ========================= -->
+
+            <div class="empty">
+
+                <div class="empty-title">
+                    No Prediction History
+                </div>
+
+                <div>
+                    No predictions have been saved yet.
+                </div>
+
+                <div>
+                    Make a new prediction to display it here.
+                </div>
+
+                <a
+                    href="{{ url_for('quick') }}"
+                    class="predict-btn"
+                >
+                    Make Prediction
+                </a>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+
+        <!-- BACK -->
+
+        <a
+            href="{{ url_for('dashboard') }}"
+            class="back-btn"
+        >
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        © 2026 LandInsight |
+        Smart Land Price Prediction System
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,3780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LandInsight - Advanced Valuation</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #f5f7fb;
+            color: #172033;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+            height: 70px;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 42px;
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .brand {
+            font-size: 21px;
+            font-weight: 700;
+            color: #172033;
+            text-decoration: none;
+        }
+
+        .brand span {
+            color: #2563eb;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #475569;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #2563eb;
+        }
+
+        .logout-btn {
+            text-decoration: none;
+            background: #eef2ff;
+            color: #3730a3;
+
+            padding: 9px 15px;
+            border-radius: 8px;
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* ================= PAGE ================= */
+
+        .page {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 38px 22px 60px;
+        }
+
+        .page-header {
+            margin-bottom: 28px;
+        }
+
+        .page-header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 7px;
+        }
+
+        .page-header p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* ================= CARD ================= */
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 22px 25px;
+            border-bottom: 1px solid #e5e7eb;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .card-header-left h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .card-header-left p {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .quick-badge {
+            padding: 7px 11px;
+            border-radius: 7px;
+
+            background: #eff6ff;
+            color: #1d4ed8;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            white-space: nowrap;
+        }
+
+        /* ================= FORM ================= */
+
+        .form-body {
+            padding: 27px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            margin-bottom: 17px;
+
+            font-size: 14px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .section-number {
+            width: 25px;
+            height: 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 7px;
+
+            background: #eff6ff;
+            color: #2563eb;
+
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 17px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .field.full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            margin-bottom: 7px;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            color: #475569;
+        }
+
+        label .required {
+            color: #dc2626;
+        }
+
+        input,
+        select {
+            width: 100%;
+            height: 43px;
+
+            padding: 0 12px;
+
+            border: 1px solid #d8dee8;
+            border-radius: 8px;
+
+            background: #ffffff;
+
+            color: #1e293b;
+
+            font-family: inherit;
+            font-size: 13px;
+
+            outline: none;
+
+            transition: 0.18s ease;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.09);
+        }
+
+        input::placeholder {
+            color: #94a3b8;
+        }
+
+        select:disabled {
+            background: #f8fafc;
+            color: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        .auto-field {
+            background: #f8fafc;
+        }
+
+        .field-note {
+            margin-top: 5px;
+            font-size: 10px;
+            color: #94a3b8;
+        }
+
+        /* ================= STATUS ================= */
+
+        .status {
+            display: none;
+
+            margin-top: 18px;
+            padding: 12px 14px;
+
+            border-radius: 8px;
+
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .status.info {
+            display: block;
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #dbeafe;
+        }
+
+        .status.success {
+            display: block;
+            background: #ecfdf5;
+            color: #047857;
+            border: 1px solid #a7f3d0;
+        }
+
+        .status.error {
+            display: block;
+            background: #fef2f2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+        }
+
+        /* ================= BUTTONS ================= */
+
+        .form-actions {
+            margin-top: 28px;
+            padding-top: 22px;
+
+            border-top: 1px solid #e5e7eb;
+
+            display: flex;
+            justify-content: flex-end;
+            gap: 11px;
+        }
+
+        .btn {
+            height: 43px;
+
+            border: none;
+            border-radius: 8px;
+
+            padding: 0 18px;
+
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: 0.18s ease;
+        }
+
+        .btn-secondary {
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* ================= RESULT ================= */
+
+        .result-card {
+            display: none;
+
+            margin-top: 24px;
+
+            background: #ffffff;
+
+            border: 1px solid #bfdbfe;
+            border-radius: 14px;
+
+            box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+
+            overflow: hidden;
+        }
+
+        .result-header {
+            padding: 20px 24px;
+
+            background: #eff6ff;
+
+            border-bottom: 1px solid #dbeafe;
+        }
+
+        .result-header h2 {
+            font-size: 17px;
+            color: #1e3a8a;
+        }
+
+        .result-header p {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #475569;
+        }
+
+        .result-body {
+            padding: 25px;
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 17px;
+        }
+
+        .result-item {
+            padding: 17px;
+
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+
+            background: #fafafa;
+        }
+
+        .result-label {
+            font-size: 11px;
+            color: #64748b;
+            margin-bottom: 6px;
+        }
+
+        .result-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .result-item.highlight {
+            background: #eff6ff;
+            border-color: #bfdbfe;
+        }
+
+        .result-item.highlight .result-value {
+            color: #1d4ed8;
+        }
+
+        /* ================= LOADING ================= */
+
+        .loading {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .spinner {
+            width: 15px;
+            height: 15px;
+
+            border: 2px solid rgba(255,255,255,0.4);
+            border-top-color: #ffffff;
+
+            border-radius: 50%;
+
+            animation: spin 0.7s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .result-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            .navbar {
+                padding: 0 18px;
+            }
+
+            .page {
+                padding: 25px 14px 45px;
+            }
+
+            .page-header h1 {
+                font-size: 23px;
+            }
+
+            .card-header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .form-body {
+                padding: 20px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-actions {
+                flex-direction: column-reverse;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+
+    <!-- ================= LEAFLET MAP ================= -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        crossorigin=""
+    >
+
+    <style>
+        /* ================= ADVANCED LOCATION MAP ================= */
+
+        .map-wrapper {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #fafafa;
+        }
+
+        .map-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .map-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .map-subtitle {
+            margin-top: 4px;
+            font-size: 11px;
+            color: #64748b;
+        }
+
+        #advancedMap {
+            width: 100%;
+            height: 270px;
+            border-radius: 9px;
+            border: 1px solid #d8dee8;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .map-status {
+            margin-top: 9px;
+            padding: 8px 10px;
+            border-radius: 7px;
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
+            color: #1d4ed8;
+            font-size: 11px;
+            line-height: 1.45;
+        }
+
+        .map-status.success {
+            background: #ecfdf5;
+            border-color: #a7f3d0;
+            color: #047857;
+        }
+
+        .map-status.error {
+            background: #fef2f2;
+            border-color: #fecaca;
+            color: #b91c1c;
+        }
+
+        .map-reset-btn {
+            height: 34px;
+            padding: 0 11px;
+            border: 1px solid #d8dee8;
+            border-radius: 7px;
+            background: #ffffff;
+            color: #475569;
+            font-family: inherit;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .map-reset-btn:hover {
+            background: #f1f5f9;
+        }
+
+        @media (max-width: 650px) {
+            .map-header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            #advancedMap {
+                height: 235px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <a href="{{ url_for('dashboard') }}" class="brand">
+        Land<span>Insight</span>
+    </a>
+
+    <div class="nav-right">
+
+        <a href="{{ url_for('dashboard') }}"
+           class="nav-link">
+            Dashboard
+        </a>
+
+        <a href="{{ url_for('logout') }}"
+           class="logout-btn">
+            Logout
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= PAGE ================= -->
+
+<main class="page">
+
+    <div class="page-header">
+
+        <h1>Quick Land Valuation</h1>
+
+        <p>
+            Enter the basic property details. Other property features
+            are automatically filled with dataset defaults and remain
+            editable before prediction.
+        </p>
+
+    </div>
+
+
+    <!-- ================= MAIN CARD ================= -->
+
+    <div class="card">
+
+        <div class="card-header">
+
+            <div class="card-header-left">
+
+                <h2>Property Details</h2>
+
+                <p>
+                    Auto-filled values can be edited directly in Quick Mode.
+                </p>
+
+            </div>
+
+            <div class="quick-badge">
+                Quick Mode
+            </div>
+
+        </div>
+
+
+        <form id="quickForm">
+
+            <div class="form-body">
+
+
+                <!-- ================= BASIC DETAILS ================= -->
+
+                <div class="section">
+
+                    <div class="section-title">
+
+                        <div class="section-number">1</div>
+
+                        Basic Property Details
+
+                    </div>
+
+
+                    <div class="grid">
+
+
+                        <!-- LOCATION -->
+
+                        <div class="field">
+
+                            <label for="location">
+                                Location
+                                <span class="required">*</span>
+                            </label>
+
+                            <select id="location"
+                                    name="location"
+                                    required>
+
+                                <option value="">
+                                    Select Location
+                                </option>
+
+                                {% for location in locations %}
+
+                                <option value="{{ location }}">
+                                    {{ location }}
+                                </option>
+
+                                {% endfor %}
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- AREA -->
+
+                        <div class="field">
+
+                            <label for="area">
+                                Area
+                                <span class="required">*</span>
+                            </label>
+
+                            <select id="area"
+                                    name="area"
+                                    required
+                                    disabled>
+
+                                <option value="">
+                                    Select Location First
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DISTRICT -->
+
+                        <div class="field">
+
+                            <label for="district">
+                                District
+                            </label>
+
+                            <input type="text"
+                                   id="district"
+                                   name="district"
+                                   class="auto-field"
+                                   placeholder="Auto-filled">
+
+                        </div>
+
+
+                        <!-- LAND AREA -->
+
+                        <div class="field">
+
+                            <label for="land_area">
+                                Land Area (sq.ft)
+                                <span class="required">*</span>
+                            </label>
+
+                            <input type="number"
+                                   id="land_area"
+                                   name="land_area"
+                                   min="1"
+                                   step="0.01"
+                                   placeholder="Enter land area"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= LOCATION DATA ================= -->
+
+                <div class="section">
+
+                    <div class="section-title">
+
+                        <div class="section-number">2</div>
+
+                        Location & Market Information
+
+                    </div>
+
+
+                    <div class="grid">
+
+
+                        <!-- LATITUDE -->
+
+                        <div class="field">
+
+                            <label for="latitude">
+                                Latitude
+                            </label>
+
+                            <input type="number"
+                                   id="latitude"
+                                   name="latitude"
+                                   step="any"
+                                   class="auto-field"
+                                   placeholder="Auto-filled">
+
+                            <div class="field-note">
+                                Default value loaded from selected area
+                            </div>
+
+                        </div>
+
+
+                        <!-- LONGITUDE -->
+
+                        <div class="field">
+
+                            <label for="longitude">
+                                Longitude
+                            </label>
+
+                            <input type="number"
+                                   id="longitude"
+                                   name="longitude"
+                                   step="any"
+                                   class="auto-field"
+                                   placeholder="Auto-filled">
+
+                            <div class="field-note">
+                                Default value loaded from selected area
+                            </div>
+
+                        </div>
+
+
+                        <!-- GUIDELINE -->
+
+                        <div class="field">
+
+                            <label for="guideline_value">
+                                Guideline Value (Rs per sq.ft)
+                            </label>
+
+                            <input type="number"
+                                   id="guideline_value"
+                                   name="guideline_value"
+                                   step="0.01"
+                                   min="0"
+                                   class="auto-field"
+                                   placeholder="Auto-filled">
+
+                            <div class="field-note">
+                                Default value loaded from selected area
+                            </div>
+
+                        </div>
+
+
+                        <!-- REGISTRATION YEAR -->
+
+                        <div class="field">
+
+                            <label for="registration_year">
+                                Registration Year
+                            </label>
+
+                            <input type="number"
+                                   id="registration_year"
+                                   name="registration_year"
+                                   min="1900"
+                                   max="2100"
+                                   class="auto-field"
+                                   placeholder="Auto-filled">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- ================= INTERACTIVE LOCATION MAP ================= -->
+
+                <div class="map-wrapper">
+
+                    <div class="map-header">
+
+                        <div>
+                            <div class="map-title">
+                                Select Property Location on Map
+                            </div>
+
+                            <div class="map-subtitle">
+                                Tap the map to select the property location.
+                                Latitude, longitude, district and matching area will be filled when available.
+                            </div>
+                        </div>
+
+                        <button
+                            type="button"
+                            id="resetMapBtn"
+                            class="map-reset-btn">
+                            Reset Map
+                        </button>
+
+                    </div>
+
+                    <div id="advancedMap"></div>
+
+                    <div
+                        id="mapStatus"
+                        class="map-status">
+                        Tap anywhere on the map to select a property location.
+                    </div>
+
+                </div>
+
+                <!-- ================= LAND / ROAD ================= -->
+
+                <div class="section">
+
+                    <div class="section-title">
+
+                        <div class="section-number">3</div>
+
+                        Land & Road Features
+
+                    </div>
+
+
+                    <div class="grid">
+
+
+                        <!-- LAND TYPE -->
+
+                        <div class="field">
+
+                            <label for="land_type">
+                                Land Type
+                            </label>
+
+                            <select id="land_type"
+                                    name="land_type">
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="Residential">
+                                    Residential
+                                </option>
+
+                                <option value="Commercial">
+                                    Commercial
+                                </option>
+
+                                <option value="Agricultural">
+                                    Agricultural
+                                </option>
+
+                                <option value="Industrial">
+                                    Industrial
+                                </option>
+
+                                <option value="Mixed">
+                                    Mixed
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- ROAD WIDTH -->
+
+                        <div class="field">
+
+                            <label for="road_width">
+                                Road Width (ft)
+                            </label>
+
+                            <input type="number"
+                                   id="road_width"
+                                   name="road_width"
+                                   step="0.01"
+                                   min="0">
+
+                        </div>
+
+
+                        <!-- ROAD TYPE -->
+
+                        <div class="field">
+
+                            <label for="road_type">
+                                Road Type
+                            </label>
+
+                            <select id="road_type"
+                                    name="road_type">
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="Tar">
+                                    Tar
+                                </option>
+
+                                <option value="Concrete">
+                                    Concrete
+                                </option>
+
+                                <option value="Mud">
+                                    Mud
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- CORNER -->
+
+                        <div class="field">
+
+                            <label for="corner_plot">
+                                Corner Plot
+                            </label>
+
+                            <select id="corner_plot"
+                                    name="corner_plot">
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="Yes">
+                                    Yes
+                                </option>
+
+                                <option value="No">
+                                    No
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- FACING -->
+
+                        <div class="field">
+
+                            <label for="facing">
+                                Facing
+                            </label>
+
+                            <select id="facing"
+                                    name="facing">
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="North">
+                                    North
+                                </option>
+
+                                <option value="South">
+                                    South
+                                </option>
+
+                                <option value="East">
+                                    East
+                                </option>
+
+                                <option value="West">
+                                    West
+                                </option>
+
+                                <option value="North-East">
+                                    North-East
+                                </option>
+
+                                <option value="North-West">
+                                    North-West
+                                </option>
+
+                                <option value="South-East">
+                                    South-East
+                                </option>
+
+                                <option value="South-West">
+                                    South-West
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= DISTANCE FEATURES ================= -->
+
+                <div class="section">
+
+                    <div class="section-title">
+
+                        <div class="section-number">4</div>
+
+                        Accessibility & Distance
+
+                    </div>
+
+
+                    <div class="grid">
+
+
+                        <!-- MAIN ROAD -->
+
+                        <div class="field">
+
+                            <label for="distance_main_road">
+                                Distance to Main Road (km)
+                            </label>
+
+                            <input type="number"
+                                   id="distance_main_road"
+                                   name="distance_main_road"
+                                   step="0.01"
+                                   min="0">
+
+                        </div>
+
+
+                        <!-- HIGHWAY -->
+
+                        <div class="field">
+
+                            <label for="distance_highway">
+                                Distance to Highway (km)
+                            </label>
+
+                            <input type="number"
+                                   id="distance_highway"
+                                   name="distance_highway"
+                                   step="0.01"
+                                   min="0">
+
+                        </div>
+
+
+                        <!-- BUS STAND -->
+
+                        <div class="field">
+
+                            <label for="distance_bus_stand">
+                                Distance to Bus Stand (km)
+                            </label>
+
+                            <input type="number"
+                                   id="distance_bus_stand"
+                                   name="distance_bus_stand"
+                                   step="0.01"
+                                   min="0">
+
+                        </div>
+
+
+                        <!-- RAILWAY -->
+
+                        <div class="field">
+
+                            <label for="distance_railway">
+                                Distance to Railway Station (km)
+                            </label>
+
+                            <input type="number"
+                                   id="distance_railway"
+                                   name="distance_railway"
+                                   step="0.01"
+                                   min="0">
+
+                        </div>
+
+
+                        <!-- SCHOOL -->
+
+                        <div class="field">
+
+                            <label for="distance_school">
+                                Distance to School (km)
+                            </label>
+
+                            <input type="number"
+                                   id="distance_school"
+                                   name="distance_school"
+                                   step="0.01"
+                                   min="0">
+
+                        </div>
+
+
+                        <!-- HOSPITAL -->
+
+                        <div class="field">
+
+                            <label for="distance_hospital">
+                                Distance to Hospital (km)
+                            </label>
+
+                            <input type="number"
+                                   id="distance_hospital"
+                                   name="distance_hospital"
+                                   step="0.01"
+                                   min="0">
+
+                        </div>
+
+
+                        <!-- MARKET -->
+
+                        <div class="field">
+
+                            <label for="distance_market">
+                                Distance to Market (km)
+                            </label>
+
+                            <input type="number"
+                                   id="distance_market"
+                                   name="distance_market"
+                                   step="0.01"
+                                   min="0">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= FACILITIES ================= -->
+
+                <div class="section">
+
+                    <div class="section-title">
+
+                        <div class="section-number">5</div>
+
+                        Facilities
+
+                    </div>
+
+
+                    <div class="grid">
+
+
+                        <!-- WATER -->
+
+                        <div class="field">
+
+                            <label for="water_facility">
+                                Water Facility
+                            </label>
+
+                            <select id="water_facility"
+                                    name="water_facility">
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="Yes">
+                                    Yes
+                                </option>
+
+                                <option value="No">
+                                    No
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- ELECTRICITY -->
+
+                        <div class="field">
+
+                            <label for="electricity">
+                                Electricity
+                            </label>
+
+                            <select id="electricity"
+                                    name="electricity">
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="Yes">
+                                    Yes
+                                </option>
+
+                                <option value="No">
+                                    No
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- SEWERAGE -->
+
+                        <div class="field">
+
+                            <label for="sewerage_facility">
+                                Sewerage Facility
+                            </label>
+
+                            <select id="sewerage_facility"
+                                    name="sewerage_facility">
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="Yes">
+                                    Yes
+                                </option>
+
+                                <option value="No">
+                                    No
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= STATUS ================= -->
+
+                <div id="statusMessage"
+                     class="status">
+                </div>
+
+
+                <!-- ================= ACTIONS ================= -->
+
+                <div class="form-actions">
+
+                    <button type="button"
+                            class="btn btn-secondary"
+                            id="resetBtn">
+
+                        Reset
+
+                    </button>
+
+                    <button type="submit"
+                            class="btn btn-primary"
+                            id="calculateBtn">
+
+                        Calculate Price
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= RESULT ================= -->
+
+    <div id="resultCard"
+         class="result-card">
+
+        <div class="result-header">
+
+            <h2>Estimated Land Value</h2>
+
+            <p>
+                Prediction generated using the selected property features.
+            </p>
+
+        </div>
+
+        <div class="result-body">
+
+            <div class="result-grid">
+
+
+                <div class="result-item">
+
+                    <div class="result-label">
+                        Location
+                    </div>
+
+                    <div class="result-value"
+                         id="resultLocation">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="result-item">
+
+                    <div class="result-label">
+                        Area
+                    </div>
+
+                    <div class="result-value"
+                         id="resultArea">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="result-item">
+
+                    <div class="result-label">
+                        District
+                    </div>
+
+                    <div class="result-value"
+                         id="resultDistrict">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="result-item highlight">
+
+                    <div class="result-label">
+                        Estimated Price / sq.ft
+                    </div>
+
+                    <div class="result-value"
+                         id="resultPrice">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="result-item highlight">
+
+                    <div class="result-label">
+                        Estimated Total Price
+                    </div>
+
+                    <div class="result-value"
+                         id="resultTotal">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="result-item">
+
+                    <div class="result-label">
+                        Land Area
+                    </div>
+
+                    <div class="result-value"
+                         id="resultLandArea">
+                        —
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= WHY THIS PRICE (SHAP) ================= -->
+            <div id="whyPrice" aria-live="polite"></div>
+
+            <!-- ================= NEW VALUATION FEATURES ================= -->
+            <div class="valuation-tools" id="valuationTools">
+
+                <div class="feature-card">
+                    <h3>Indicative Price Range</h3>
+                    <div class="feature-value" id="priceRange">—</div>
+                    <div class="feature-subtext">
+                        Indicative model range around the predicted price. This is not a guaranteed market quote.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Estimate Reliability</h3>
+                    <div class="feature-value" id="reliabilityValue">—</div>
+                    <div class="reliability-bar">
+                        <div class="reliability-fill" id="reliabilityFill"></div>
+                    </div>
+                    <div class="feature-subtext" id="reliabilityText">
+                        Reliability is estimated from model behaviour and input completeness.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="explanation-note">
+                <strong>Explainable AI:</strong>
+                “Why this price?” shows model-based feature contributions. These indicate how the model behaved for this prediction; they are not guaranteed causal effects.
+            </div>
+
+            <div class="report-actions">
+                <button type="button"
+                        class="btn btn-secondary"
+                        id="downloadReportBtn">
+                    Download Valuation Report
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+
+<script src="{{ url_for('static', filename='why_price.js') }}"></script>
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin="">
+</script>
+
+<script>
+/* =========================================================
+   ADVANCED PAGE - INTERACTIVE LOCATION MAP
+   ========================================================= */
+
+(function () {
+
+    "use strict";
+
+    const mapElement =
+        document.getElementById("advancedMap");
+
+    const mapStatus =
+        document.getElementById("mapStatus");
+
+    const resetMapBtn =
+        document.getElementById("resetMapBtn");
+
+    const latitudeInput =
+        document.getElementById("latitude");
+
+    const longitudeInput =
+        document.getElementById("longitude");
+
+    const districtInput =
+        document.getElementById("district");
+
+    const locationSelectMap =
+        document.getElementById("location");
+
+    const areaSelectMap =
+        document.getElementById("area");
+
+    if (!mapElement) {
+        return;
+    }
+
+    if (typeof L === "undefined") {
+
+        if (mapStatus) {
+            mapStatus.textContent =
+                "Map could not be loaded.";
+            mapStatus.className =
+                "map-status error";
+        }
+
+        return;
+    }
+
+
+    /* =====================================================
+       DEFAULT MAP POSITION
+    ===================================================== */
+
+    const DEFAULT_LAT = 13.0827;
+    const DEFAULT_LON = 80.2707;
+
+    let initialLat =
+        parseFloat(
+            latitudeInput ? latitudeInput.value : ""
+        );
+
+    let initialLon =
+        parseFloat(
+            longitudeInput ? longitudeInput.value : ""
+        );
+
+    if (
+        !Number.isFinite(initialLat) ||
+        initialLat < -90 ||
+        initialLat > 90
+    ) {
+        initialLat = DEFAULT_LAT;
+    }
+
+    if (
+        !Number.isFinite(initialLon) ||
+        initialLon < -180 ||
+        initialLon > 180
+    ) {
+        initialLon = DEFAULT_LON;
+    }
+
+
+    /* =====================================================
+       CREATE MAP
+    ===================================================== */
+
+    const advancedMap =
+        L.map(
+            "advancedMap",
+            {
+                zoomControl: true
+            }
+        ).setView(
+            [initialLat, initialLon],
+            12
+        );
+
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            maxZoom: 19,
+            attribution:
+                "&copy; OpenStreetMap contributors"
+        }
+    ).addTo(advancedMap);
+
+
+    let marker =
+        L.marker(
+            [initialLat, initialLon],
+            {
+                draggable: true
+            }
+        ).addTo(advancedMap);
+
+
+    marker.bindPopup(
+        "Property Location"
+    );
+
+
+    /* =====================================================
+       STATUS
+    ===================================================== */
+
+    function mapMessage(
+        message,
+        type
+    ) {
+
+        if (!mapStatus) {
+            return;
+        }
+
+        mapStatus.textContent =
+            message;
+
+        mapStatus.className =
+            "map-status";
+
+        if (type === "success") {
+            mapStatus.classList.add("success");
+        }
+
+        if (type === "error") {
+            mapStatus.classList.add("error");
+        }
+
+    }
+
+
+    /* =====================================================
+       SET COORDINATES
+    ===================================================== */
+
+    function setCoordinates(
+        lat,
+        lon
+    ) {
+
+        if (
+            !Number.isFinite(lat) ||
+            !Number.isFinite(lon)
+        ) {
+            return;
+        }
+
+        if (latitudeInput) {
+            latitudeInput.value =
+                lat.toFixed(6);
+        }
+
+        if (longitudeInput) {
+            longitudeInput.value =
+                lon.toFixed(6);
+        }
+
+        marker.setLatLng(
+            [lat, lon]
+        );
+
+    }
+
+
+    /* =====================================================
+       NORMALIZE TEXT
+    ===================================================== */
+
+    function normalize(
+        value
+    ) {
+
+        return String(value || "")
+            .trim()
+            .toLowerCase()
+            .replace(/\s+/g, " ");
+
+    }
+
+
+    /* =====================================================
+       LOCATION MATCH
+    ===================================================== */
+
+    function findLocationMatch(
+        value
+    ) {
+
+        if (
+            !locationSelectMap ||
+            !value
+        ) {
+            return null;
+        }
+
+        const target =
+            normalize(value);
+
+        let exact =
+            Array.from(
+                locationSelectMap.options
+            ).find(function (option) {
+
+                return (
+                    normalize(option.value) ===
+                    target
+                    ||
+                    normalize(option.textContent) ===
+                    target
+                );
+
+            });
+
+        if (exact) {
+            return exact;
+        }
+
+
+        return Array.from(
+            locationSelectMap.options
+        ).find(function (option) {
+
+            const optionValue =
+                normalize(option.value);
+
+            const optionText =
+                normalize(option.textContent);
+
+            return (
+                optionValue &&
+                optionValue !== "select location" &&
+                (
+                    target.includes(optionValue) ||
+                    optionValue.includes(target) ||
+                    target.includes(optionText) ||
+                    optionText.includes(target)
+                )
+            );
+
+        }) || null;
+
+    }
+
+
+    /* =====================================================
+       AREA MATCH
+    ===================================================== */
+
+    function findAreaMatch(
+        value
+    ) {
+
+        if (
+            !areaSelectMap ||
+            !value
+        ) {
+            return null;
+        }
+
+        const target =
+            normalize(value);
+
+
+        let exact =
+            Array.from(
+                areaSelectMap.options
+            ).find(function (option) {
+
+                return (
+                    normalize(option.value) ===
+                    target
+                    ||
+                    normalize(option.textContent) ===
+                    target
+                );
+
+            });
+
+
+        if (exact) {
+            return exact;
+        }
+
+
+        return Array.from(
+            areaSelectMap.options
+        ).find(function (option) {
+
+            const optionValue =
+                normalize(option.value);
+
+            const optionText =
+                normalize(option.textContent);
+
+            return (
+                optionValue &&
+                optionValue !== "select area" &&
+                (
+                    target.includes(optionValue) ||
+                    optionValue.includes(target) ||
+                    target.includes(optionText) ||
+                    optionText.includes(target)
+                )
+            );
+
+        }) || null;
+
+    }
+
+
+    /* =====================================================
+       WAIT UNTIL AREA LIST IS LOADED
+    ===================================================== */
+
+    async function waitForAreaOptions(
+        timeout = 5000
+    ) {
+
+        const started =
+            Date.now();
+
+        while (
+            Date.now() - started <
+            timeout
+        ) {
+
+            if (
+                areaSelectMap &&
+                areaSelectMap.options.length > 1 &&
+                !areaSelectMap.disabled
+            ) {
+                return true;
+            }
+
+            await new Promise(
+                function (resolve) {
+                    setTimeout(
+                        resolve,
+                        150
+                    );
+                }
+            );
+
+        }
+
+        return false;
+
+    }
+
+
+    /* =====================================================
+       APPLY REVERSE GEOCODE RESULT
+    ===================================================== */
+
+    async function applyMapLocation(
+        lat,
+        lon
+    ) {
+
+        try {
+
+            mapMessage(
+                "Finding the nearest LandInsight dataset area...",
+                "info"
+            );
+
+            const response = await fetch(
+                "/api/map-location?lat=" +
+                encodeURIComponent(lat) +
+                "&lon=" +
+                encodeURIComponent(lon),
+                {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                }
+            );
+
+            const data = await response.json();
+
+            if (!response.ok || !data.success) {
+                throw new Error(
+                    data.message ||
+                    data.error ||
+                    "No matching dataset area found."
+                );
+            }
+
+            /*
+             * MAP AUTOFILL RULE:
+             *
+             * Location details are filled automatically from the nearest
+             * LandInsight dataset area:
+             *   Location, Area, District, Latitude, Longitude, Guideline Value
+             *
+             * Property/accessibility features are NEVER overwritten here.
+             * The user must enter those manually in Advanced mode.
+             */
+
+            const matchedLocation =
+                findLocationMatch(data.location);
+
+            if (locationSelectMap && matchedLocation) {
+                locationSelectMap.value = matchedLocation.value;
+            } else if (locationSelectMap && data.location) {
+                throw new Error(
+                    "Map matched location \"" +
+                    String(data.location) +
+                    "\" but it is not available in the Location list."
+                );
+            }
+
+            /*
+             * Load the matched location's Area list first.
+             * loadAreas() clears only auto/default location fields; it does
+             * not touch the manually entered accessibility/property fields.
+             */
+            if (locationSelectMap && matchedLocation) {
+                await loadAreas(matchedLocation.value);
+            }
+
+            const areaName = String(data.area || "").trim();
+
+            if (areaSelectMap && areaName) {
+                let option = findAreaMatch(areaName);
+
+                if (!option) {
+                    option = new Option(
+                        areaName,
+                        areaName,
+                        false,
+                        false
+                    );
+                    areaSelectMap.appendChild(option);
+                }
+
+                areaSelectMap.value = option.value;
+                areaSelectMap.disabled = false;
+            }
+
+            setValue(
+                "district",
+                data.district
+            );
+
+            setValue(
+                "latitude",
+                data.latitude
+            );
+
+            setValue(
+                "longitude",
+                data.longitude
+            );
+
+            setValue(
+                "guideline_value",
+                data.guideline_value
+            );
+
+            setCoordinates(
+                Number(data.latitude),
+                Number(data.longitude)
+            );
+
+            marker
+                .bindPopup(
+                    "<strong>" +
+                    (data.area || "Selected Area") +
+                    "</strong><br>" +
+                    (data.district || "") +
+                    "<br>" +
+                    Number(data.latitude).toFixed(6) +
+                    ", " +
+                    Number(data.longitude).toFixed(6)
+                )
+                .openPopup();
+
+            const distance = Number(data.distance_km);
+            const distanceText = Number.isFinite(distance)
+                ? " Matched " + distance.toFixed(2) + " km from the selected point."
+                : "";
+
+            mapMessage(
+                "Area: " +
+                (data.area || "-") +
+                " | District: " +
+                (data.district || "-") +
+                " | Guideline Value: ₹" +
+                Number(data.guideline_value || 0).toLocaleString("en-IN") +
+                " / sq.ft." +
+                distanceText,
+                "success"
+            );
+
+        } catch (error) {
+
+            console.error(
+                "ADVANCED MAP ERROR:",
+                error
+            );
+
+            setCoordinates(
+                lat,
+                lon
+            );
+
+            marker
+                .bindPopup(
+                    "Selected coordinates:<br>" +
+                    Number(lat).toFixed(6) +
+                    ", " +
+                    Number(lon).toFixed(6)
+                )
+                .openPopup();
+
+            mapMessage(
+                error.message ||
+                "Coordinates selected, but matching area details could not be retrieved.",
+                "error"
+            );
+
+        }
+
+    }
+
+
+    /* =====================================================
+       MAP CLICK
+    ===================================================== */
+
+    advancedMap.on(
+        "click",
+        async function (event) {
+
+            const lat =
+                Number(
+                    event.latlng.lat
+                );
+
+            const lon =
+                Number(
+                    event.latlng.lng
+                );
+
+
+            setCoordinates(
+                lat,
+                lon
+            );
+
+
+            await applyMapLocation(
+                lat,
+                lon
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       MARKER DRAG
+    ===================================================== */
+
+    marker.on(
+        "dragend",
+        async function () {
+
+            const position =
+                marker.getLatLng();
+
+
+            const lat =
+                Number(position.lat);
+
+            const lon =
+                Number(position.lng);
+
+
+            setCoordinates(
+                lat,
+                lon
+            );
+
+
+            await applyMapLocation(
+                lat,
+                lon
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       RESET MAP
+    ===================================================== */
+
+    if (resetMapBtn) {
+
+        resetMapBtn.addEventListener(
+            "click",
+            function () {
+
+                let lat =
+                    parseFloat(
+                        latitudeInput
+                            ? latitudeInput.value
+                            : ""
+                    );
+
+                let lon =
+                    parseFloat(
+                        longitudeInput
+                            ? longitudeInput.value
+                            : ""
+                    );
+
+
+                if (
+                    !Number.isFinite(lat)
+                ) {
+                    lat =
+                        DEFAULT_LAT;
+                }
+
+
+                if (
+                    !Number.isFinite(lon)
+                ) {
+                    lon =
+                        DEFAULT_LON;
+                }
+
+
+                advancedMap.setView(
+                    [lat, lon],
+                    12
+                );
+
+
+                marker.setLatLng(
+                    [lat, lon]
+                );
+
+
+                mapMessage(
+                    "Map reset to the current property coordinates.",
+                    "info"
+                );
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       KEEP MAP IN SYNC WITH MANUAL LAT/LON
+    ===================================================== */
+
+    function syncMapFromInputs() {
+
+        if (
+            !latitudeInput ||
+            !longitudeInput
+        ) {
+            return;
+        }
+
+
+        const lat =
+            parseFloat(
+                latitudeInput.value
+            );
+
+        const lon =
+            parseFloat(
+                longitudeInput.value
+            );
+
+
+        if (
+            !Number.isFinite(lat) ||
+            !Number.isFinite(lon)
+        ) {
+            return;
+        }
+
+
+        if (
+            lat < -90 ||
+            lat > 90 ||
+            lon < -180 ||
+            lon > 180
+        ) {
+            return;
+        }
+
+
+        marker.setLatLng(
+            [lat, lon]
+        );
+
+
+        advancedMap.setView(
+            [lat, lon],
+            Math.max(
+                advancedMap.getZoom(),
+                12
+            )
+        );
+
+    }
+
+
+    if (latitudeInput) {
+
+        latitudeInput.addEventListener(
+            "change",
+            syncMapFromInputs
+        );
+
+    }
+
+
+    if (longitudeInput) {
+
+        longitudeInput.addEventListener(
+            "change",
+            syncMapFromInputs
+        );
+
+    }
+
+
+    /* =====================================================
+       INITIAL MAP SIZE FIX
+    ===================================================== */
+
+    setTimeout(
+        function () {
+
+            advancedMap.invalidateSize();
+
+        },
+        300
+    );
+
+
+    /*
+     * Public map helpers used by the main Reset button.
+     */
+    window.landInsightAdvancedMap = {
+        map: advancedMap,
+        marker: marker,
+        reset: function () {
+            advancedMap.setView(
+                [DEFAULT_LAT, DEFAULT_LON],
+                7
+            );
+            marker.setLatLng(
+                [DEFAULT_LAT, DEFAULT_LON]
+            );
+            marker.bindPopup("Property Location");
+            mapMessage(
+                "Map reset. Select a property point to auto-fill location details.",
+                "info"
+            );
+        }
+    };
+
+})();
+</script>
+
+
+<script>
+
+    /* =========================================================
+       ELEMENTS
+    ========================================================= */
+
+    const locationSelect =
+        document.getElementById("location");
+
+    const areaSelect =
+        document.getElementById("area");
+
+    const quickForm =
+        document.getElementById("quickForm");
+
+    const statusMessage =
+        document.getElementById("statusMessage");
+
+    const resultCard =
+        document.getElementById("resultCard");
+
+    const calculateBtn =
+        document.getElementById("calculateBtn");
+
+    const resetBtn =
+        document.getElementById("resetBtn");
+
+    const whyPrice =
+        document.getElementById("whyPrice");
+
+
+    /* =========================================================
+       HELPERS
+    ========================================================= */
+
+    function showStatus(message, type) {
+
+        statusMessage.textContent = message;
+
+        statusMessage.className =
+            "status " + type;
+    }
+
+
+    function hideStatus() {
+
+        statusMessage.textContent = "";
+
+        statusMessage.className =
+            "status";
+    }
+
+
+    function setValue(id, value) {
+
+        const element =
+            document.getElementById(id);
+
+        if (!element) {
+            return;
+        }
+
+        if (
+            value !== undefined &&
+            value !== null &&
+            value !== ""
+        ) {
+
+            element.value = value;
+
+        }
+
+    }
+
+
+    function clearAutoFields() {
+
+        /* Only these fields are map/area auto-filled in Advanced. */
+        const fields = [
+            "district",
+            "latitude",
+            "longitude",
+            "guideline_value"
+        ];
+
+        fields.forEach(function(id) {
+
+            const element =
+                document.getElementById(id);
+
+            if (element) {
+                element.value = "";
+            }
+
+        });
+
+    }
+
+
+    /* =========================================================
+       LOAD AREA LIST
+    ========================================================= */
+
+    async function loadAreas(location) {
+
+        areaSelect.disabled = true;
+
+        areaSelect.innerHTML =
+            '<option value="">Loading areas...</option>';
+
+        clearAutoFields();
+
+        hideStatus();
+
+        if (!location) {
+
+            areaSelect.innerHTML =
+                '<option value="">Select Location First</option>';
+
+            return;
+
+        }
+
+
+        try {
+
+            const response =
+                await fetch(
+                    "/api/location-areas?location=" +
+                    encodeURIComponent(location),
+                    {
+                        method: "GET",
+                        headers: {
+                            "Accept": "application/json"
+                        }
+                    }
+                );
+
+
+            /*
+             * If backend returns an error, don't silently
+             * keep the dropdown disabled.
+             */
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Area API returned HTTP " +
+                    response.status
+                );
+
+            }
+
+
+            const data =
+                await response.json();
+
+
+            console.log(
+                "Location Areas Response:",
+                data
+            );
+
+
+            let areas = [];
+
+
+            /*
+             * Supports:
+             *
+             * {
+             *   success: true,
+             *   areas: [...]
+             * }
+             *
+             * and also:
+             *
+             * {
+             *   areas: [...]
+             * }
+             */
+
+            if (Array.isArray(data)) {
+
+                areas = data;
+
+            } else if (
+                data &&
+                Array.isArray(data.areas)
+            ) {
+
+                areas = data.areas;
+
+            }
+
+
+            if (!areas.length) {
+
+                areaSelect.innerHTML =
+                    '<option value="">No areas found</option>';
+
+                showStatus(
+                    "No areas were found for the selected location.",
+                    "error"
+                );
+
+                return;
+
+            }
+
+
+            areaSelect.innerHTML =
+                '<option value="">Select Area</option>';
+
+
+            areas.forEach(function(area) {
+
+                const option =
+                    document.createElement("option");
+
+                /*
+                 * Backend may return either:
+                 *
+                 * "Adyar"
+                 *
+                 * OR
+                 *
+                 * {name: "Adyar"}
+                 */
+
+                if (
+                    typeof area === "object" &&
+                    area !== null
+                ) {
+
+                    option.value =
+                        area.name ||
+                        area.area ||
+                        area.Area ||
+                        "";
+
+                    option.textContent =
+                        area.name ||
+                        area.area ||
+                        area.Area ||
+                        "";
+
+                } else {
+
+                    option.value =
+                        String(area);
+
+                    option.textContent =
+                        String(area);
+
+                }
+
+
+                if (option.value) {
+                    areaSelect.appendChild(option);
+                }
+
+            });
+
+
+            areaSelect.disabled = false;
+
+
+        } catch (error) {
+
+            console.error(
+                "AREA LOAD ERROR:",
+                error
+            );
+
+
+            /*
+             * Important:
+             * Show actual error instead of making user
+             * think the Area field simply has no values.
+             */
+
+            areaSelect.innerHTML =
+                '<option value="">Unable to load areas</option>';
+
+            areaSelect.disabled = true;
+
+
+            showStatus(
+                "Unable to load areas. Please check the Flask API route /api/location-areas.",
+                "error"
+            );
+
+        }
+
+    }
+
+
+    /* =========================================================
+       LOAD AREA DEFAULTS
+    ========================================================= */
+
+    async function loadAreaDefaults(location, area) {
+
+        if (!location || !area) {
+            return;
+        }
+
+
+        showStatus(
+            "Loading default property values...",
+            "info"
+        );
+
+
+        try {
+
+            /*
+             * First try the full defaults API.
+             */
+
+            const response =
+                await fetch(
+                    "/api/area-defaults?location=" +
+                    encodeURIComponent(location) +
+                    "&area=" +
+                    encodeURIComponent(area),
+                    {
+                        method: "GET",
+                        headers: {
+                            "Accept": "application/json"
+                        }
+                    }
+                );
+
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Defaults API returned HTTP " +
+                    response.status
+                );
+
+            }
+
+
+            const data =
+                await response.json();
+
+
+            console.log(
+                "Area Defaults Response:",
+                data
+            );
+
+
+            /*
+             * Backend may wrap defaults:
+             *
+             * {
+             *   success: true,
+             *   defaults: {...}
+             * }
+             *
+             * or directly return the object.
+             */
+
+            let defaults =
+                data.defaults ||
+                data.data ||
+                data;
+
+
+            if (!defaults) {
+                throw new Error(
+                    "No defaults returned"
+                );
+            }
+
+
+            /*
+             * =========================
+             * BASIC
+             * =========================
+             */
+
+            setValue(
+                "district",
+                defaults.District ??
+                defaults.district
+            );
+
+
+            /*
+             * =========================
+             * LOCATION
+             * =========================
+             */
+
+            setValue(
+                "latitude",
+                defaults.Latitude ??
+                defaults.latitude
+            );
+
+            setValue(
+                "longitude",
+                defaults.Longitude ??
+                defaults.longitude
+            );
+
+
+            setValue(
+                "guideline_value",
+                defaults["Guideline Value (Rs per sq.ft)"] ??
+                defaults.guideline_value ??
+                defaults.guideline
+            );
+
+
+            /*
+             * =========================
+             * LAND / ROAD
+             * =========================
+             */
+
+
+            /*
+             * =========================
+             * DISTANCES
+             * =========================
+             */
+
+
+            /*
+             * =========================
+             * FACILITIES
+             * =========================
+             */
+
+
+            hideStatus();
+
+
+        } catch (error) {
+
+            console.error(
+                "DEFAULT LOAD ERROR:",
+                error
+            );
+
+
+            /*
+             * Fallback to the smaller area-details API.
+             */
+
+            try {
+
+                const response =
+                    await fetch(
+                        "/api/area-details?location=" +
+                        encodeURIComponent(location) +
+                        "&area=" +
+                        encodeURIComponent(area),
+                        {
+                            method: "GET",
+                            headers: {
+                                "Accept": "application/json"
+                            }
+                        }
+                    );
+
+
+                if (!response.ok) {
+                    throw new Error(
+                        "Area details API failed"
+                    );
+                }
+
+
+                const data =
+                    await response.json();
+
+
+                console.log(
+                    "Area Details Fallback:",
+                    data
+                );
+
+
+                const details =
+                    data.details ||
+                    data.data ||
+                    data;
+
+
+                setValue(
+                    "district",
+                    details.District ??
+                    details.district
+                );
+
+
+                setValue(
+                    "latitude",
+                    details.Latitude ??
+                    details.latitude
+                );
+
+
+                setValue(
+                    "longitude",
+                    details.Longitude ??
+                    details.longitude
+                );
+
+
+                setValue(
+                    "guideline_value",
+                    details["Guideline Value (Rs per sq.ft)"] ??
+                    details.guideline_value ??
+                    details.guideline
+                );
+
+
+                hideStatus();
+
+
+            } catch (fallbackError) {
+
+                console.error(
+                    "AREA DETAILS ERROR:",
+                    fallbackError
+                );
+
+
+                showStatus(
+                    "Area selected, but default values could not be loaded. You can still enter them manually.",
+                    "error"
+                );
+
+            }
+
+        }
+
+    }
+
+
+    /* =========================================================
+       LOCATION CHANGE
+    ========================================================= */
+
+    locationSelect.addEventListener(
+        "change",
+        function() {
+
+            const location =
+                this.value;
+
+            loadAreas(location);
+
+            resultCard.style.display =
+                "none";
+
+        }
+    );
+
+
+    /* =========================================================
+       AREA CHANGE
+    ========================================================= */
+
+    areaSelect.addEventListener(
+        "change",
+        function() {
+
+            const location =
+                locationSelect.value;
+
+            const area =
+                this.value;
+
+
+            resultCard.style.display =
+                "none";
+
+
+            if (!location || !area) {
+
+                clearAutoFields();
+
+                return;
+
+            }
+
+
+            loadAreaDefaults(
+                location,
+                area
+            );
+
+        }
+    );
+
+
+    /* =========================================================
+       BUILD COMPLETE PAYLOAD
+    ========================================================= */
+
+    function buildPayload() {
+
+        return {
+
+            /*
+             * BASIC
+             */
+
+            location:
+                document.getElementById(
+                    "location"
+                ).value,
+
+            area:
+                document.getElementById(
+                    "area"
+                ).value,
+
+            district:
+                document.getElementById(
+                    "district"
+                ).value,
+
+            land_area:
+                document.getElementById(
+                    "land_area"
+                ).value,
+
+
+            /*
+             * LOCATION
+             */
+
+            latitude:
+                document.getElementById(
+                    "latitude"
+                ).value,
+
+            longitude:
+                document.getElementById(
+                    "longitude"
+                ).value,
+
+            guideline_value:
+                document.getElementById(
+                    "guideline_value"
+                ).value,
+
+            registration_year:
+                document.getElementById(
+                    "registration_year"
+                ).value,
+
+
+            /*
+             * LAND / ROAD
+             */
+
+            land_type:
+                document.getElementById(
+                    "land_type"
+                ).value,
+
+            road_width:
+                document.getElementById(
+                    "road_width"
+                ).value,
+
+            road_type:
+                document.getElementById(
+                    "road_type"
+                ).value,
+
+            corner_plot:
+                document.getElementById(
+                    "corner_plot"
+                ).value,
+
+            facing:
+                document.getElementById(
+                    "facing"
+                ).value,
+
+
+            /*
+             * DISTANCES
+             */
+
+            distance_main_road:
+                document.getElementById(
+                    "distance_main_road"
+                ).value,
+
+            distance_highway:
+                document.getElementById(
+                    "distance_highway"
+                ).value,
+
+            distance_bus_stand:
+                document.getElementById(
+                    "distance_bus_stand"
+                ).value,
+
+            distance_railway:
+                document.getElementById(
+                    "distance_railway"
+                ).value,
+
+            distance_school:
+                document.getElementById(
+                    "distance_school"
+                ).value,
+
+            distance_hospital:
+                document.getElementById(
+                    "distance_hospital"
+                ).value,
+
+            distance_market:
+                document.getElementById(
+                    "distance_market"
+                ).value,
+
+
+            /*
+             * FACILITIES
+             */
+
+            water_facility:
+                document.getElementById(
+                    "water_facility"
+                ).value,
+
+            electricity:
+                document.getElementById(
+                    "electricity"
+                ).value,
+
+            sewerage_facility:
+                document.getElementById(
+                    "sewerage_facility"
+                ).value
+
+        };
+
+    }
+
+
+
+    /* =========================================================
+       INDICATIVE RANGE + RELIABILITY + PDF REPORT
+       Added without changing the existing prediction flow.
+    ========================================================= */
+
+    let latestReportData = null;
+
+    function formatINR(value, decimals) {
+        const n = Number(value);
+        if (!Number.isFinite(n)) return "—";
+        return "₹" + n.toLocaleString("en-IN", {
+            maximumFractionDigits: decimals === undefined ? 2 : decimals
+        });
+    }
+
+    function getExplanationItems(explanation) {
+        if (!explanation) return [];
+
+        const candidates = [
+            explanation.contributions,
+            explanation.feature_contributions,
+            explanation.items,
+            explanation.drivers,
+            explanation.features
+        ];
+
+        for (const item of candidates) {
+            if (Array.isArray(item)) return item;
+        }
+
+        return [];
+    }
+
+    function updateValuationFeatures(data, price, payload) {
+        if (!Number.isFinite(price) || price <= 0) return;
+
+        /*
+         * Indicative range:
+         * Keep this explicitly indicative. It is a presentation aid,
+         * not a second prediction model.
+         */
+        const low = price * 0.90;
+        const high = price * 1.10;
+
+        const rangeEl = document.getElementById("priceRange");
+        if (rangeEl) {
+            rangeEl.textContent =
+                formatINR(low) + " – " + formatINR(high) + " / sq.ft";
+        }
+
+        /*
+         * Reliability is a transparent heuristic:
+         * - starts at 100
+         * - reduces for missing optional inputs
+         * - slightly rewards an explanation being available
+         *
+         * It is deliberately labelled as an estimate, not model accuracy.
+         */
+        const fields = [
+            "district", "latitude", "longitude", "guideline_value",
+            "registration_year", "land_type", "road_width", "road_type",
+            "corner_plot", "facing", "distance_main_road",
+            "distance_highway", "distance_bus_stand", "distance_railway",
+            "distance_school", "distance_hospital", "distance_market",
+            "water_facility", "electricity", "sewerage_facility"
+        ];
+
+        let present = 0;
+        fields.forEach(function (key) {
+            const value = payload && payload[key];
+            if (value !== undefined && value !== null && String(value).trim() !== "") {
+                present++;
+            }
+        });
+
+        let reliability = 50 + Math.round((present / fields.length) * 45);
+
+        const explanationItems = getExplanationItems(data && data.explanation);
+        if (explanationItems.length > 0) {
+            reliability += 5;
+        }
+
+        reliability = Math.max(0, Math.min(100, reliability));
+
+        const reliabilityEl = document.getElementById("reliabilityValue");
+        const fillEl = document.getElementById("reliabilityFill");
+        const textEl = document.getElementById("reliabilityText");
+
+        let reliabilityLabel = "Medium";
+        if (reliability >= 85) reliabilityLabel = "High";
+        else if (reliability < 65) reliabilityLabel = "Low";
+
+        if (reliabilityEl) reliabilityEl.textContent = reliabilityLabel;
+        if (fillEl) {
+            fillEl.style.width = reliability + "%";
+            fillEl.setAttribute("aria-label", reliabilityLabel + " reliability");
+        }
+
+        if (textEl) {
+            textEl.textContent =
+                reliabilityLabel +
+                " reliability based on the completeness of the supplied property inputs and model explanation availability. This is not a statistical confidence interval.";
+        }
+    }
+
+    function resetValuationFeatures() {
+        const rangeEl = document.getElementById("priceRange");
+        const reliabilityEl = document.getElementById("reliabilityValue");
+        const fillEl = document.getElementById("reliabilityFill");
+        const textEl = document.getElementById("reliabilityText");
+
+        if (rangeEl) rangeEl.textContent = "—";
+        if (reliabilityEl) reliabilityEl.textContent = "—";
+        if (fillEl) fillEl.style.width = "0";
+        if (textEl) {
+            textEl.textContent =
+                "Reliability is estimated from model behaviour and input completeness.";
+        }
+    }
+
+    function safeFilePart(value) {
+        return String(value || "Property")
+            .replace(/[^a-z0-9_-]+/gi, "_")
+            .replace(/^_+|_+$/g, "")
+            .slice(0, 60) || "Property";
+    }
+
+    async function downloadValuationReport() {
+        const resultCardEl = document.getElementById("resultCard");
+        const button = document.getElementById("downloadReportBtn");
+
+        if (!resultCardEl || resultCardEl.style.display === "none") {
+            showStatus("Please calculate a land value before downloading the report.", "error");
+            return;
+        }
+
+        if (!latestReportData) {
+            showStatus("Please calculate a land value before downloading the report.", "error");
+            return;
+        }
+
+        if (button) {
+            button.disabled = true;
+            button.textContent = "Preparing Report...";
+        }
+
+        try {
+            /*
+             * SAME PDF FLOW AS QUICK MODE.
+             * The Flask /download-report route uses ReportLab to create the
+             * actual PDF. We do NOT use html2pdf/html2canvas here.
+             * This is the important fix for the blank-PDF problem.
+             */
+            const response = await fetch(
+                "{{ url_for('download_report') }}",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/pdf"
+                    },
+                    body: JSON.stringify(latestReportData)
+                }
+            );
+
+            if (!response.ok) {
+                let message = "Unable to generate PDF report.";
+
+                try {
+                    const errorData = await response.json();
+                    message = errorData.error || errorData.message || message;
+                } catch (_) {}
+
+                throw new Error(message);
+            }
+
+            const blob = await response.blob();
+
+            if (!blob || blob.size === 0) {
+                throw new Error("The server returned an empty PDF file.");
+            }
+
+            const contentType = response.headers.get("content-type") || "";
+            if (!contentType.toLowerCase().includes("pdf")) {
+                throw new Error("The server did not return a PDF file.");
+            }
+
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement("a");
+
+            link.href = url;
+            link.download = "LandInsight_Valuation_Report.pdf";
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+
+            window.URL.revokeObjectURL(url);
+
+            showStatus(
+                "Valuation report generated successfully.",
+                "success"
+            );
+        } catch (error) {
+            console.error("REPORT ERROR:", error);
+            showStatus(
+                error.message || "Unable to generate report.",
+                "error"
+            );
+        } finally {
+            if (button) {
+                button.disabled = false;
+                button.textContent = "Download Valuation Report";
+            }
+        }
+    }
+
+    const downloadReportBtn =
+        document.getElementById("downloadReportBtn");
+
+    if (downloadReportBtn) {
+        downloadReportBtn.addEventListener(
+            "click",
+            downloadValuationReport
+        );
+    }
+
+
+    /* =========================================================
+       CALCULATE
+    ========================================================= */
+
+    quickForm.addEventListener(
+        "submit",
+        async function(event) {
+
+            event.preventDefault();
+
+
+            hideStatus();
+
+            if (whyPrice) {
+                whyPrice.innerHTML = "";
+            }
+
+            resultCard.style.display =
+                "none";
+
+
+            const location =
+                locationSelect.value;
+
+            const area =
+                areaSelect.value;
+
+            const landArea =
+                document.getElementById(
+                    "land_area"
+                ).value;
+
+
+            /*
+             * BASIC VALIDATION
+             */
+
+            if (!location) {
+
+                showStatus(
+                    "Please select a location.",
+                    "error"
+                );
+
+                locationSelect.focus();
+
+                return;
+
+            }
+
+
+            if (!area) {
+
+                showStatus(
+                    "Please select an area.",
+                    "error"
+                );
+
+                areaSelect.focus();
+
+                return;
+
+            }
+
+
+            if (
+                !landArea ||
+                Number(landArea) <= 0
+            ) {
+
+                showStatus(
+                    "Please enter a valid land area.",
+                    "error"
+                );
+
+                document.getElementById(
+                    "land_area"
+                ).focus();
+
+                return;
+
+            }
+
+
+            /*
+             * BUILD COMPLETE PAYLOAD.
+             *
+             * Important:
+             * All editable default fields are sent.
+             */
+
+            const payload =
+                buildPayload();
+
+
+            console.log(
+                "QUICK PREDICTION PAYLOAD:",
+                payload
+            );
+
+
+            /*
+             * BUTTON LOADING
+             */
+
+            calculateBtn.disabled =
+                true;
+
+            calculateBtn.innerHTML = `
+                <span class="loading">
+                    <span class="spinner"></span>
+                    Calculating...
+                </span>
+            `;
+
+
+            try {
+
+                const response =
+                    await fetch(
+                        "{{ url_for('quick_predict') }}",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/json",
+
+                                "Accept":
+                                    "application/json"
+                            },
+
+                            body:
+                                JSON.stringify(payload)
+                        }
+                    );
+
+
+                /*
+                 * Try JSON response.
+                 */
+
+                let data;
+
+                try {
+
+                    data =
+                        await response.json();
+
+                } catch (jsonError) {
+
+                    throw new Error(
+                        "Server returned an invalid response."
+                    );
+
+                }
+
+
+                console.log(
+                    "PREDICTION RESPONSE:",
+                    data
+                );
+
+
+                if (
+                    !response.ok ||
+                    !data.success
+                ) {
+
+                    throw new Error(
+                        data.message ||
+                        data.error ||
+                        "Prediction failed."
+                    );
+
+                }
+
+
+                /*
+                 * =========================
+                 * RESULT VALUES
+                 * =========================
+                 */
+
+                document.getElementById(
+                    "resultLocation"
+                ).textContent =
+                    data.location ||
+                    location;
+
+
+                document.getElementById(
+                    "resultArea"
+                ).textContent =
+                    data.area ||
+                    area;
+
+
+                document.getElementById(
+                    "resultDistrict"
+                ).textContent =
+                    data.district ||
+                    document.getElementById(
+                        "district"
+                    ).value ||
+                    "—";
+
+
+                const price =
+                    Number(
+                        data.predicted_price_per_sqft
+                    );
+
+
+                const total =
+                    Number(
+                        data.estimated_total_price
+                    );
+
+
+                const areaValue =
+                    Number(
+                        landArea
+                    );
+
+
+                document.getElementById(
+                    "resultPrice"
+                ).textContent =
+                    Number.isFinite(price)
+                        ? "₹" +
+                          price.toLocaleString(
+                              "en-IN",
+                              {
+                                  maximumFractionDigits: 2
+                              }
+                          )
+                        : "—";
+
+
+                document.getElementById(
+                    "resultTotal"
+                ).textContent =
+                    Number.isFinite(total)
+                        ? "₹" +
+                          total.toLocaleString(
+                              "en-IN",
+                              {
+                                  maximumFractionDigits: 0
+                              }
+                          )
+                        : "—";
+
+
+                document.getElementById(
+                    "resultLandArea"
+                ).textContent =
+                    Number.isFinite(areaValue)
+                        ? areaValue.toLocaleString(
+                              "en-IN",
+                              {
+                                  maximumFractionDigits: 2
+                              }
+                          ) +
+                          " sq.ft"
+                        : "—";
+
+
+                resultCard.style.display =
+                    "block";
+
+                updateValuationFeatures(
+                    data,
+                    price,
+                    payload
+                );
+
+                /*
+                 * Keep the exact values currently shown on the Advanced page
+                 * and send them to the same Flask PDF endpoint used by Quick.
+                 */
+                const rangeText =
+                    document.getElementById("priceRange")?.textContent.trim() || "";
+
+                const reliabilityTextValue =
+                    document.getElementById("reliabilityValue")?.textContent.trim() || "—";
+
+                const rangeNumbers = rangeText.match(/₹([\d,]+(?:\.\d+)?)\s*[–-]\s*₹([\d,]+(?:\.\d+)?)/);
+
+                latestReportData = {
+                    location: data.location || location,
+                    area: data.area || area,
+                    district: data.district || document.getElementById("district").value || "—",
+                    land_area: areaValue,
+                    guideline_value: Number(data.guideline_value ?? payload.guideline_value ?? 0),
+                    predicted_price_per_sqft: price,
+                    estimated_total_price: total,
+                    price_low: rangeNumbers ? Number(rangeNumbers[1].replace(/,/g, "")) : price * 0.90,
+                    price_high: rangeNumbers ? Number(rangeNumbers[2].replace(/,/g, "")) : price * 1.10,
+                    reliability: reliabilityTextValue,
+                    comparables_count: Number(data.comparables_count || 0),
+                    range_basis: data.range_basis || "Indicative range around the predicted price.",
+                    reliability_note: data.reliability_note || "Reliability is an estimate based on supplied inputs and model behaviour.",
+                    explanation: data.explanation || null
+                };
+
+                /* SHAP / Explainable AI */
+                if (window.LandWhy && whyPrice) {
+                    LandWhy.render(
+                        whyPrice,
+                        data.explanation
+                    );
+                }
+
+
+                showStatus(
+                    "Land value calculated successfully.",
+                    "success"
+                );
+
+
+                /*
+                 * Scroll to result.
+                 */
+
+                resultCard.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+
+            } catch (error) {
+
+                console.error(
+                    "PREDICTION ERROR:",
+                    error
+                );
+
+
+                showStatus(
+                    error.message ||
+                    "Unable to calculate land value.",
+                    "error"
+                );
+
+            } finally {
+
+                calculateBtn.disabled =
+                    false;
+
+                calculateBtn.textContent =
+                    "Calculate Price";
+
+            }
+
+        }
+    );
+
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    resetBtn.addEventListener(
+        "click",
+        function() {
+
+            quickForm.reset();
+
+
+            areaSelect.innerHTML =
+                '<option value="">Select Location First</option>';
+
+            areaSelect.disabled =
+                true;
+
+
+            clearAutoFields();
+
+
+            resultCard.style.display =
+                "none";
+
+            resetValuationFeatures();
+
+            if (whyPrice) {
+                whyPrice.innerHTML = "";
+            }
+
+            if (window.landInsightAdvancedMap &&
+                typeof window.landInsightAdvancedMap.reset === "function") {
+                window.landInsightAdvancedMap.reset();
+            }
+
+            hideStatus();
+
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | LandInsight</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+
+            font-family:
+                "Segoe UI",
+                Inter,
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f5f7fb 0%,
+                    #eef4ff 100%
+                );
+
+            color: #172033;
+
+            min-height: 100vh;
+        }
+
+
+        /* ==========================================
+           NAVBAR
+        ========================================== */
+
+        .navbar {
+
+            width: 100%;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.97
+                );
+
+            border-bottom:
+                1px solid #e6eaf0;
+
+            padding:
+                14px 5%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content:
+                space-between;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+        }
+
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 11px;
+        }
+
+
+        .brand-icon {
+
+            width: 42px;
+
+            height: 42px;
+
+            border-radius: 12px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #2563eb,
+                    #4f46e5
+                );
+
+            color: white;
+
+            font-size: 21px;
+
+            box-shadow:
+                0 6px 15px
+                rgba(
+                    37,
+                    99,
+                    235,
+                    0.20
+                );
+        }
+
+
+        .brand-text h2 {
+
+            font-size: 20px;
+
+            font-weight: 800;
+
+            color: #111827;
+        }
+
+
+        .brand-text span {
+
+            font-size: 11px;
+
+            color: #6b7280;
+        }
+
+
+        .nav-right {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+        }
+
+
+        .user-name {
+
+            font-size: 14px;
+
+            color: #374151;
+
+            font-weight: 600;
+
+            margin-right: 5px;
+        }
+
+
+        .nav-link {
+
+            text-decoration: none;
+
+            padding:
+                8px 11px;
+
+            border-radius: 8px;
+
+            color: #475569;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            transition:
+                0.2s ease;
+        }
+
+
+        .nav-link:hover {
+
+            background: #f1f5f9;
+
+            color: #2563eb;
+        }
+
+
+        .nav-link.active {
+
+            background: #eff6ff;
+
+            color: #2563eb;
+        }
+
+
+        .logout-btn {
+
+            text-decoration: none;
+
+            padding:
+                9px 14px;
+
+            border-radius: 9px;
+
+            background: #fef2f2;
+
+            color: #dc2626;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            transition:
+                0.2s ease;
+        }
+
+
+        .logout-btn:hover {
+
+            background: #fee2e2;
+        }
+
+
+        /* ==========================================
+           MAIN
+        ========================================== */
+
+        .container {
+
+            width: 90%;
+
+            max-width: 1150px;
+
+            margin:
+                45px auto 60px;
+        }
+
+
+        /* ==========================================
+           WELCOME
+        ========================================== */
+
+        .welcome {
+
+            margin-bottom: 32px;
+        }
+
+
+        .welcome h1 {
+
+            font-size: 34px;
+
+            font-weight: 800;
+
+            color: #111827;
+
+            margin-bottom: 9px;
+        }
+
+
+        .welcome-name {
+
+            color: #2563eb;
+        }
+
+
+        .welcome p {
+
+            font-size: 15px;
+
+            color: #6b7280;
+
+            line-height: 1.7;
+
+            max-width: 750px;
+        }
+
+
+        /* ==========================================
+           STAT / FEATURE CARDS
+        ========================================== */
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+
+            margin-bottom: 28px;
+        }
+
+
+        .card {
+
+            position: relative;
+
+            background: white;
+
+            border:
+                1px solid #e5e7eb;
+
+            border-radius: 18px;
+
+            padding: 28px;
+
+            min-height: 245px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 25px
+                rgba(
+                    15,
+                    23,
+                    42,
+                    0.06
+                );
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+
+        .card:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(
+                    15,
+                    23,
+                    42,
+                    0.10
+                );
+        }
+
+
+        .card::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 130px;
+
+            height: 130px;
+
+            border-radius: 50%;
+
+            right: -60px;
+
+            top: -60px;
+
+            background: #eff6ff;
+
+            z-index: 0;
+        }
+
+
+        .advanced-card::after {
+
+            background: #f5f3ff;
+        }
+
+
+        .history-card::after {
+
+            background: #ecfdf5;
+        }
+
+
+        /* ==========================================
+           CARD ICON
+        ========================================== */
+
+        .card-icon {
+
+            position: relative;
+
+            z-index: 1;
+
+            width: 52px;
+
+            height: 52px;
+
+            border-radius: 14px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 25px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .quick-icon {
+
+            background: #eff6ff;
+        }
+
+
+        .advanced-icon {
+
+            background: #f5f3ff;
+        }
+
+
+        .history-icon {
+
+            background: #ecfdf5;
+        }
+
+
+        /* ==========================================
+           CARD CONTENT
+        ========================================== */
+
+        .card h2 {
+
+            position: relative;
+
+            z-index: 1;
+
+            font-size: 20px;
+
+            color: #111827;
+
+            margin-bottom: 9px;
+        }
+
+
+        .card p {
+
+            position: relative;
+
+            z-index: 1;
+
+            color: #6b7280;
+
+            font-size: 13px;
+
+            line-height: 1.65;
+
+            margin-bottom: 22px;
+        }
+
+
+        /* ==========================================
+           CARD BUTTON
+        ========================================== */
+
+        .card-btn {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin-top: auto;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-decoration: none;
+
+            width: 100%;
+
+            padding:
+                12px 16px;
+
+            border-radius: 10px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition:
+                0.2s ease;
+        }
+
+
+        .quick-btn {
+
+            background: #2563eb;
+
+            color: white;
+        }
+
+
+        .quick-btn:hover {
+
+            background: #1d4ed8;
+        }
+
+
+        .advanced-btn {
+
+            background: #7c3aed;
+
+            color: white;
+        }
+
+
+        .advanced-btn:hover {
+
+            background: #6d28d9;
+        }
+
+
+        .history-btn {
+
+            background: #059669;
+
+            color: white;
+        }
+
+
+        .history-btn:hover {
+
+            background: #047857;
+        }
+
+
+        /* ==========================================
+           INFORMATION SECTION
+        ========================================== */
+
+        .info-box {
+
+            background: white;
+
+            border:
+                1px solid #e5e7eb;
+
+            border-radius: 18px;
+
+            padding:
+                27px 28px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(
+                    15,
+                    23,
+                    42,
+                    0.05
+                );
+        }
+
+
+        .info-header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .info-header-icon {
+
+            width: 38px;
+
+            height: 38px;
+
+            border-radius: 10px;
+
+            background: #eff6ff;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 18px;
+        }
+
+
+        .info-box h3 {
+
+            font-size: 18px;
+
+            color: #111827;
+        }
+
+
+        .info-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+
+        .info-item {
+
+            background: #f8fafc;
+
+            border:
+                1px solid #eef2f7;
+
+            border-radius: 12px;
+
+            padding: 16px;
+        }
+
+
+        .info-number {
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            color: #2563eb;
+
+            margin-bottom: 8px;
+        }
+
+
+        .info-item strong {
+
+            display: block;
+
+            font-size: 13px;
+
+            color: #374151;
+
+            margin-bottom: 5px;
+        }
+
+
+        .info-item span {
+
+            font-size: 12px;
+
+            color: #6b7280;
+
+            line-height: 1.55;
+        }
+
+
+        /* ==========================================
+           FOOTER
+        ========================================== */
+
+        .footer {
+
+            text-align: center;
+
+            margin-top: 32px;
+
+            color: #9ca3af;
+
+            font-size: 12px;
+        }
+
+
+        /* ==========================================
+           MOBILE
+        ========================================== */
+
+        @media (max-width: 900px) {
+
+            .cards {
+
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .history-card {
+
+                grid-column:
+                    1 / -1;
+            }
+
+            .info-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .navbar {
+
+                padding:
+                    12px 4%;
+            }
+
+
+            .nav-link {
+
+                display: none;
+            }
+
+
+            .user-name {
+
+                display: none;
+            }
+
+
+            .container {
+
+                width: 92%;
+
+                margin-top: 32px;
+            }
+
+
+            .welcome h1 {
+
+                font-size: 28px;
+            }
+
+
+            .cards {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .history-card {
+
+                grid-column: auto;
+            }
+
+
+            .card {
+
+                min-height: 220px;
+
+                padding: 24px;
+            }
+
+        }
+
+
+        @media (max-width: 450px) {
+
+            .brand-text span {
+
+                display: none;
+            }
+
+
+            .brand-text h2 {
+
+                font-size: 18px;
+            }
+
+
+            .brand-icon {
+
+                width: 38px;
+
+                height: 38px;
+            }
+
+
+            .logout-btn {
+
+                padding:
+                    8px 11px;
+            }
+
+
+            .welcome h1 {
+
+                font-size: 25px;
+            }
+
+
+            .info-box {
+
+                padding: 22px 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     NAVBAR
+======================================================= -->
+
+<nav class="navbar">
+
+
+    <!-- BRAND -->
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            🏡
+        </div>
+
+        <div class="brand-text">
+
+            <h2>
+                LandInsight
+            </h2>
+
+            <span>
+                Intelligent Land Valuation
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
+    <div class="nav-right">
+
+
+        <span class="user-name">
+
+            Welcome,
+
+            {% if user %}
+                {{ user["name"] }}
+            {% else %}
+                {{ session.get(
+                    "name",
+                    session.get(
+                        "user_name",
+                        session.get(
+                            "email",
+                            "User"
+                        )
+                    )
+                ) }}
+            {% endif %}
+
+        </span>
+
+
+        <!-- DASHBOARD -->
+
+        <a
+            href="{{ url_for('dashboard') }}"
+            class="nav-link active"
+        >
+            Dashboard
+        </a>
+
+
+        <!-- QUICK -->
+
+        <a
+            href="{{ url_for('quick') }}"
+            class="nav-link"
+        >
+            Quick
+        </a>
+
+
+        <!-- ADVANCED -->
+
+        <a
+            href="{{ url_for('advanced') }}"
+            class="nav-link"
+        >
+            Advanced
+        </a>
+
+
+        <!-- HISTORY -->
+
+        <a
+            href="{{ url_for('history') }}"
+            class="nav-link"
+        >
+            History
+        </a>
+
+
+        <!-- LOGOUT -->
+
+        <a
+            href="{{ url_for('logout') }}"
+            class="logout-btn"
+        >
+            Logout
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ======================================================
+     MAIN CONTENT
+======================================================= -->
+
+<main class="container">
+
+
+    <!-- ==================================================
+         WELCOME
+    =================================================== -->
+
+    <section class="welcome">
+
+
+        <h1>
+
+            Welcome back,
+
+            <span class="welcome-name">
+
+                {% if user %}
+                    {{ user["name"] }}
+                {% else %}
+                    {{ session.get(
+                        "name",
+                        session.get(
+                            "user_name",
+                            session.get(
+                                "email",
+                                "User"
+                            )
+                        )
+                    ) }}
+                {% endif %}
+
+            </span>
+
+            👋
+
+        </h1>
+
+
+        <p>
+
+            Estimate land value using location,
+            accessibility, infrastructure and
+            property characteristics with the
+            LandInsight machine learning system.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FEATURE CARDS
+    =================================================== -->
+
+    <section class="cards">
+
+
+        <!-- QUICK -->
+
+        <div class="card">
+
+
+            <div class="card-icon quick-icon">
+                ⚡
+            </div>
+
+
+            <h2>
+                Quick Prediction
+            </h2>
+
+
+            <p>
+
+                Get a fast land price estimate
+                using essential property details
+                such as location, area and
+                guideline value.
+
+            </p>
+
+
+            <a
+                href="{{ url_for('quick') }}"
+                class="card-btn quick-btn"
+            >
+
+                Start Quick Prediction
+                →
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ADVANCED -->
+
+        <div class="card advanced-card">
+
+
+            <div class="card-icon advanced-icon">
+                📊
+            </div>
+
+
+            <h2>
+                Advanced Prediction
+            </h2>
+
+
+            <p>
+
+                Use detailed land, road,
+                accessibility, infrastructure
+                and property features for
+                a more comprehensive valuation.
+
+            </p>
+
+
+            <a
+                href="{{ url_for('advanced') }}"
+                class="card-btn advanced-btn"
+            >
+
+                Start Advanced Prediction
+                →
+
+            </a>
+
+        </div>
+
+
+
+        <!-- HISTORY -->
+
+        <div class="card history-card">
+
+
+            <div class="card-icon history-icon">
+                🕘
+            </div>
+
+
+            <h2>
+                Prediction History
+            </h2>
+
+
+            <p>
+
+                View your previous land
+                valuation results, estimated
+                prices and property details.
+
+            </p>
+
+
+            <a
+                href="{{ url_for('history') }}"
+                class="card-btn history-btn"
+            >
+
+                View Prediction History
+                →
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================================
+         HOW IT WORKS
+    =================================================== -->
+
+    <section class="info-box">
+
+
+        <div class="info-header">
+
+            <div class="info-header-icon">
+                💡
+            </div>
+
+            <h3>
+                How LandInsight Works
+            </h3>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <!-- STEP 01 -->
+
+            <div class="info-item">
+
+                <div class="info-number">
+                    STEP 01
+                </div>
+
+                <strong>
+                    Enter Property Details
+                </strong>
+
+                <span>
+
+                    Provide location, area,
+                    land size and relevant
+                    property characteristics.
+
+                </span>
+
+            </div>
+
+
+
+            <!-- STEP 02 -->
+
+            <div class="info-item">
+
+                <div class="info-number">
+                    STEP 02
+                </div>
+
+                <strong>
+                    Machine Learning Analysis
+                </strong>
+
+                <span>
+
+                    The trained ML model analyses
+                    the provided land and
+                    accessibility features.
+
+                </span>
+
+            </div>
+
+
+
+            <!-- STEP 03 -->
+
+            <div class="info-item">
+
+                <div class="info-number">
+                    STEP 03
+                </div>
+
+                <strong>
+                    Get Valuation Estimate
+                </strong>
+
+                <span>
+
+                    View the estimated market
+                    price per sq.ft and total
+                    estimated land value.
+
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <div class="footer">
+
+        LandInsight © 2026 ·
+        ML-Based Land Valuation System
+
+    </div>
+
+
+</main>
+
+
+</body>
+
+</html>

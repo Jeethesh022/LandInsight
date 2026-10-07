@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LandInsight - Prediction Result</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================== */
+
+        .navbar {
+            width: 100%;
+            background: #1e3a8a;
+            color: white;
+            padding: 18px 35px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        .user-section {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+
+        .username {
+            font-size: 15px;
+        }
+
+
+        .logout-btn {
+            text-decoration: none;
+            background: white;
+            color: #1e3a8a;
+
+            padding: 9px 15px;
+            border-radius: 6px;
+
+            font-weight: bold;
+        }
+
+
+        .logout-btn:hover {
+            background: #dbeafe;
+        }
+
+
+        /* =========================
+           MAIN CONTAINER
+        ========================== */
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+
+            margin: 45px auto;
+        }
+
+
+        /* =========================
+           RESULT CARD
+        ========================== */
+
+        .result-card {
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.08);
+
+            text-align: center;
+        }
+
+
+        .result-card h1 {
+            margin-top: 0;
+
+            color: #1e3a8a;
+
+            font-size: 30px;
+        }
+
+
+        .result-subtitle {
+            color: #6b7280;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================
+           PRICE GRID
+        ========================== */
+
+        .price-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+
+            margin-top: 25px;
+        }
+
+
+        .price-box {
+
+            border-radius: 14px;
+
+            padding: 25px;
+
+            text-align: center;
+        }
+
+
+        .per-sqft-box {
+
+            background: #eff6ff;
+
+            border: 2px solid #3b82f6;
+        }
+
+
+        .total-value-box {
+
+            background: #ecfdf5;
+
+            border: 2px solid #10b981;
+        }
+
+
+        .price-label {
+
+            font-size: 15px;
+
+            color: #4b5563;
+
+            margin-bottom: 12px;
+        }
+
+
+        .price-value {
+
+            font-size: 32px;
+
+            font-weight: bold;
+
+            word-break: break-word;
+        }
+
+
+        .per-sqft-box .price-value {
+
+            color: #1d4ed8;
+        }
+
+
+        .total-value-box .price-value {
+
+            color: #047857;
+        }
+
+
+        .price-unit {
+
+            font-size: 14px;
+
+            color: #6b7280;
+
+            margin-top: 8px;
+        }
+
+
+        /* =========================
+           LAND AREA
+        ========================== */
+
+        .area-box {
+
+            margin-top: 20px;
+
+            background: #f8fafc;
+
+            border: 1px solid #e2e8f0;
+
+            border-radius: 12px;
+
+            padding: 18px;
+        }
+
+
+        .area-label {
+
+            font-size: 14px;
+
+            color: #64748b;
+        }
+
+
+        .area-value {
+
+            font-size: 24px;
+
+            font-weight: bold;
+
+            color: #334155;
+
+            margin-top: 5px;
+        }
+
+
+        /* =========================
+           WARNING BOX
+        ========================== */
+
+        .warning-box {
+
+            background: #fff3cd;
+
+            border: 1px solid #ffca2c;
+
+            color: #664d03;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            margin-top: 25px;
+
+            text-align: left;
+
+            line-height: 1.6;
+        }
+
+
+        .warning-box h3 {
+
+            margin-top: 0;
+
+            margin-bottom: 12px;
+
+            font-size: 19px;
+        }
+
+
+        .warning-box p {
+
+            margin: 7px 0;
+        }
+
+
+        /* =========================
+           SAFE BOX
+        ========================== */
+
+        .safe-box {
+
+            background: #d1e7dd;
+
+            border: 1px solid #75b798;
+
+            color: #0f5132;
+
+            padding: 18px;
+
+            border-radius: 10px;
+
+            margin-top: 25px;
+
+            text-align: left;
+        }
+
+
+        .safe-box h3 {
+
+            margin-top: 0;
+
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .button-section {
+
+            margin-top: 30px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .btn {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            padding: 12px 22px;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            transition: 0.2s;
+        }
+
+
+        .primary-btn {
+
+            background: #1e3a8a;
+
+            color: white;
+        }
+
+
+        .primary-btn:hover {
+
+            background: #172554;
+        }
+
+
+        .secondary-btn {
+
+            background: #e5e7eb;
+
+            color: #1f2937;
+        }
+
+
+        .secondary-btn:hover {
+
+            background: #d1d5db;
+        }
+
+
+        /* =========================
+           NOTE
+        ========================== */
+
+        .note {
+
+            margin-top: 25px;
+
+            color: #6b7280;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 650px) {
+
+            .navbar {
+
+                padding: 15px 18px;
+            }
+
+
+            .brand {
+
+                font-size: 20px;
+            }
+
+
+            .user-section {
+
+                gap: 8px;
+            }
+
+
+            .username {
+
+                display: none;
+            }
+
+
+            .container {
+
+                width: 94%;
+
+                margin: 25px auto;
+            }
+
+
+            .result-card {
+
+                padding: 22px;
+            }
+
+
+            .result-card h1 {
+
+                font-size: 25px;
+            }
+
+
+            .price-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .price-value {
+
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="brand">
+            LandInsight
+        </div>
+
+
+        <div class="user-section">
+
+            {% if username %}
+
+                <span class="username">
+                    Welcome, {{ username }}
+                </span>
+
+            {% endif %}
+
+
+            <a
+                href="{{ url_for('logout') }}"
+                class="logout-btn"
+            >
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main class="container">
+
+        <section class="result-card">
+
+
+            <h1>
+                Land Price Prediction
+            </h1>
+
+
+            <p class="result-subtitle">
+
+                Your estimated land market value
+                has been calculated successfully.
+
+            </p>
+
+
+            <!-- =========================
+                 PRICE RESULTS
+            ========================== -->
+
+            <div class="price-grid">
+
+
+                <!-- PRICE PER SQ FT -->
+
+                <div class="price-box per-sqft-box">
+
+                    <div class="price-label">
+
+                        Predicted Market Price
+
+                    </div>
+
+
+                    <div class="price-value">
+
+                        ₹ {{ prediction }}
+
+                    </div>
+
+
+                    <div class="price-unit">
+
+                        per sq.ft
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOTAL VALUE -->
+
+                <div class="price-box total-value-box">
+
+                    <div class="price-label">
+
+                        Estimated Total Land Value
+
+                    </div>
+
+
+                    <div class="price-value">
+
+                        ₹ {{ total_value }}
+
+                    </div>
+
+
+                    <div class="price-unit">
+
+                        for the entered land area
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 LAND AREA
+            ========================== -->
+
+            <div class="area-box">
+
+                <div class="area-label">
+
+                    Land Area
+
+                </div>
+
+
+                <div class="area-value">
+
+                    {{ land_area }} sq.ft
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 WARNING
+            ========================== -->
+
+            {% if warnings and warnings|length > 0 %}
+
+                <div class="warning-box">
+
+                    <h3>
+                        ⚠️ Prediction Reliability Warning
+                    </h3>
+
+
+                    {% for warning in warnings %}
+
+                        <p>
+                            {{ warning }}
+                        </p>
+
+                    {% endfor %}
+
+                </div>
+
+            {% else %}
+
+                <div class="safe-box">
+
+                    <h3>
+                        ✓ Input Pattern Check
+                    </h3>
+
+
+                    <p>
+
+                        The entered values are within
+                        the model's familiar training pattern.
+
+                    </p>
+
+                </div>
+
+            {% endif %}
+
+
+            <!-- =========================
+                 BUTTONS
+            ========================== -->
+
+            <div class="button-section">
+
+
+                <a
+                    href="{{ url_for('quick') }}"
+                    class="btn primary-btn"
+                >
+                    New Prediction
+                </a>
+
+
+                <a
+                    href="{{ url_for('advanced') }}"
+                    class="btn primary-btn"
+                >
+                    Advanced Prediction
+                </a>
+
+
+                <a
+                    href="{{ url_for('history') }}"
+                    class="btn secondary-btn"
+                >
+                    Prediction History
+                </a>
+
+
+                <a
+                    href="{{ url_for('dashboard') }}"
+                    class="btn secondary-btn"
+                >
+                    Dashboard
+                </a>
+
+            </div>
+
+
+            <!-- =========================
+                 NOTE
+            ========================== -->
+
+            <p class="note">
+
+                Note: This result is an estimated value generated
+                by a machine learning model. Actual land prices may
+                vary depending on location, market conditions,
+                documentation, property characteristics, and other
+                real-world factors.
+
+            </p>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

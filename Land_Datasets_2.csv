@@ -1,0 +1,501 @@
+S.No,Location,Area,District,Latitude,Longitude,Land Area (sq.ft),Land Type,Road Width (ft),Road Type,Corner Plot,Facing,Distance to Main Road (km),Distance to Highway (km),Distance to Bus Stand (km),Distance to Railway Station (km),Distance to School (km),Distance to Hospital (km),Distance to Market (km),Water Facility,Electricity,Sewerage Facility,Guideline Value (Rs per sq.ft),Registration Year,Market Price (Rs per sq.ft),Total Market Price (Rs)
+1,Erode,Veerappanchatram,Erode,11.376057,77.75856,19400,Commercial,24,Tar,Yes,West,1.74,3.29,6.58,1.13,3.64,7.52,0.1,No,Yes,Yes,4522,2023,6265,121541000
+2,Thanjavur,Big Bazaar Street,Thanjavur,10.818163,79.118622,19500,Commercial,30,Tar,No,North,0.33,12.35,1.87,1.26,4.75,7.73,4.87,Yes,Yes,Yes,6020,2021,8909,173725500
+3,Vellore,Sathuvachari,Vellore,12.972746,79.120702,10900,Commercial,60,Tar,No,South,0.25,16.92,4.61,6.11,4.64,5.87,2.03,Yes,Yes,No,7562,2016,10455,113959500
+4,Namakkal,Salem Road,Namakkal,11.217776,78.161569,9400,Agricultural,18,Concrete,No,East,4.1,14.28,7.34,11.64,0.46,3.0,0.78,No,Yes,Yes,214,2021,253,2378200
+5,Salem,Suramangalam,Salem,11.67913,78.127472,4000,Residential,30,Mud,No,North,2.85,15.53,5.04,7.98,2.19,0.4,0.74,Yes,Yes,Yes,3069,2019,3572,14288000
+6,Namakkal,Erode Road,Namakkal,11.245333,78.166016,16500,Commercial,30,Tar,No,North,1.55,2.56,4.67,3.51,2.14,7.09,2.01,Yes,Yes,No,3036,2025,4490,74085000
+7,Pollachi,Coimbatore Road,Coimbatore,10.693037,77.000348,16000,Residential,30,Concrete,No,West,4.72,6.8,5.28,10.63,1.88,7.78,5.78,Yes,Yes,Yes,1486,2015,1660,26560000
+8,Coimbatore,Gandhipuram,Coimbatore,11.011656,76.904958,13400,Residential,18,Tar,No,South,1.29,13.61,7.66,3.79,3.67,3.07,3.83,Yes,Yes,Yes,8547,2025,11538,154609200
+9,Madurai,Tallakulam,Madurai,9.892375,78.078631,9500,Residential,20,Tar,Yes,North,3.49,8.04,9.38,2.32,1.77,1.09,5.56,No,Yes,Yes,6156,2023,8462,80389000
+10,Hosur,Denkanikottai Road,Krishnagiri,12.779775,77.857925,4200,Agricultural,15,Concrete,No,West,4.25,17.2,4.16,13.35,4.27,7.5,4.73,Yes,Yes,Yes,508,2023,571,2398200
+11,Cuddalore,Thirupapuliyur,Cuddalore,11.749137,79.78139,19400,Residential,16,Tar,No,West,3.76,13.17,8.52,9.97,2.88,0.93,2.27,Yes,Yes,No,1589,2020,2016,39110400
+12,Coimbatore,Singanallur,Coimbatore,11.025396,76.986536,19700,Agricultural,18,Mud,No,East,3.87,1.35,9.95,7.21,1.47,7.09,4.51,No,Yes,Yes,753,2015,726,14302200
+13,Chennai,T. Nagar,Chennai,12.942373,80.23352,5900,Commercial,60,Tar,No,South,1.86,5.46,3.09,5.04,4.26,1.27,4.28,Yes,Yes,Yes,11050,2022,18294,107934600
+14,Erode,Perundurai Road,Erode,11.350232,77.715542,1300,Commercial,60,Mud,No,West,2.94,9.05,6.79,5.12,0.86,7.86,5.05,No,Yes,Yes,5798,2025,7428,9656400
+15,Chennai,Perambur,Chennai,13.092498,80.182373,1000,Residential,30,Tar,No,East,3.22,14.66,9.76,7.89,1.68,6.4,1.7,Yes,Yes,Yes,4517,2021,6055,6055000
+16,Karur,Thirumanilaiyur,Karur,10.943492,78.114065,3900,Residential,16,Concrete,No,West,2.63,13.31,4.47,11.03,0.33,4.62,1.04,Yes,Yes,Yes,1225,2018,1387,5409300
+17,Nagercoil,Kottar,Kanyakumari,8.188168,77.440346,10500,Residential,30,Tar,No,North,4.44,5.59,0.35,14.02,2.56,4.41,4.14,Yes,Yes,No,1774,2025,2593,27226500
+18,Karur,Trichy Road,Karur,10.974402,78.058995,19400,Residential,30,Concrete,No,West,4.54,4.32,0.88,1.78,0.19,0.94,4.13,Yes,Yes,No,1261,2016,1392,27004800
+19,Erode,Veerappanchatram,Erode,11.355431,77.727867,8000,Agricultural,18,Mud,No,West,0.97,15.14,8.11,14.86,2.12,3.1,4.68,Yes,Yes,No,477,2021,587,4696000
+20,Thoothukudi,Bryant Nagar,Thoothukudi,8.787403,78.139725,9100,Residential,20,Tar,Yes,North,4.25,7.42,9.58,10.25,2.46,4.05,0.59,Yes,Yes,Yes,2764,2019,3938,35835800
+21,Erode,Diesel Shed Road,Erode,11.374474,77.77794,14700,Residential,30,Concrete,No,East,0.67,3.29,7.66,9.39,0.6,0.86,4.24,Yes,Yes,Yes,2587,2019,3490,51303000
+22,Vellore,Bagayam,Vellore,12.929651,79.165024,7600,Agricultural,18,Concrete,No,East,3.91,11.39,4.36,13.62,0.64,4.04,0.17,Yes,Yes,Yes,305,2023,413,3138800
+23,Madurai,Goripalayam,Madurai,9.880876,78.102029,11800,Residential,16,Tar,No,West,4.89,11.34,3.36,0.94,4.63,7.37,1.59,Yes,Yes,Yes,3963,2015,4515,53277000
+24,Madurai,Thirunagar,Madurai,9.945823,78.168983,7900,Agricultural,18,Concrete,Yes,North,1.46,4.17,4.74,5.49,2.96,0.81,5.85,No,Yes,Yes,614,2018,813,6422700
+25,Nagercoil,Vadasery,Kanyakumari,8.156659,77.40381,13900,Agricultural,18,Mud,No,South,4.67,17.39,0.64,0.69,1.94,6.52,5.92,Yes,Yes,Yes,287,2025,345,4795500
+26,Chennai,Adyar,Chennai,12.909205,80.170078,15400,Residential,24,Concrete,No,South,4.57,11.91,7.32,11.43,1.95,2.08,1.31,Yes,Yes,Yes,6596,2022,8436,129914400
+27,Vellore,Gandhi Nagar,Vellore,12.939853,79.138097,800,Residential,24,Concrete,No,South,4.4,8.37,1.51,0.72,3.8,5.04,4.25,Yes,Yes,Yes,2701,2016,3196,2556800
+28,Kanchipuram,Vishnu Kanchi,Kanchipuram,12.82546,79.730848,17100,Residential,24,Tar,No,North,4.75,3.37,9.28,7.53,1.37,3.78,5.88,Yes,Yes,Yes,2325,2017,2953,50496300
+29,Nagercoil,Vetturnimadam,Kanyakumari,8.170015,77.434883,13700,Residential,16,Mud,No,North,4.87,12.24,2.39,12.38,1.79,2.91,0.29,Yes,Yes,Yes,1600,2015,1653,22646100
+30,Namakkal,Erode Road,Namakkal,11.202359,78.205959,12600,Commercial,60,Tar,No,North,1.46,16.22,7.53,3.01,1.13,3.09,2.96,Yes,Yes,Yes,3662,2025,5630,70938000
+31,Erode,Surampatti,Erode,11.371617,77.740934,2300,Residential,20,Tar,Yes,East,1.95,0.89,3.36,3.41,1.7,1.13,5.35,Yes,Yes,No,3283,2018,4600,10580000
+32,Coimbatore,Saravanampatti,Coimbatore,11.061816,76.964749,8800,Residential,30,Tar,No,South,1.3,10.22,3.44,14.03,0.14,1.96,2.26,Yes,Yes,Yes,5565,2022,8438,74254400
+33,Madurai,Villapuram,Madurai,9.852372,78.140605,15700,Residential,18,Concrete,No,East,4.1,5.53,1.87,10.13,4.65,4.54,3.47,Yes,Yes,Yes,5236,2017,6017,94466900
+34,Pollachi,Coimbatore Road,Coimbatore,10.676492,77.035362,14700,Residential,30,Tar,No,North,2.71,1.51,3.5,2.28,0.41,7.92,2.0,Yes,Yes,Yes,2127,2025,3213,47231100
+35,Tirunelveli,Melapalayam,Tirunelveli,8.727909,77.772953,6700,Commercial,24,Tar,No,North,1.1,7.89,9.28,10.91,0.34,6.3,4.98,Yes,Yes,No,5547,2017,7399,49573300
+36,Tiruchirappalli,Srirangam,Tiruchirappalli,10.83772,78.689245,4500,Residential,20,Concrete,No,East,2.56,5.03,9.02,5.94,2.76,7.27,3.78,Yes,Yes,Yes,6885,2018,9256,41652000
+37,Chennai,Velachery,Chennai,13.085365,80.235973,16200,Residential,16,Concrete,No,North,0.26,11.61,7.67,13.19,1.78,6.61,0.75,Yes,Yes,Yes,7830,2019,10345,167589000
+38,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.827188,78.65122,12000,Commercial,33,Concrete,No,West,0.99,18.21,5.92,6.19,2.36,7.59,1.0,Yes,Yes,Yes,9825,2025,14992,179904000
+39,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.829008,78.652302,13200,Residential,24,Tar,Yes,East,3.71,18.72,9.27,6.93,0.65,7.88,5.05,Yes,Yes,No,5426,2022,7435,98142000
+40,Kanchipuram,Pillaiyarpalayam,Kanchipuram,12.864655,79.694391,6200,Residential,16,Tar,No,South,4.61,7.25,3.6,11.14,2.32,1.95,2.77,Yes,Yes,Yes,2907,2022,3624,22468800
+41,Dindigul,Palani Road,Dindigul,10.350917,78.003083,8600,Agricultural,10,Mud,No,East,4.98,10.29,6.03,1.29,3.77,1.84,5.4,Yes,Yes,Yes,401,2022,469,4033400
+42,Chennai,T. Nagar,Chennai,13.013322,80.228659,11800,Residential,20,Tar,Yes,North,0.47,15.19,2.87,13.49,2.68,6.45,5.88,Yes,Yes,Yes,7630,2017,10192,120265600
+43,Vellore,Officers Line,Vellore,12.927142,79.145555,5600,Commercial,24,Concrete,No,West,4.29,16.69,4.09,10.12,1.1,2.49,5.39,Yes,Yes,Yes,3102,2017,3582,20059200
+44,Sivakasi,Virudhunagar Road,Virudhunagar,9.494637,77.817486,1600,Residential,18,Tar,Yes,West,3.16,8.48,5.61,6.71,1.54,7.6,4.61,Yes,Yes,Yes,2007,2015,2544,4070400
+45,Hosur,Denkanikottai Road,Krishnagiri,12.764501,77.841931,3000,Residential,20,Tar,Yes,North,0.94,5.81,0.38,13.74,0.68,4.7,1.72,Yes,Yes,No,3375,2024,4830,14490000
+46,Tirunelveli,Melapalayam,Tirunelveli,8.747793,77.740052,5800,Residential,30,Concrete,No,South,2.64,1.42,1.83,11.15,0.51,4.9,1.55,Yes,Yes,Yes,3371,2021,4698,27248400
+47,Coimbatore,Saravanampatti,Coimbatore,11.049551,77.040524,7400,Residential,18,Tar,No,East,4.22,17.0,9.56,2.57,3.15,3.9,2.13,Yes,Yes,Yes,4068,2023,5098,37725200
+48,Madurai,K.K. Nagar,Madurai,9.953924,78.140311,10700,Commercial,30,Tar,No,North,0.77,19.03,4.57,3.02,2.76,7.01,4.42,Yes,Yes,Yes,16043,2023,24725,264557500
+49,Karur,Thanthonimalai,Karur,10.99926,78.116084,5200,Residential,16,Tar,No,South,1.63,2.85,7.36,3.13,0.66,3.49,4.79,Yes,Yes,Yes,1851,2021,2359,12266800
+50,Madurai,Tallakulam,Madurai,9.865674,78.060004,4200,Residential,18,Concrete,Yes,East,4.04,11.0,6.68,11.15,2.65,3.53,5.27,Yes,Yes,No,4234,2016,5400,22680000
+51,Madurai,Villapuram,Madurai,9.979731,78.095593,19500,Residential,30,Tar,No,West,4.92,15.48,4.29,6.49,3.71,2.06,0.75,Yes,Yes,Yes,4664,2023,5896,114972000
+52,Cuddalore,Kammalar Street,Cuddalore,11.745666,79.776903,9300,Residential,20,Mud,No,East,2.98,19.66,8.87,9.13,4.53,7.92,4.49,Yes,Yes,No,1481,2017,1570,14601000
+53,Thanjavur,Vallam Road,Thanjavur,10.762357,79.117639,800,Agricultural,10,Tar,No,North,2.64,12.15,5.35,4.13,2.62,4.03,5.98,No,Yes,Yes,510,2023,650,520000
+54,Cuddalore,Manjakuppam,Cuddalore,11.725489,79.811422,7200,Residential,30,Mud,No,West,0.27,6.92,9.33,11.11,1.48,2.17,0.13,Yes,Yes,Yes,2728,2019,3834,27604800
+55,Sivakasi,Rayagiri,Virudhunagar,9.492974,77.810965,12000,Agricultural,18,Mud,No,North,1.41,17.63,8.01,9.98,4.27,6.96,4.28,Yes,Yes,Yes,271,2020,313,3756000
+56,Salem,Suramangalam,Salem,11.716132,78.146547,3600,Agricultural,12,Mud,Yes,East,0.89,16.45,8.35,7.76,0.13,2.44,3.74,No,Yes,Yes,560,2022,732,2635200
+57,Nagercoil,Kottar,Kanyakumari,8.164167,77.400921,6800,Residential,30,Tar,No,West,3.88,18.97,1.83,11.63,3.57,3.89,0.44,Yes,Yes,No,1749,2018,2103,14300400
+58,Pollachi,Coimbatore Road,Coimbatore,10.669181,77.003281,3800,Residential,20,Tar,Yes,South,1.44,19.94,4.38,6.94,0.9,6.4,4.19,Yes,Yes,Yes,2261,2025,3526,13398800
+59,Karur,Vengamedu,Karur,10.983876,78.113667,10600,Commercial,60,Concrete,No,East,2.11,17.93,2.45,3.43,0.25,5.28,2.27,No,Yes,No,2598,2015,2896,30697600
+60,Vellore,Sathuvachari,Vellore,12.967583,79.160882,13600,Commercial,33,Tar,No,East,1.01,9.51,0.21,9.1,3.08,2.13,3.39,Yes,Yes,Yes,5920,2016,8435,114716000
+61,Dindigul,Begampur,Dindigul,10.360471,77.987168,6900,Residential,20,Concrete,No,South,4.55,14.62,7.54,2.45,0.6,4.65,0.21,Yes,Yes,Yes,2480,2016,2667,18402300
+62,Coimbatore,RS Puram,Coimbatore,10.96318,76.952594,16600,Agricultural,12,Concrete,Yes,East,1.08,14.02,8.25,0.91,3.38,7.62,0.83,No,Yes,Yes,1286,2023,1782,29581200
+63,Vellore,Gandhi Nagar,Vellore,12.950024,79.162674,11600,Agricultural,15,Mud,No,South,4.1,9.32,6.51,8.04,3.68,0.84,0.46,Yes,Yes,No,394,2021,433,5022800
+64,Namakkal,Kumarapalayam Road,Namakkal,11.25231,78.180356,3700,Residential,18,Tar,No,North,4.98,19.51,6.57,3.23,3.43,0.76,0.28,Yes,Yes,No,1385,2022,1643,6079100
+65,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.787104,78.748765,15700,Residential,20,Concrete,No,North,2.04,12.32,6.06,11.96,3.31,7.94,1.77,Yes,Yes,Yes,6976,2015,7898,123998600
+66,Vellore,Thorapadi,Vellore,12.972723,79.114375,17700,Residential,18,Tar,No,North,2.24,2.4,4.17,9.02,2.94,5.37,0.66,Yes,Yes,Yes,3383,2019,4468,79083600
+67,Vellore,Thorapadi,Vellore,12.91047,79.177586,5200,Residential,18,Tar,Yes,South,2.3,13.55,1.63,6.91,2.98,7.6,1.59,Yes,Yes,Yes,2801,2019,3955,20566000
+68,Karur,Vengamedu,Karur,10.991853,78.08907,19400,Residential,18,Tar,Yes,South,0.29,2.88,4.63,14.03,1.65,4.16,0.35,Yes,No,No,1518,2016,1836,35618400
+69,Erode,Surampatti,Erode,11.339108,77.753349,8900,Residential,30,Tar,No,West,3.4,19.41,1.12,10.19,2.27,6.97,1.15,Yes,Yes,No,3124,2016,3436,30580400
+70,Vellore,Katpadi,Vellore,12.902431,79.174476,5100,Agricultural,10,Tar,No,North,3.37,11.76,3.62,2.64,3.06,2.68,5.21,No,Yes,Yes,463,2025,626,3192600
+71,Tirunelveli,Pettai,Tirunelveli,8.774054,77.723817,8700,Agricultural,15,Mud,No,West,1.55,13.16,3.42,9.56,3.09,4.59,2.34,Yes,Yes,Yes,387,2020,430,3741000
+72,Madurai,Thirunagar,Madurai,9.936868,78.130534,17900,Residential,30,Mud,No,South,4.58,16.37,1.27,2.49,2.68,2.12,2.91,Yes,Yes,Yes,3676,2025,4229,75699100
+73,Dindigul,Begampur,Dindigul,10.412862,77.969479,5600,Residential,30,Tar,Yes,South,2.48,5.51,2.99,4.82,4.03,4.41,1.94,Yes,Yes,Yes,2601,2023,3952,22131200
+74,Erode,Veerappanchatram,Erode,11.314515,77.742013,7600,Residential,16,Concrete,No,West,2.18,2.2,8.19,5.79,2.68,1.08,0.12,Yes,Yes,Yes,3325,2024,4361,33143600
+75,Thanjavur,Medical College Road,Thanjavur,10.766581,79.162442,5500,Commercial,33,Tar,No,South,3.86,3.42,4.35,2.55,1.25,6.98,2.89,Yes,Yes,Yes,5195,2021,7197,39583500
+76,Thanjavur,Medical College Road,Thanjavur,10.777363,79.147558,15800,Agricultural,15,Mud,No,South,2.2,14.49,6.99,14.87,0.73,1.01,4.37,Yes,Yes,Yes,466,2015,505,7979000
+77,Thoothukudi,Bryant Nagar,Thoothukudi,8.765866,78.1284,1800,Residential,18,Concrete,Yes,West,2.75,17.66,6.58,8.13,1.69,2.8,4.05,No,Yes,Yes,3847,2018,4174,7513200
+78,Karur,Trichy Road,Karur,10.997458,78.062271,3600,Commercial,24,Tar,No,West,0.11,6.37,9.82,7.28,1.97,1.13,5.85,Yes,Yes,No,3565,2019,4488,16156800
+79,Sivakasi,Rayagiri,Virudhunagar,9.485316,77.787663,2100,Residential,24,Concrete,Yes,North,1.21,7.16,3.93,5.39,1.27,4.18,4.97,Yes,Yes,No,1528,2020,2138,4489800
+80,Salem,Ammapet,Salem,11.640851,78.19306,4700,Residential,30,Tar,No,South,3.63,3.25,2.28,12.34,1.68,0.38,1.01,Yes,No,Yes,3090,2016,3376,15867200
+81,Chennai,Velachery,Chennai,13.051593,80.17088,8500,Commercial,40,Tar,No,South,0.82,7.67,0.87,0.68,0.76,7.71,3.34,No,Yes,Yes,12209,2016,15107,128409500
+82,Tirunelveli,Vannarpettai Extension,Tirunelveli,8.701415,77.740255,15600,Residential,20,Concrete,Yes,North,0.39,19.9,0.77,10.52,4.92,2.07,0.94,Yes,Yes,Yes,3368,2015,4367,68125200
+83,Erode,Perundurai Road,Erode,11.318612,77.717664,5700,Commercial,60,Tar,Yes,West,2.08,13.25,3.67,8.02,2.46,1.58,2.38,No,Yes,Yes,6506,2020,9117,51966900
+84,Thanjavur,Karanthai,Thanjavur,10.763279,79.149516,1800,Residential,18,Concrete,Yes,North,4.8,10.01,1.28,8.36,2.33,6.79,0.68,Yes,Yes,Yes,3006,2022,4240,7632000
+85,Pollachi,Coimbatore Road,Coimbatore,10.672972,77.039251,14600,Residential,16,Concrete,No,South,2.24,5.47,8.44,0.86,4.52,3.8,3.86,Yes,Yes,Yes,2096,2021,2744,40062400
+86,Ooty,Charing Cross,Nilgiris,11.429497,76.705611,10600,Residential,16,Concrete,No,East,0.45,0.74,9.57,11.14,1.83,2.51,2.16,Yes,Yes,Yes,2007,2019,2777,29436200
+87,Vellore,Gandhi Nagar,Vellore,12.901676,79.106574,8600,Residential,16,Mud,No,East,0.69,12.49,7.79,9.77,2.7,0.53,5.81,Yes,Yes,No,4017,2019,5088,43756800
+88,Nagercoil,Ramanputhur,Kanyakumari,8.180825,77.407832,1500,Residential,18,Tar,No,East,2.8,8.08,1.8,4.32,4.65,5.47,3.03,Yes,No,Yes,1444,2021,1895,2842500
+89,Thoothukudi,Millerpuram,Thoothukudi,8.794525,78.117685,13100,Agricultural,18,Mud,Yes,West,0.97,11.13,9.85,14.08,0.31,1.49,0.88,Yes,Yes,Yes,570,2022,751,9838100
+90,Dindigul,Begampur,Dindigul,10.391324,77.990669,19600,Residential,30,Tar,No,North,3.83,3.62,4.72,0.44,1.31,5.87,5.95,Yes,Yes,No,2129,2024,3102,60799200
+91,Cuddalore,Kammalar Street,Cuddalore,11.756899,79.798152,11700,Commercial,33,Tar,No,South,0.27,15.04,2.18,14.38,1.9,2.75,0.98,Yes,Yes,No,3458,2018,4707,55071900
+92,Madurai,K.K. Nagar,Madurai,9.900898,78.103641,10800,Residential,24,Tar,No,North,2.98,9.88,6.49,1.25,2.94,4.58,3.41,Yes,Yes,No,6062,2017,7473,80708400
+93,Cuddalore,Kammalar Street,Cuddalore,11.723513,79.773397,3500,Agricultural,10,Mud,No,West,1.93,2.89,7.41,3.77,1.92,0.69,4.83,Yes,Yes,Yes,235,2020,291,1018500
+94,Nagercoil,Vetturnimadam,Kanyakumari,8.155917,77.420495,8300,Commercial,20,Mud,Yes,West,1.87,7.02,0.46,0.66,4.18,2.33,3.16,Yes,Yes,Yes,3158,2017,3884,32237200
+95,Salem,Ammapet,Salem,11.700264,78.145819,1000,Commercial,24,Tar,No,South,4.56,15.71,0.27,1.14,1.2,1.22,2.45,No,Yes,Yes,4021,2024,4760,4760000
+96,Erode,Surampatti,Erode,11.322049,77.76297,14300,Residential,18,Concrete,No,North,2.49,1.16,0.81,13.62,0.78,4.35,2.53,Yes,Yes,Yes,3346,2018,4083,58386900
+97,Nagercoil,Vetturnimadam,Kanyakumari,8.169672,77.441393,12500,Residential,16,Tar,No,North,3.31,4.36,5.74,7.12,4.86,4.95,2.16,Yes,Yes,Yes,1453,2021,2017,25212500
+98,Chennai,Anna Nagar,Chennai,13.145129,80.184111,3300,Commercial,20,Concrete,No,South,0.5,9.44,4.95,2.74,4.73,6.83,4.05,Yes,Yes,Yes,15682,2022,22533,74358900
+99,Tirunelveli,Vannarpettai,Tirunelveli,8.728478,77.777806,6800,Residential,30,Tar,No,South,3.8,0.85,1.44,10.0,0.89,2.19,5.69,Yes,Yes,Yes,2665,2022,3703,25180400
+100,Vellore,Thorapadi,Vellore,12.943096,79.139825,1100,Residential,16,Tar,Yes,North,4.83,4.47,5.33,4.52,3.98,4.71,3.84,Yes,Yes,No,2402,2024,3317,3648700
+101,Thoothukudi,Millerpuram,Thoothukudi,8.787549,78.117077,6600,Residential,60,Concrete,Yes,East,3.95,3.17,4.61,5.81,4.64,5.26,4.95,Yes,Yes,Yes,3851,2024,4941,32610600
+102,Karur,Vengamedu,Karur,10.991558,78.064877,15900,Agricultural,20,Mud,Yes,West,0.86,13.88,7.5,14.53,1.7,3.15,2.87,Yes,Yes,No,208,2015,287,4563300
+103,Tiruchirappalli,Srirangam,Tiruchirappalli,10.834275,78.738639,13600,Commercial,20,Tar,Yes,North,3.44,3.4,2.16,0.51,3.96,5.42,4.26,Yes,Yes,Yes,10999,2017,12855,174828000
+104,Namakkal,Erode Road,Namakkal,11.230814,78.187181,8000,Commercial,24,Tar,No,West,2.24,4.84,4.2,12.86,1.25,0.75,1.76,Yes,Yes,Yes,3468,2015,4777,38216000
+105,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.785437,78.72819,8600,Residential,20,Tar,No,West,2.56,3.64,7.02,6.91,1.97,2.62,3.82,Yes,Yes,Yes,5915,2019,6881,59176600
+106,Vellore,Officers Line,Vellore,12.932532,79.121054,4900,Commercial,20,Tar,No,East,2.33,4.61,3.2,8.86,0.97,6.9,4.58,Yes,Yes,Yes,6424,2024,8072,39552800
+107,Madurai,Thirunagar,Madurai,9.887882,78.064132,8300,Residential,12,Concrete,No,East,0.94,18.55,5.89,5.46,3.0,0.48,5.76,Yes,Yes,Yes,6307,2022,8502,70566600
+108,Madurai,Goripalayam,Madurai,9.919474,78.105839,7200,Residential,18,Tar,No,East,4.49,3.41,5.63,1.99,3.39,2.47,3.99,Yes,Yes,Yes,3987,2024,4482,32270400
+109,Nagercoil,Vetturnimadam,Kanyakumari,8.184966,77.411536,3000,Residential,60,Tar,No,East,2.62,5.64,9.37,2.8,0.32,3.65,5.96,No,Yes,No,1314,2016,1935,5805000
+110,Salem,Ammapet,Salem,11.702644,78.140012,9400,Residential,60,Mud,No,East,0.7,16.74,1.7,3.02,3.04,7.03,1.26,Yes,Yes,No,3369,2017,4269,40128600
+111,Erode,Surampatti,Erode,11.315031,77.747254,11100,Residential,30,Concrete,No,South,1.08,16.22,7.21,11.19,0.74,1.25,5.57,Yes,Yes,Yes,3576,2018,4536,50349600
+112,Chennai,Anna Nagar,Chennai,12.906295,80.172216,11100,Residential,10,Tar,No,South,3.02,18.71,8.08,7.22,3.95,0.44,0.74,Yes,Yes,Yes,6901,2025,7876,87423600
+113,Ooty,Charing Cross,Nilgiris,11.430409,76.707816,3800,Residential,18,Tar,No,East,1.26,15.1,8.2,1.94,0.43,4.88,0.96,Yes,Yes,Yes,1619,2021,2003,7611400
+114,Cuddalore,Kammalar Street,Cuddalore,11.720909,79.776326,10100,Residential,10,Concrete,No,East,3.44,8.3,3.32,7.77,4.39,6.85,0.36,Yes,Yes,Yes,1831,2025,2166,21876600
+115,Nagercoil,Vetturnimadam,Kanyakumari,8.153258,77.443509,4900,Residential,40,Tar,No,North,4.52,19.61,8.06,11.78,3.25,6.3,0.89,Yes,Yes,No,2024,2024,2544,12465600
+116,Erode,Surampatti,Erode,11.338637,77.725048,4500,Residential,18,Tar,No,South,1.7,8.02,6.92,4.73,4.75,7.36,2.94,Yes,Yes,No,1922,2017,2400,10800000
+117,Erode,Diesel Shed Road,Erode,11.360871,77.776002,10400,Commercial,60,Tar,No,North,0.57,14.71,1.03,14.06,0.77,7.68,4.83,Yes,Yes,Yes,4154,2021,5378,55931200
+118,Coimbatore,Saravanampatti,Coimbatore,11.020826,76.985506,8100,Commercial,20,Tar,No,North,3.84,16.13,5.02,9.15,4.66,1.22,0.79,Yes,Yes,Yes,10888,2017,15674,126959400
+119,Thanjavur,Vallam Road,Thanjavur,10.776798,79.120098,10800,Residential,10,Tar,No,South,2.25,8.1,7.35,8.47,4.69,6.31,2.93,Yes,No,Yes,2435,2025,3330,35964000
+120,Pollachi,Coimbatore Road,Coimbatore,10.68688,76.995135,1800,Residential,18,Concrete,No,East,1.55,9.55,4.53,4.81,4.6,6.32,0.75,No,Yes,Yes,2695,2015,3529,6352200
+121,Coimbatore,RS Puram,Coimbatore,10.979265,76.909829,17400,Agricultural,24,Mud,No,South,4.56,13.37,0.55,0.48,0.35,4.97,4.83,Yes,Yes,Yes,1138,2025,1500,26100000
+122,Tiruchirappalli,Srirangam,Tiruchirappalli,10.787732,78.700567,8600,Residential,24,Concrete,Yes,North,4.27,3.7,7.4,3.22,1.43,5.77,5.88,Yes,Yes,Yes,5340,2021,6791,58402600
+123,Dindigul,Palani Road,Dindigul,10.420545,77.984471,6800,Residential,33,Concrete,No,South,2.9,3.5,9.47,4.8,2.93,5.69,3.93,No,Yes,Yes,2121,2025,3353,22800400
+124,Erode,Diesel Shed Road,Erode,11.354166,77.757662,2300,Residential,12,Tar,No,West,1.17,12.05,3.31,0.93,2.15,3.95,1.43,Yes,Yes,Yes,2550,2019,3356,7718800
+125,Thoothukudi,Bryant Nagar,Thoothukudi,8.78489,78.124713,11500,Residential,20,Concrete,No,North,4.44,18.48,5.14,8.0,4.02,2.72,5.04,Yes,Yes,Yes,2475,2024,3094,35581000
+126,Dindigul,Palani Road,Dindigul,10.342808,78.000574,4500,Residential,18,Concrete,No,East,0.85,12.3,1.37,5.73,4.8,7.97,4.66,Yes,Yes,Yes,1435,2019,1871,8419500
+127,Dindigul,Begampur,Dindigul,10.354985,78.000973,11100,Residential,60,Tar,Yes,North,4.21,19.81,1.59,6.94,2.02,0.92,4.56,Yes,Yes,Yes,2756,2017,3730,41403000
+128,Erode,Perundurai Road,Erode,11.344749,77.713006,3400,Residential,40,Tar,No,North,3.22,13.23,6.77,11.54,0.38,3.12,3.28,Yes,Yes,Yes,3924,2024,6180,21012000
+129,Vellore,Sathuvachari,Vellore,12.922483,79.141971,10200,Residential,20,Tar,No,East,2.05,18.4,6.38,2.99,1.76,1.78,0.25,No,Yes,Yes,2365,2021,3138,32007600
+130,Pollachi,Coimbatore Road,Coimbatore,10.680411,77.033021,15100,Agricultural,20,Tar,No,South,4.82,15.79,8.69,2.07,3.69,3.69,3.36,Yes,Yes,No,371,2022,573,8652300
+131,Karur,Vengamedu,Karur,10.991483,78.086775,9100,Residential,40,Mud,Yes,North,4.89,8.64,7.98,1.64,2.82,6.48,5.56,Yes,Yes,Yes,1051,2020,1204,10956400
+132,Sivakasi,Virudhunagar Road,Virudhunagar,9.493645,77.814239,6700,Commercial,20,Tar,No,South,3.15,17.26,0.24,7.91,3.42,0.53,2.47,No,Yes,Yes,2919,2020,4807,32206900
+133,Namakkal,Salem Road,Namakkal,11.252436,78.165736,4100,Residential,30,Tar,No,West,3.62,16.28,9.99,4.73,2.1,1.35,3.49,No,Yes,Yes,1297,2018,1602,6568200
+134,Cuddalore,Manjakuppam,Cuddalore,11.727271,79.768567,4100,Residential,18,Concrete,No,North,1.78,8.81,9.6,11.38,2.75,2.49,5.39,Yes,Yes,No,1463,2025,2048,8396800
+135,Erode,Perundurai Road,Erode,11.31772,77.777104,8100,Residential,10,Tar,No,North,3.98,15.83,4.5,7.35,4.97,5.49,4.91,No,Yes,Yes,3709,2021,5563,45060300
+136,Vellore,Bagayam,Vellore,12.894327,79.184524,9000,Residential,12,Tar,Yes,East,1.31,1.96,4.66,7.93,1.63,0.69,0.76,Yes,Yes,Yes,2895,2025,3645,32805000
+137,Chennai,Adyar,Chennai,12.874195,80.203725,5400,Residential,10,Tar,No,West,2.21,15.77,8.44,4.2,1.68,2.17,2.93,Yes,Yes,Yes,5130,2018,5799,31314600
+138,Sivakasi,Rayagiri,Virudhunagar,9.484433,77.818812,1800,Residential,10,Tar,Yes,West,0.25,2.84,6.28,3.93,2.89,4.84,5.11,Yes,Yes,Yes,1980,2024,2307,4152600
+139,Vellore,Bagayam,Vellore,12.981988,79.129298,3600,Residential,12,Concrete,No,North,4.02,12.29,2.32,6.44,1.66,0.9,0.28,Yes,Yes,Yes,4440,2018,6773,24382800
+140,Hosur,Denkanikottai Road,Krishnagiri,12.764182,77.842092,14500,Agricultural,24,Mud,No,West,2.59,19.84,0.24,0.64,4.97,4.8,0.85,No,Yes,No,658,2017,780,11310000
+141,Namakkal,Erode Road,Namakkal,11.249169,78.155958,1300,Residential,24,Tar,No,East,4.38,5.6,6.19,8.48,2.04,5.52,4.38,Yes,Yes,No,1504,2025,1898,2467400
+142,Nagercoil,Vetturnimadam,Kanyakumari,8.188379,77.415633,9700,Residential,20,Concrete,No,North,4.81,4.14,2.16,12.94,4.57,1.93,2.87,Yes,Yes,Yes,1382,2016,2018,19574600
+143,Thoothukudi,Bryant Nagar,Thoothukudi,8.795246,78.139179,10400,Residential,33,Tar,No,North,1.1,15.05,0.43,14.7,1.95,5.84,5.34,Yes,Yes,Yes,2485,2019,3543,36847200
+144,Madurai,Tallakulam,Madurai,9.898519,78.062232,11200,Residential,16,Tar,No,East,1.76,19.13,2.59,1.84,3.79,7.08,1.74,Yes,Yes,Yes,4889,2022,6275,70280000
+145,Madurai,K.K. Nagar,Madurai,9.915308,78.059339,7600,Agricultural,15,Mud,Yes,West,3.85,17.62,9.04,14.77,4.91,7.64,0.52,Yes,Yes,No,622,2023,730,5548000
+146,Cuddalore,Kammalar Street,Cuddalore,11.755481,79.796573,6800,Residential,33,Concrete,No,West,1.92,8.51,7.65,11.68,1.11,7.55,0.81,No,Yes,Yes,1800,2018,2133,14504400
+147,Madurai,Tallakulam,Madurai,9.974221,78.167561,9100,Residential,16,Tar,No,East,1.32,5.42,1.78,14.12,4.45,6.29,3.15,Yes,Yes,Yes,5910,2018,7629,69423900
+148,Madurai,K.K. Nagar,Madurai,9.925061,78.073085,19000,Agricultural,24,Mud,No,East,0.68,18.4,3.35,9.28,2.38,3.38,3.24,Yes,No,No,655,2015,687,13053000
+149,Vellore,Sathuvachari,Vellore,12.922651,79.169263,8100,Residential,24,Concrete,Yes,West,3.99,4.79,9.25,6.79,3.23,0.32,5.96,Yes,Yes,Yes,2581,2019,3291,26657100
+150,Vellore,Bagayam,Vellore,12.933617,79.156846,5200,Residential,10,Concrete,No,West,4.76,7.31,1.94,10.3,4.25,0.61,2.75,No,Yes,No,2359,2020,2884,14996800
+151,Vellore,Sathuvachari,Vellore,12.928262,79.147787,2400,Residential,30,Tar,No,South,4.54,8.79,6.54,5.4,2.1,3.69,0.84,Yes,Yes,Yes,3946,2018,4408,10579200
+152,Thoothukudi,Millerpuram,Thoothukudi,8.786449,78.118086,7100,Agricultural,24,Mud,No,West,1.49,13.72,9.12,3.36,2.76,5.7,5.72,Yes,Yes,No,438,2016,638,4529800
+153,Salem,Ammapet,Salem,11.715202,78.169664,4800,Residential,18,Mud,No,East,4.28,6.92,5.54,7.55,3.2,2.87,1.54,No,Yes,No,2721,2015,3432,16473600
+154,Madurai,Tallakulam,Madurai,9.940029,78.084646,9300,Residential,20,Tar,No,West,2.11,4.92,8.2,12.96,0.92,0.36,2.08,Yes,Yes,Yes,6428,2021,7289,67787700
+155,Vellore,Officers Line,Vellore,12.930078,79.153127,10600,Residential,60,Mud,No,South,0.44,3.36,7.95,4.35,4.44,5.41,0.76,Yes,Yes,Yes,3213,2017,4502,47721200
+156,Vellore,Bagayam,Vellore,12.899811,79.163113,14300,Agricultural,16,Tar,No,West,2.36,8.9,0.7,10.22,1.83,6.36,5.01,No,Yes,Yes,381,2018,477,6821100
+157,Vellore,Officers Line,Vellore,12.899894,79.110095,4200,Residential,20,Tar,No,East,0.36,0.71,4.48,11.71,0.27,5.32,4.96,Yes,Yes,No,3113,2021,3717,15611400
+158,Karur,Vengamedu,Karur,10.989669,78.08785,2300,Commercial,30,Concrete,No,North,1.9,4.93,2.24,11.37,0.68,0.96,1.14,Yes,Yes,Yes,3123,2020,4148,9540400
+159,Madurai,Goripalayam,Madurai,9.994794,78.167317,5800,Residential,15,Tar,No,West,3.31,6.28,7.4,8.67,2.8,6.68,4.29,Yes,Yes,Yes,4857,2021,5587,32404600
+160,Tiruchirappalli,Srirangam,Tiruchirappalli,10.797324,78.702772,9200,Residential,18,Tar,No,East,3.42,1.98,0.21,3.5,4.48,5.28,1.11,No,Yes,Yes,6639,2021,9262,85210400
+161,Namakkal,Kumarapalayam Road,Namakkal,11.208769,78.160633,5400,Residential,15,Tar,No,South,0.96,3.3,8.63,5.08,1.87,0.73,2.21,Yes,Yes,Yes,1102,2015,1058,5713200
+162,Coimbatore,RS Puram,Coimbatore,11.057683,77.017553,2600,Commercial,30,Concrete,No,West,4.98,1.55,4.13,5.13,4.75,4.74,4.86,Yes,No,Yes,9369,2020,9089,23631400
+163,Karur,Trichy Road,Karur,10.958405,78.064771,11700,Residential,12,Concrete,No,West,2.99,7.62,4.2,6.7,3.2,7.44,5.6,Yes,Yes,Yes,1472,2019,1961,22943700
+164,Kanchipuram,Pillaiyarpalayam,Kanchipuram,12.824403,79.696793,7000,Residential,60,Concrete,No,North,1.15,11.56,7.6,4.16,4.15,7.44,3.62,Yes,Yes,No,2593,2019,3480,24360000
+165,Chennai,Adyar,Chennai,13.046387,80.162467,4500,Residential,33,Concrete,No,East,2.53,9.69,0.25,11.89,1.72,7.07,2.3,Yes,Yes,Yes,9011,2016,11949,53770500
+166,Vellore,Thorapadi,Vellore,12.945921,79.176989,19200,Agricultural,12,Mud,No,West,4.07,10.0,5.73,14.74,3.08,3.57,2.28,Yes,Yes,No,288,2016,388,7449600
+167,Tirunelveli,Pettai,Tirunelveli,8.734304,77.764156,7200,Residential,12,Concrete,No,West,1.95,12.64,0.59,7.14,2.66,1.95,0.92,Yes,Yes,Yes,3393,2017,4573,32925600
+168,Coimbatore,Gandhipuram,Coimbatore,11.02971,76.960233,15600,Commercial,20,Tar,Yes,South,2.72,19.88,9.6,0.99,3.56,2.62,5.43,Yes,Yes,No,18000,2015,25039,390608400
+169,Cuddalore,Manjakuppam,Cuddalore,11.743133,79.787329,9600,Residential,18,Tar,No,South,4.85,6.7,2.06,4.58,4.83,1.03,5.22,Yes,Yes,No,1717,2018,2209,21206400
+170,Nagercoil,Vadasery,Kanyakumari,8.191823,77.431934,9700,Residential,20,Tar,Yes,South,1.99,7.68,4.04,1.71,0.48,6.3,2.73,No,Yes,Yes,1706,2020,1754,17013800
+171,Erode,Perundurai Road,Erode,11.383464,77.725355,7100,Residential,10,Tar,No,West,0.41,4.47,5.77,13.72,2.73,5.12,1.29,Yes,Yes,No,3529,2016,4131,29330100
+172,Madurai,K.K. Nagar,Madurai,9.960883,78.120228,7500,Agricultural,24,Mud,No,West,3.3,13.69,4.46,3.74,3.64,1.6,5.63,Yes,Yes,No,617,2018,789,5917500
+173,Vellore,Officers Line,Vellore,12.929983,79.102091,9000,Residential,24,Tar,No,South,3.22,1.68,9.82,7.25,4.49,3.96,0.46,Yes,Yes,Yes,3815,2020,6150,55350000
+174,Karur,Thirumanilaiyur,Karur,11.004768,78.077959,10400,Commercial,24,Tar,No,South,2.58,14.92,4.71,3.55,3.75,1.31,1.27,Yes,Yes,No,3734,2023,5913,61495200
+175,Cuddalore,Manjakuppam,Cuddalore,11.741482,79.811334,8900,Residential,33,Concrete,No,East,0.96,7.6,4.89,2.55,1.44,2.67,0.85,Yes,Yes,Yes,2123,2017,2397,21333300
+176,Madurai,Villapuram,Madurai,9.893006,78.068642,16800,Agricultural,16,Mud,No,North,1.28,15.21,3.28,4.38,0.74,3.68,1.89,Yes,Yes,No,529,2019,780,13104000
+177,Tirunelveli,Vannarpettai,Tirunelveli,8.774542,77.77949,11900,Agricultural,24,Mud,No,North,0.5,1.01,4.88,7.62,2.1,4.67,3.36,No,Yes,Yes,180,2015,209,2487100
+178,Tirunelveli,Vannarpettai,Tirunelveli,8.715835,77.758272,10500,Residential,18,Mud,Yes,West,2.83,6.42,1.86,3.25,0.38,7.61,2.48,Yes,Yes,Yes,3298,2018,4628,48594000
+179,Vellore,Katpadi,Vellore,12.966266,79.11764,11500,Residential,16,Mud,No,East,1.4,9.0,4.44,4.09,3.9,6.24,2.33,Yes,Yes,Yes,2510,2018,3359,38628500
+180,Nagercoil,Kottar,Kanyakumari,8.16765,77.434157,4100,Commercial,20,Tar,No,South,1.06,8.61,4.9,12.98,3.25,5.62,5.9,Yes,Yes,No,2669,2017,3044,12480400
+181,Coimbatore,Gandhipuram,Coimbatore,10.972155,76.966366,3400,Residential,16,Concrete,No,South,4.55,16.19,2.81,4.4,1.35,1.34,5.67,Yes,Yes,No,4164,2017,5708,19407200
+182,Thoothukudi,Bryant Nagar,Thoothukudi,8.793272,78.138687,7900,Residential,20,Tar,No,South,4.35,6.6,6.27,11.5,0.73,6.31,5.64,Yes,Yes,No,3445,2015,3735,29506500
+183,Thanjavur,Karanthai,Thanjavur,10.771277,79.140208,8300,Residential,20,Concrete,No,West,2.04,15.89,9.15,4.0,3.71,5.52,3.19,Yes,Yes,No,3434,2023,5577,46289100
+184,Pollachi,Coimbatore Road,Coimbatore,10.668512,77.015368,4700,Residential,12,Concrete,Yes,South,3.96,8.09,9.8,13.3,1.58,6.23,2.09,Yes,Yes,No,2514,2018,2715,12760500
+185,Namakkal,Erode Road,Namakkal,11.217482,78.204833,8700,Residential,40,Tar,No,East,4.73,1.68,7.55,4.16,4.35,6.04,5.33,Yes,Yes,Yes,1190,2019,1246,10840200
+186,Vellore,Bagayam,Vellore,12.959754,79.144998,2500,Commercial,20,Tar,No,East,3.24,4.59,8.9,12.25,1.81,4.76,0.93,No,Yes,No,5699,2024,6284,15710000
+187,Cuddalore,Kammalar Street,Cuddalore,11.721719,79.774245,1800,Residential,33,Concrete,No,East,3.89,12.88,8.85,9.72,2.66,5.79,2.74,Yes,Yes,Yes,2750,2021,3590,6462000
+188,Erode,Veerappanchatram,Erode,11.360171,77.775652,17900,Agricultural,10,Concrete,No,North,1.61,4.88,6.95,13.68,1.55,4.68,1.81,Yes,Yes,No,339,2025,381,6819900
+189,Salem,Ammapet,Salem,11.669589,78.125027,8300,Residential,16,Tar,No,North,3.74,5.28,8.33,8.37,3.83,3.94,3.05,Yes,Yes,Yes,2366,2019,2681,22252300
+190,Coimbatore,RS Puram,Coimbatore,11.066569,76.971597,7000,Residential,20,Mud,Yes,West,2.31,4.19,2.33,1.79,0.1,3.63,4.64,Yes,Yes,Yes,2811,2016,3452,24164000
+191,Kanchipuram,Pillaiyarpalayam,Kanchipuram,12.858287,79.699855,10300,Commercial,60,Mud,No,South,3.8,17.1,9.99,3.67,1.51,2.23,1.65,Yes,No,No,4680,2020,5866,60419800
+192,Vellore,Gandhi Nagar,Vellore,12.967962,79.123912,11300,Residential,18,Mud,No,North,4.93,18.19,8.02,4.33,1.67,4.51,3.41,Yes,Yes,Yes,3494,2023,4220,47686000
+193,Dindigul,Begampur,Dindigul,10.359975,77.99761,6000,Agricultural,12,Mud,No,West,1.65,4.12,6.63,4.42,0.42,0.72,3.53,Yes,Yes,Yes,285,2015,394,2364000
+194,Coimbatore,Gandhipuram,Coimbatore,10.949797,76.9161,9900,Commercial,40,Tar,Yes,West,0.84,4.61,6.67,10.98,3.04,7.64,3.01,Yes,Yes,Yes,13523,2023,20137,199356300
+195,Chennai,Velachery,Chennai,13.061028,80.226724,8700,Residential,15,Concrete,No,South,0.6,9.87,6.11,3.99,0.31,2.02,2.78,Yes,Yes,No,7033,2022,10127,88104900
+196,Chennai,Velachery,Chennai,12.877513,80.225557,15300,Agricultural,24,Tar,Yes,North,4.86,11.32,0.97,12.81,3.11,5.03,2.56,Yes,Yes,No,711,2022,726,11107800
+197,Nagercoil,Vetturnimadam,Kanyakumari,8.181817,77.414264,6000,Residential,18,Tar,No,South,2.37,18.89,7.39,3.54,4.31,3.21,5.13,Yes,Yes,No,1398,2017,1563,9378000
+198,Cuddalore,Thirupapuliyur,Cuddalore,11.73325,79.771215,5400,Residential,20,Concrete,No,East,1.5,7.17,8.49,7.99,4.23,3.74,5.72,Yes,Yes,No,1612,2018,2026,10940400
+199,Chennai,Perambur,Chennai,13.009095,80.195689,8500,Residential,15,Tar,No,North,0.26,12.56,3.86,9.91,0.63,0.41,1.56,Yes,Yes,No,6513,2018,8172,69462000
+200,Chennai,T. Nagar,Chennai,13.003024,80.168785,1800,Residential,33,Mud,No,East,0.21,12.31,7.69,4.56,3.96,5.17,5.58,No,Yes,Yes,5521,2020,6036,10864800
+201,Chennai,Velachery,Chennai,12.973157,80.201295,11800,Residential,16,Mud,No,South,0.74,1.7,9.47,4.28,2.57,1.0,2.6,No,Yes,No,8380,2020,10728,126590400
+202,Madurai,Thirunagar,Madurai,9.897821,78.118846,11000,Residential,60,Tar,No,East,1.58,1.3,4.04,3.32,3.43,1.7,4.08,Yes,Yes,Yes,2076,2020,2277,25047000
+203,Namakkal,Kumarapalayam Road,Namakkal,11.217117,78.15716,10300,Residential,24,Tar,Yes,North,1.27,15.12,1.48,12.18,4.69,4.97,4.29,Yes,No,Yes,1416,2016,1902,19590600
+204,Dindigul,Palani Road,Dindigul,10.416329,77.975996,4800,Commercial,20,Tar,Yes,North,1.28,5.99,0.52,4.48,1.05,3.22,2.37,Yes,Yes,Yes,4876,2017,6398,30710400
+205,Vellore,Thorapadi,Vellore,12.92008,79.167369,11800,Residential,33,Concrete,No,South,4.49,9.08,7.72,12.17,1.61,7.46,0.66,No,Yes,Yes,2745,2024,3838,45288400
+206,Thoothukudi,Bryant Nagar,Thoothukudi,8.765214,78.122285,11700,Residential,18,Tar,No,East,2.3,5.82,4.05,6.61,4.41,2.38,5.37,Yes,Yes,Yes,2543,2020,3270,38259000
+207,Karur,Trichy Road,Karur,10.994859,78.069484,2500,Residential,10,Mud,No,East,4.84,16.88,1.59,8.09,0.93,6.6,3.55,Yes,Yes,Yes,1599,2023,1902,4755000
+208,Namakkal,Kumarapalayam Road,Namakkal,11.22813,78.169831,2000,Commercial,30,Tar,No,South,4.69,17.97,2.02,5.12,2.98,5.83,2.71,Yes,Yes,No,3080,2018,4246,8492000
+209,Coimbatore,RS Puram,Coimbatore,11.069879,76.940088,11100,Residential,30,Tar,Yes,North,2.14,4.37,9.0,4.1,3.56,0.82,0.33,Yes,Yes,Yes,3781,2019,4347,48251700
+210,Tirunelveli,Vannarpettai Extension,Tirunelveli,8.725302,77.75342,6000,Residential,16,Tar,No,West,1.91,5.61,3.98,3.28,1.38,5.13,2.39,Yes,Yes,Yes,2811,2018,4052,24312000
+211,Vellore,Sathuvachari,Vellore,12.93066,79.160388,8800,Commercial,33,Mud,No,East,0.55,11.55,1.44,11.37,2.59,5.87,5.23,Yes,Yes,Yes,6270,2020,7123,62682400
+212,Nagercoil,Vadasery,Kanyakumari,8.178264,77.41696,1000,Residential,15,Tar,No,East,3.55,4.64,1.12,13.37,3.84,1.84,1.82,No,Yes,Yes,2375,2021,2857,2857000
+213,Chennai,Perambur,Chennai,13.164837,80.224998,8900,Residential,15,Tar,No,East,2.24,6.97,5.31,6.69,3.03,7.22,5.97,Yes,Yes,Yes,8346,2020,11689,104032100
+214,Thanjavur,Medical College Road,Thanjavur,10.756351,79.11482,1000,Residential,18,Tar,No,South,1.39,19.73,2.25,3.29,2.91,4.13,3.52,Yes,Yes,Yes,2704,2016,3752,3752000
+215,Namakkal,Salem Road,Namakkal,11.199356,78.196914,4900,Residential,10,Tar,No,North,0.43,17.35,8.39,1.7,0.22,0.73,5.14,Yes,Yes,Yes,1521,2022,2374,11632600
+216,Vellore,Katpadi,Vellore,12.895797,79.140017,1900,Residential,40,Concrete,Yes,North,3.46,5.78,4.3,5.75,2.66,3.86,2.03,Yes,Yes,Yes,3617,2023,5410,10279000
+217,Sivakasi,Rayagiri,Virudhunagar,9.484623,77.783524,6100,Agricultural,16,Mud,No,East,4.94,1.57,7.53,1.45,3.0,6.12,2.22,Yes,Yes,No,180,2023,215,1311500
+218,Nagercoil,Vetturnimadam,Kanyakumari,8.182653,77.44181,5100,Residential,33,Tar,Yes,South,2.82,6.44,3.43,14.01,3.44,7.8,2.56,Yes,Yes,Yes,1823,2025,2126,10842600
+219,Cuddalore,Manjakuppam,Cuddalore,11.722712,79.812196,11200,Residential,12,Concrete,No,South,3.49,12.89,7.62,12.49,3.62,4.81,2.0,Yes,Yes,Yes,1883,2015,2725,30520000
+220,Vellore,Bagayam,Vellore,12.940855,79.140361,10100,Residential,24,Tar,Yes,South,2.08,11.95,5.93,10.0,3.63,5.24,4.76,Yes,Yes,Yes,1943,2016,2410,24341000
+221,Salem,Suramangalam,Salem,11.651259,78.180219,10500,Residential,18,Concrete,No,North,3.0,7.23,4.57,13.02,3.64,4.3,2.27,Yes,Yes,Yes,4147,2021,5015,52657500
+222,Erode,Perundurai Road,Erode,11.370546,77.737278,10100,Residential,33,Concrete,No,North,0.64,12.45,9.6,6.27,0.35,7.41,5.31,Yes,Yes,Yes,3841,2022,4753,48005300
+223,Vellore,Gandhi Nagar,Vellore,12.895942,79.182731,14700,Agricultural,10,Tar,Yes,North,3.25,9.63,4.31,2.14,0.57,2.09,5.04,Yes,Yes,No,341,2020,419,6159300
+224,Karur,Thanthonimalai,Karur,10.946074,78.118223,1700,Commercial,40,Concrete,No,North,3.19,12.67,6.46,10.48,0.18,7.68,3.56,Yes,Yes,Yes,2768,2018,3899,6628300
+225,Erode,Veerappanchatram,Erode,11.382883,77.72021,4600,Residential,60,Tar,No,North,2.76,10.34,6.51,14.27,1.5,5.63,0.25,Yes,Yes,Yes,3131,2018,4442,20433200
+226,Nagercoil,Ramanputhur,Kanyakumari,8.152809,77.400109,5900,Residential,30,Mud,Yes,North,0.18,11.46,7.56,12.47,2.77,5.07,4.21,No,Yes,No,1495,2018,2325,13717500
+227,Chennai,Velachery,Chennai,12.924727,80.198836,2900,Residential,40,Tar,No,South,4.48,13.29,1.42,4.71,4.58,0.98,2.5,No,Yes,Yes,8225,2023,11517,33399300
+228,Chennai,Perambur,Chennai,12.94514,80.21725,1300,Residential,16,Concrete,No,South,4.11,10.21,7.77,4.36,2.52,1.82,5.18,Yes,Yes,No,9596,2018,13902,18072600
+229,Madurai,Goripalayam,Madurai,9.881043,78.077845,7100,Residential,24,Tar,No,West,4.45,12.86,5.31,6.66,2.38,1.91,4.96,Yes,Yes,Yes,2922,2020,3958,28101800
+230,Tirunelveli,Melapalayam,Tirunelveli,8.753276,77.77512,2000,Commercial,60,Tar,No,North,4.09,15.07,4.64,13.93,2.03,4.65,0.73,Yes,Yes,Yes,5924,2021,6898,13796000
+231,Vellore,Thorapadi,Vellore,12.934187,79.15263,9800,Residential,16,Tar,No,North,2.41,11.93,5.11,7.29,4.11,6.04,2.11,Yes,Yes,Yes,2164,2019,2745,26901000
+232,Erode,Diesel Shed Road,Erode,11.346178,77.783134,6800,Commercial,20,Concrete,No,North,4.94,17.58,1.83,12.37,0.26,3.33,5.24,Yes,Yes,Yes,5556,2021,8293,56392400
+233,Erode,Surampatti,Erode,11.383048,77.726239,10700,Residential,40,Tar,Yes,South,4.32,5.07,5.13,14.87,0.16,4.58,3.12,Yes,Yes,Yes,3333,2016,3633,38873100
+234,Cuddalore,Manjakuppam,Cuddalore,11.718623,79.782462,3000,Residential,24,Tar,No,South,1.43,9.58,1.98,8.13,3.56,4.73,0.65,Yes,Yes,Yes,1817,2020,1966,5898000
+235,Nagercoil,Kottar,Kanyakumari,8.181435,77.438908,2800,Residential,24,Tar,No,North,4.01,17.48,7.04,10.24,2.67,5.33,5.52,Yes,Yes,Yes,2058,2024,2716,7604800
+236,Tirunelveli,Vannarpettai Extension,Tirunelveli,8.766018,77.778003,6400,Agricultural,10,Concrete,No,North,1.84,13.22,5.24,4.19,0.76,1.2,0.71,Yes,Yes,Yes,412,2017,510,3264000
+237,Karur,Vengamedu,Karur,10.988763,78.12379,18700,Agricultural,10,Concrete,No,East,3.17,7.52,6.86,11.65,4.99,4.09,0.46,Yes,Yes,Yes,180,2021,261,4880700
+238,Cuddalore,Manjakuppam,Cuddalore,11.720239,79.769092,6100,Residential,24,Tar,Yes,East,3.02,9.09,9.25,4.6,3.43,0.72,5.74,No,Yes,Yes,2251,2024,2330,14213000
+239,Madurai,Villapuram,Madurai,9.94649,78.134776,3200,Residential,20,Concrete,No,West,1.92,1.58,7.91,6.72,2.25,2.19,1.34,Yes,Yes,Yes,5889,2017,7606,24339200
+240,Madurai,Tallakulam,Madurai,9.958774,78.176765,7900,Commercial,30,Tar,No,South,3.76,9.54,4.26,8.07,1.66,1.1,2.55,Yes,Yes,Yes,18000,2017,27570,217803000
+241,Chennai,Anna Nagar,Chennai,12.940307,80.183714,5900,Residential,16,Tar,Yes,South,0.1,3.82,1.12,8.43,1.71,4.52,1.41,Yes,Yes,Yes,5810,2020,7400,43660000
+242,Pollachi,Coimbatore Road,Coimbatore,10.668345,77.043797,7000,Commercial,20,Tar,No,North,2.16,8.11,9.33,2.58,4.99,3.22,3.93,No,Yes,No,6067,2021,7344,51408000
+243,Nagercoil,Vetturnimadam,Kanyakumari,8.157577,77.407694,4800,Commercial,40,Tar,No,South,3.57,19.99,0.27,2.75,3.4,0.76,3.58,Yes,Yes,Yes,3836,2020,5222,25065600
+244,Tirunelveli,Melapalayam,Tirunelveli,8.720887,77.721747,9400,Commercial,30,Tar,Yes,East,4.93,4.99,8.19,2.86,1.49,3.52,2.01,Yes,Yes,No,3297,2015,4489,42196600
+245,Vellore,Officers Line,Vellore,12.905523,79.097012,4400,Residential,15,Mud,No,West,4.01,19.42,1.19,9.05,1.36,4.48,1.99,Yes,Yes,Yes,2510,2017,3252,14308800
+246,Nagercoil,Ramanputhur,Kanyakumari,8.180847,77.432528,14900,Commercial,20,Concrete,No,North,1.46,2.62,6.14,1.37,1.28,0.77,3.34,Yes,Yes,Yes,3535,2021,5005,74574500
+247,Namakkal,Kumarapalayam Road,Namakkal,11.208509,78.21142,9200,Residential,12,Concrete,No,North,3.01,5.43,7.51,1.63,3.89,4.84,0.75,Yes,Yes,Yes,1290,2020,1953,17967600
+248,Sivakasi,Virudhunagar Road,Virudhunagar,9.487313,77.792288,8400,Agricultural,16,Mud,No,South,2.42,11.72,3.28,2.46,1.41,6.92,3.65,Yes,Yes,Yes,201,2023,214,1797600
+249,Sivakasi,Rayagiri,Virudhunagar,9.48514,77.807829,14400,Commercial,20,Mud,No,South,3.85,9.33,7.55,14.64,2.36,5.25,5.52,Yes,Yes,Yes,3523,2015,3893,56059200
+250,Pollachi,Coimbatore Road,Coimbatore,10.673973,77.024745,6300,Residential,12,Tar,No,East,4.43,7.92,4.57,6.38,0.99,5.93,2.75,Yes,Yes,No,2687,2017,2884,18169200
+251,Kanchipuram,Pillaiyarpalayam,Kanchipuram,12.833201,79.699442,14600,Commercial,20,Tar,No,East,3.93,15.39,3.3,3.4,2.32,4.51,5.52,No,Yes,No,6343,2022,9516,138933600
+252,Coimbatore,Saravanampatti,Coimbatore,11.070611,76.919063,1400,Residential,60,Concrete,No,South,3.24,13.75,3.45,9.84,1.01,7.52,1.88,Yes,Yes,Yes,6077,2020,7082,9914800
+253,Erode,Diesel Shed Road,Erode,11.331875,77.733053,8300,Residential,10,Tar,No,East,1.05,11.16,1.46,10.46,4.73,3.59,5.42,Yes,Yes,Yes,3467,2017,5672,47077600
+254,Thoothukudi,Bryant Nagar,Thoothukudi,8.768013,78.142917,1500,Residential,10,Concrete,No,South,3.23,14.89,7.17,12.93,1.0,0.31,3.63,Yes,Yes,Yes,3492,2015,4249,6373500
+255,Hosur,Denkanikottai Road,Krishnagiri,12.764534,77.854655,18400,Agricultural,10,Mud,No,North,0.57,4.34,0.95,9.22,4.93,5.47,4.29,No,Yes,Yes,406,2022,584,10745600
+256,Nagercoil,Vetturnimadam,Kanyakumari,8.171687,77.403993,4000,Agricultural,24,Mud,No,East,3.66,17.38,1.6,4.61,1.06,0.51,3.37,Yes,Yes,Yes,295,2015,403,1612000
+257,Vellore,Sathuvachari,Vellore,12.975709,79.155871,8800,Commercial,60,Tar,No,East,0.12,1.91,1.27,1.79,1.82,5.7,4.76,Yes,Yes,Yes,6030,2021,7994,70347200
+258,Erode,Diesel Shed Road,Erode,11.360931,77.717458,5900,Commercial,60,Concrete,No,West,1.05,13.21,4.94,6.81,0.65,4.29,0.69,Yes,Yes,No,5468,2022,7572,44674800
+259,Vellore,Officers Line,Vellore,12.918726,79.106523,10600,Residential,24,Tar,No,East,4.03,17.67,4.83,14.58,2.81,2.39,2.98,Yes,Yes,Yes,2643,2018,3665,38849000
+260,Sivakasi,Rayagiri,Virudhunagar,9.487505,77.792032,1600,Residential,60,Tar,No,North,4.76,3.41,9.6,9.08,3.24,5.77,4.25,Yes,Yes,Yes,1628,2023,2198,3516800
+261,Chennai,T. Nagar,Chennai,12.932313,80.21491,1100,Residential,24,Tar,No,West,0.54,9.06,3.66,10.92,2.94,4.09,2.97,No,Yes,Yes,8135,2016,9820,10802000
+262,Erode,Surampatti,Erode,11.309073,77.711202,9000,Agricultural,20,Mud,No,West,0.45,18.71,9.38,8.37,3.12,2.55,0.48,No,Yes,Yes,340,2021,451,4059000
+263,Sivakasi,Virudhunagar Road,Virudhunagar,9.495291,77.79895,2300,Commercial,40,Tar,No,West,1.19,18.92,2.89,0.78,1.29,3.12,2.17,Yes,Yes,Yes,2495,2017,3047,7008100
+264,Coimbatore,Singanallur,Coimbatore,11.050392,76.988536,2500,Residential,16,Concrete,No,North,0.26,2.94,0.58,5.2,2.53,3.04,3.41,Yes,Yes,Yes,5642,2019,6693,16732500
+265,Namakkal,Kumarapalayam Road,Namakkal,11.239935,78.192271,5200,Residential,12,Tar,No,North,4.47,1.4,8.58,2.78,2.59,3.57,0.16,No,Yes,No,1261,2016,1718,8933600
+266,Dindigul,Palani Road,Dindigul,10.417687,77.983628,9300,Commercial,40,Tar,No,South,3.52,19.5,0.48,11.21,4.64,0.88,0.75,Yes,Yes,Yes,4432,2016,5893,54804900
+267,Tirunelveli,Vannarpettai Extension,Tirunelveli,8.714288,77.751231,11800,Commercial,20,Tar,No,West,0.76,10.57,0.73,4.77,1.24,5.07,4.74,Yes,Yes,No,5228,2018,6932,81797600
+268,Nagercoil,Kottar,Kanyakumari,8.189831,77.438078,2500,Residential,12,Concrete,Yes,South,4.92,5.48,0.94,8.6,1.71,2.78,0.14,Yes,Yes,Yes,1626,2021,1806,4515000
+269,Kanchipuram,Vishnu Kanchi,Kanchipuram,12.836299,79.727863,1500,Commercial,30,Tar,Yes,East,0.1,1.38,9.91,11.82,4.69,7.25,0.22,Yes,Yes,Yes,5285,2019,6800,10200000
+270,Pollachi,Coimbatore Road,Coimbatore,10.695585,77.016725,9600,Residential,33,Tar,No,East,2.11,11.37,4.44,12.47,4.55,7.48,3.43,Yes,Yes,No,1521,2021,2113,20284800
+271,Salem,Suramangalam,Salem,11.678332,78.167792,12200,Commercial,60,Tar,No,North,3.09,3.19,8.2,10.87,3.82,3.32,5.14,Yes,Yes,Yes,4457,2024,6414,78250800
+272,Nagercoil,Vetturnimadam,Kanyakumari,8.162738,77.445311,10000,Commercial,30,Mud,No,North,4.86,18.43,7.6,9.3,0.94,4.48,4.62,Yes,Yes,Yes,3422,2023,4235,42350000
+273,Cuddalore,Kammalar Street,Cuddalore,11.72062,79.768508,5700,Agricultural,10,Mud,No,West,3.56,16.05,2.44,9.05,0.86,2.64,5.34,Yes,Yes,Yes,285,2016,313,1784100
+274,Vellore,Thorapadi,Vellore,12.970812,79.146991,3900,Residential,16,Tar,No,East,1.53,16.12,5.08,13.92,3.15,4.26,4.3,Yes,Yes,Yes,1784,2018,2520,9828000
+275,Tiruchirappalli,Srirangam,Tiruchirappalli,10.788753,78.675525,6200,Residential,16,Tar,No,West,2.0,16.53,2.72,11.28,0.46,6.2,4.77,Yes,Yes,No,6555,2018,8604,53344800
+276,Thoothukudi,Bryant Nagar,Thoothukudi,8.77379,78.137472,6000,Residential,10,Tar,Yes,North,4.99,17.48,8.85,14.29,2.25,2.51,0.87,Yes,Yes,No,3702,2020,3954,23724000
+277,Erode,Surampatti,Erode,11.354488,77.778398,3900,Commercial,24,Tar,No,North,1.89,3.78,3.34,14.48,3.15,2.44,2.76,Yes,Yes,Yes,3975,2022,5353,20876700
+278,Dindigul,Palani Road,Dindigul,10.38985,77.982598,6000,Residential,24,Tar,No,West,4.13,4.88,8.08,8.2,1.46,0.53,4.91,Yes,Yes,Yes,2957,2017,4386,26316000
+279,Erode,Veerappanchatram,Erode,11.321537,77.73195,10400,Residential,20,Tar,Yes,North,2.14,17.67,0.76,3.51,4.55,7.15,4.11,Yes,Yes,Yes,3471,2016,4448,46259200
+280,Karur,Thanthonimalai,Karur,10.9602,78.109112,12700,Commercial,40,Tar,No,North,2.9,6.07,0.72,11.17,0.94,3.58,2.97,Yes,Yes,Yes,3219,2021,4184,53136800
+281,Ooty,Charing Cross,Nilgiris,11.431009,76.705153,1200,Residential,24,Tar,No,North,0.22,9.0,8.86,3.96,2.91,5.57,0.46,Yes,Yes,Yes,2354,2015,2746,3295200
+282,Thanjavur,Medical College Road,Thanjavur,10.81581,79.159399,17700,Agricultural,18,Concrete,No,South,4.68,9.87,6.46,7.92,4.27,3.62,4.94,No,Yes,Yes,492,2023,628,11115600
+283,Vellore,Bagayam,Vellore,12.906472,79.185926,3200,Residential,15,Concrete,No,North,4.0,9.22,2.27,3.16,4.3,4.23,0.63,Yes,Yes,No,4019,2021,5362,17158400
+284,Madurai,Goripalayam,Madurai,9.890193,78.080727,8600,Commercial,20,Tar,No,South,0.91,19.77,3.4,1.69,1.32,0.75,4.76,Yes,Yes,Yes,12158,2025,14921,128320600
+285,Salem,Suramangalam,Salem,11.67764,78.177699,10200,Commercial,20,Concrete,No,East,4.81,2.34,8.39,14.02,1.21,4.34,5.57,No,Yes,Yes,4399,2015,5996,61159200
+286,Cuddalore,Manjakuppam,Cuddalore,11.746669,79.80617,1000,Residential,10,Tar,No,North,0.18,4.69,3.26,3.0,0.2,1.51,4.03,Yes,Yes,Yes,1872,2018,2388,2388000
+287,Chennai,Velachery,Chennai,13.005027,80.184165,2400,Residential,30,Concrete,No,North,3.87,12.82,5.48,0.85,3.64,4.5,1.7,Yes,Yes,Yes,7055,2019,8739,20973600
+288,Erode,Surampatti,Erode,11.308479,77.770673,6000,Residential,16,Tar,No,West,3.25,13.3,6.16,14.4,2.59,5.94,4.26,Yes,Yes,Yes,4028,2022,5529,33174000
+289,Ooty,Charing Cross,Nilgiris,11.429122,76.706848,5600,Residential,10,Tar,Yes,East,0.24,13.75,3.57,14.26,1.69,4.64,1.62,Yes,Yes,Yes,2203,2016,3405,19068000
+290,Vellore,Officers Line,Vellore,12.979058,79.097767,9900,Residential,18,Concrete,No,South,4.58,14.46,4.74,14.63,0.29,7.9,5.11,No,Yes,Yes,3089,2020,4115,40738500
+291,Pollachi,Coimbatore Road,Coimbatore,10.669743,77.004239,11100,Residential,33,Tar,No,North,3.55,10.94,3.87,10.16,4.08,7.09,3.33,Yes,Yes,Yes,2062,2023,2642,29326200
+292,Hosur,Denkanikottai Road,Krishnagiri,12.775552,77.848399,5200,Residential,40,Tar,No,North,1.8,18.51,2.23,8.58,2.73,6.68,0.92,No,Yes,Yes,4009,2024,5338,27757600
+293,Erode,Veerappanchatram,Erode,11.345102,77.713744,6300,Residential,60,Tar,No,East,1.04,12.44,1.94,13.27,1.13,1.0,5.27,Yes,Yes,No,3068,2017,3449,21728700
+294,Namakkal,Salem Road,Namakkal,11.20175,78.177761,9300,Agricultural,16,Mud,No,North,3.5,5.99,3.58,1.72,2.54,1.52,2.65,Yes,Yes,Yes,233,2022,311,2892300
+295,Chennai,Perambur,Chennai,13.073729,80.167676,3000,Residential,10,Tar,No,East,1.25,7.88,0.9,3.61,2.39,7.93,5.98,No,Yes,Yes,5209,2021,5609,16827000
+296,Coimbatore,Saravanampatti,Coimbatore,10.971511,77.010826,3700,Residential,16,Concrete,Yes,North,1.28,11.09,2.0,7.63,0.85,1.54,3.71,Yes,Yes,No,3933,2019,5440,20128000
+297,Madurai,Villapuram,Madurai,9.869974,78.071055,3600,Residential,18,Tar,Yes,West,4.0,18.98,6.59,10.08,2.45,7.27,3.11,Yes,Yes,Yes,3337,2024,4397,15829200
+298,Tirunelveli,Vannarpettai,Tirunelveli,8.732294,77.768604,8500,Residential,12,Mud,No,West,2.45,5.71,2.57,4.27,1.9,5.82,5.7,Yes,Yes,Yes,4036,2018,5499,46741500
+299,Karur,Trichy Road,Karur,10.986141,78.062421,15300,Commercial,20,Tar,No,North,3.97,6.13,7.01,13.69,0.99,3.33,3.92,Yes,Yes,Yes,2407,2016,2985,45670500
+300,Cuddalore,Kammalar Street,Cuddalore,11.730406,79.803743,1900,Residential,16,Tar,No,West,4.62,11.11,6.25,1.47,0.97,1.08,4.61,Yes,Yes,Yes,1454,2017,2331,4428900
+301,Vellore,Katpadi,Vellore,12.942729,79.124156,8400,Residential,30,Mud,No,West,3.59,14.75,9.17,7.97,1.68,6.67,4.65,Yes,Yes,Yes,3377,2016,3627,30466800
+302,Madurai,K.K. Nagar,Madurai,9.980132,78.098236,10600,Agricultural,24,Mud,No,East,2.64,9.95,8.02,13.67,3.68,5.13,2.62,Yes,Yes,Yes,699,2015,808,8564800
+303,Karur,Thirumanilaiyur,Karur,10.962894,78.085641,9700,Residential,10,Tar,Yes,East,3.48,9.1,4.27,4.05,2.74,3.67,2.9,Yes,Yes,No,1406,2015,1685,16344500
+304,Nagercoil,Vetturnimadam,Kanyakumari,8.167697,77.428457,1100,Residential,15,Tar,No,East,2.08,11.05,4.7,14.45,3.56,7.97,1.84,Yes,Yes,Yes,1313,2025,1626,1788600
+305,Cuddalore,Manjakuppam,Cuddalore,11.758383,79.807577,11800,Commercial,60,Tar,Yes,East,0.44,10.22,0.99,10.97,2.81,6.74,1.75,Yes,Yes,No,2152,2016,3334,39341200
+306,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.828611,78.731832,3300,Residential,15,Tar,No,West,2.3,4.61,7.05,5.61,2.3,1.17,3.45,Yes,Yes,Yes,8234,2017,11483,37893900
+307,Kanchipuram,Pillaiyarpalayam,Kanchipuram,12.86405,79.717511,900,Residential,60,Tar,No,South,1.35,19.54,0.52,11.09,3.89,0.82,1.11,Yes,Yes,Yes,2492,2021,3082,2773800
+308,Madurai,K.K. Nagar,Madurai,9.876869,78.164715,4200,Residential,10,Tar,No,West,4.02,7.27,1.67,3.13,2.7,6.82,0.52,Yes,Yes,No,6986,2021,8791,36922200
+309,Tiruchirappalli,Srirangam,Tiruchirappalli,10.80734,78.740001,5200,Commercial,20,Concrete,Yes,North,4.99,9.94,8.11,12.99,1.14,0.62,2.49,No,Yes,Yes,9621,2023,10502,54610400
+310,Cuddalore,Manjakuppam,Cuddalore,11.757992,79.77839,13100,Agricultural,24,Mud,No,West,0.51,1.96,0.93,9.01,4.07,3.4,2.72,Yes,Yes,No,255,2017,405,5305500
+311,Chennai,Velachery,Chennai,12.979401,80.240716,4700,Residential,10,Concrete,No,East,4.01,5.69,8.23,0.44,3.14,7.5,4.75,No,Yes,No,7940,2020,13180,61946000
+312,Dindigul,Begampur,Dindigul,10.401333,78.001136,3300,Residential,60,Tar,Yes,North,4.7,2.01,4.85,12.67,0.44,0.44,0.25,Yes,Yes,Yes,2613,2022,3060,10098000
+313,Vellore,Katpadi,Vellore,12.939021,79.172758,11900,Commercial,60,Tar,No,North,3.31,1.7,8.95,10.5,4.77,2.72,2.97,Yes,Yes,Yes,5495,2015,7949,94593100
+314,Coimbatore,Singanallur,Coimbatore,10.967186,76.960751,1200,Residential,16,Tar,Yes,North,2.61,3.9,5.99,2.88,3.65,1.8,5.39,Yes,Yes,Yes,5165,2017,4958,5949600
+315,Hosur,Denkanikottai Road,Krishnagiri,12.773882,77.843352,11000,Residential,15,Concrete,No,South,3.3,7.64,4.5,3.03,3.81,1.51,4.69,Yes,Yes,Yes,4631,2020,6685,73535000
+316,Vellore,Bagayam,Vellore,12.906115,79.130197,7400,Residential,30,Tar,Yes,West,0.84,5.66,7.8,8.21,0.17,0.32,3.11,Yes,Yes,Yes,3060,2023,3641,26943400
+317,Dindigul,Palani Road,Dindigul,10.344028,77.977899,9800,Residential,40,Concrete,No,North,1.92,11.81,5.76,12.5,1.26,2.58,1.88,Yes,Yes,No,1909,2021,2762,27067600
+318,Madurai,Thirunagar,Madurai,9.972715,78.181599,5000,Residential,40,Concrete,Yes,East,2.69,7.15,1.66,8.93,0.32,6.65,2.58,Yes,Yes,No,5238,2022,7006,35030000
+319,Salem,Suramangalam,Salem,11.718187,78.14139,4300,Agricultural,24,Mud,No,East,2.53,13.33,5.46,3.87,4.16,7.77,2.81,Yes,Yes,Yes,679,2021,921,3960300
+320,Erode,Surampatti,Erode,11.373322,77.786986,2000,Residential,10,Tar,No,East,1.85,9.94,5.04,12.9,3.88,0.45,2.78,Yes,Yes,Yes,2937,2017,3507,7014000
+321,Thanjavur,Medical College Road,Thanjavur,10.791401,79.162023,11700,Residential,12,Tar,No,South,1.57,9.02,3.13,11.54,1.3,0.95,2.54,Yes,Yes,Yes,2653,2015,3164,37018800
+322,Nagercoil,Kottar,Kanyakumari,8.178498,77.420183,4500,Commercial,20,Tar,No,North,3.36,17.41,1.59,5.75,0.34,0.53,5.94,Yes,Yes,Yes,2191,2015,2815,12667500
+323,Erode,Veerappanchatram,Erode,11.305414,77.760997,4600,Residential,15,Concrete,No,South,3.87,14.68,0.44,10.67,4.95,2.17,1.72,Yes,Yes,Yes,3425,2017,4122,18961200
+324,Hosur,Denkanikottai Road,Krishnagiri,12.769249,77.857597,13000,Agricultural,16,Mud,No,East,0.49,10.14,0.94,10.3,3.97,6.84,5.89,Yes,Yes,No,472,2024,624,8112000
+325,Erode,Veerappanchatram,Erode,11.321502,77.723326,10600,Residential,40,Mud,Yes,South,0.99,7.1,4.09,9.5,4.62,7.9,3.95,Yes,Yes,No,2408,2019,3375,35775000
+326,Tirunelveli,Melapalayam,Tirunelveli,8.73462,77.738398,6900,Residential,16,Tar,No,West,2.79,9.32,5.22,3.54,4.7,5.22,5.41,Yes,Yes,No,2439,2020,3099,21383100
+327,Madurai,Goripalayam,Madurai,9.94064,78.05117,3800,Residential,10,Tar,No,South,0.96,4.96,2.17,0.41,2.42,0.6,1.71,No,Yes,Yes,4603,2022,4744,18027200
+328,Tiruchirappalli,Srirangam,Tiruchirappalli,10.836765,78.748444,2000,Residential,12,Concrete,No,South,0.86,13.94,9.18,7.04,0.51,4.76,2.51,Yes,Yes,No,2618,2022,3108,6216000
+329,Erode,Perundurai Road,Erode,11.314193,77.716921,1500,Commercial,33,Tar,No,North,4.73,1.6,7.65,11.16,4.98,2.98,1.78,Yes,Yes,Yes,5754,2024,5524,8286000
+330,Tirunelveli,Melapalayam,Tirunelveli,8.728311,77.749302,3400,Residential,20,Concrete,No,West,4.89,9.28,3.55,5.85,0.76,2.59,0.61,Yes,Yes,Yes,3687,2020,5205,17697000
+331,Namakkal,Erode Road,Namakkal,11.233203,78.184146,10800,Residential,18,Tar,No,East,2.76,5.86,6.2,1.42,1.75,6.49,1.63,Yes,Yes,Yes,1961,2019,2985,32238000
+332,Vellore,Gandhi Nagar,Vellore,12.895592,79.108034,5300,Commercial,30,Tar,No,South,1.21,15.74,3.0,1.45,0.28,3.71,3.74,No,Yes,Yes,6246,2015,5996,31778800
+333,Nagercoil,Ramanputhur,Kanyakumari,8.153814,77.443892,11100,Residential,40,Tar,Yes,East,4.62,10.49,4.5,4.38,3.33,4.69,1.36,Yes,Yes,Yes,2140,2020,2501,27761100
+334,Coimbatore,RS Puram,Coimbatore,10.983732,77.000144,6900,Residential,16,Mud,No,East,4.59,12.0,9.68,13.07,1.66,6.07,0.91,Yes,Yes,Yes,3896,2025,5234,36114600
+335,Dindigul,Palani Road,Dindigul,10.402666,77.983522,2800,Residential,18,Tar,No,East,2.37,16.43,7.35,6.37,3.01,3.66,3.52,Yes,Yes,Yes,3256,2015,4527,12675600
+336,Erode,Perundurai Road,Erode,11.349477,77.764145,5800,Residential,16,Concrete,No,South,3.55,8.64,4.14,3.01,2.13,6.36,5.46,Yes,Yes,Yes,3679,2016,4562,26459600
+337,Chennai,Adyar,Chennai,13.143385,80.196599,1600,Residential,30,Tar,Yes,West,2.03,6.52,1.55,9.98,0.77,6.27,1.29,Yes,Yes,Yes,5318,2019,7530,12048000
+338,Pollachi,Coimbatore Road,Coimbatore,10.681276,77.039332,3900,Residential,15,Concrete,No,North,3.34,2.92,3.08,3.87,2.27,5.19,2.66,Yes,Yes,Yes,1943,2018,2238,8728200
+339,Salem,Suramangalam,Salem,11.644213,78.168523,9300,Residential,24,Tar,No,South,4.31,17.02,1.27,10.55,2.03,8.0,1.43,Yes,Yes,Yes,5015,2017,5552,51633600
+340,Tirunelveli,Vannarpettai Extension,Tirunelveli,8.717762,77.728344,8500,Commercial,20,Concrete,No,South,2.9,17.67,1.39,10.36,1.16,1.23,2.85,Yes,Yes,Yes,7044,2022,9921,84328500
+341,Madurai,Villapuram,Madurai,9.878925,78.168297,8200,Residential,20,Tar,No,North,1.16,10.06,7.22,4.59,3.81,5.15,4.75,Yes,Yes,Yes,5292,2024,6718,55087600
+342,Tirunelveli,Vannarpettai Extension,Tirunelveli,8.783422,77.753023,2900,Residential,10,Concrete,No,North,3.94,13.35,6.97,3.73,3.73,2.13,5.89,Yes,Yes,No,2671,2021,3065,8888500
+343,Cuddalore,Manjakuppam,Cuddalore,11.729082,79.779342,4600,Residential,10,Tar,Yes,East,1.66,1.3,6.29,9.55,0.45,2.74,5.25,Yes,Yes,Yes,1506,2023,1831,8422600
+344,Erode,Perundurai Road,Erode,11.329861,77.733179,10900,Residential,24,Concrete,No,East,4.61,2.69,0.27,12.88,3.55,3.04,3.61,Yes,Yes,Yes,3592,2017,4897,53377300
+345,Salem,Suramangalam,Salem,11.633851,78.155115,10800,Commercial,33,Tar,No,West,3.54,8.47,2.5,8.16,1.1,5.89,1.26,Yes,Yes,Yes,3465,2025,4254,45943200
+346,Tirunelveli,Melapalayam,Tirunelveli,8.748046,77.746241,13500,Commercial,33,Tar,No,East,0.23,0.84,8.55,1.08,2.67,5.04,1.27,No,Yes,No,5770,2021,8229,111091500
+347,Hosur,Denkanikottai Road,Krishnagiri,12.782751,77.843982,9800,Residential,40,Tar,Yes,East,4.9,5.05,4.33,8.56,0.69,6.59,1.72,Yes,Yes,Yes,2398,2021,3218,31536400
+348,Hosur,Denkanikottai Road,Krishnagiri,12.772414,77.852646,1200,Residential,16,Tar,No,East,2.57,6.38,3.57,7.01,2.58,7.88,1.42,Yes,Yes,Yes,2812,2024,3366,4039200
+349,Madurai,Thirunagar,Madurai,9.901747,78.154718,11800,Residential,18,Mud,No,North,1.52,8.66,7.64,5.42,1.89,7.96,3.38,Yes,Yes,No,4334,2017,5947,70174600
+350,Pollachi,Coimbatore Road,Coimbatore,10.670711,77.009082,4300,Agricultural,24,Mud,No,East,0.94,12.51,7.58,14.07,0.67,7.43,3.65,No,Yes,No,196,2024,246,1057800
+351,Nagercoil,Vetturnimadam,Kanyakumari,8.169505,77.4061,5600,Residential,20,Mud,No,West,1.57,4.08,2.35,7.38,4.39,4.15,0.43,Yes,Yes,No,1686,2025,2383,13344800
+352,Vellore,Katpadi,Vellore,12.973789,79.140542,7300,Residential,40,Tar,No,South,3.33,2.4,4.84,3.57,0.41,0.33,2.02,Yes,Yes,Yes,2358,2020,3044,22221200
+353,Pollachi,Coimbatore Road,Coimbatore,10.688747,77.000791,7200,Commercial,30,Tar,No,East,3.17,16.86,0.66,2.95,0.34,1.78,0.13,Yes,Yes,Yes,2084,2022,2698,19425600
+354,Chennai,Perambur,Chennai,13.036514,80.236856,14600,Agricultural,24,Mud,Yes,West,3.44,3.06,6.81,13.25,4.87,3.71,2.13,No,Yes,Yes,909,2021,1085,15841000
+355,Dindigul,Palani Road,Dindigul,10.416507,77.967626,9100,Residential,10,Tar,No,West,1.3,19.28,9.13,6.31,2.3,3.19,0.32,Yes,Yes,Yes,2286,2024,2668,24278800
+356,Madurai,K.K. Nagar,Madurai,9.865218,78.077077,6100,Residential,10,Concrete,No,West,2.09,8.52,7.18,9.55,1.0,1.13,2.68,Yes,Yes,Yes,4894,2025,6431,39229100
+357,Salem,Ammapet,Salem,11.639633,78.18771,1800,Residential,20,Tar,Yes,West,1.36,16.22,7.57,13.19,3.05,3.56,2.62,Yes,Yes,Yes,2733,2024,2624,4723200
+358,Kanchipuram,Pillaiyarpalayam,Kanchipuram,12.844568,79.734247,4700,Agricultural,24,Concrete,No,East,4.31,8.07,7.61,8.83,3.63,1.67,4.42,No,Yes,No,386,2024,418,1964600
+359,Thoothukudi,Bryant Nagar,Thoothukudi,8.784236,78.123894,7800,Residential,18,Concrete,No,East,3.37,15.41,5.92,14.87,1.28,2.32,0.65,Yes,Yes,Yes,2797,2016,3585,27963000
+360,Erode,Surampatti,Erode,11.339319,77.726536,11900,Residential,16,Tar,Yes,North,1.79,8.34,0.59,13.8,2.09,2.83,0.61,Yes,Yes,Yes,3290,2022,4360,51884000
+361,Vellore,Sathuvachari,Vellore,12.961772,79.164473,3900,Residential,15,Tar,No,South,1.85,15.67,7.01,10.12,4.16,2.43,2.1,Yes,Yes,Yes,1948,2019,1974,7698600
+362,Salem,Suramangalam,Salem,11.703267,78.173717,9100,Residential,33,Concrete,No,South,4.65,12.2,4.28,5.71,4.11,5.26,0.56,Yes,Yes,No,3341,2024,3983,36245300
+363,Tiruchirappalli,Srirangam,Tiruchirappalli,10.845117,78.64042,7400,Residential,24,Concrete,No,West,3.44,5.63,7.27,3.56,4.16,1.99,4.21,Yes,Yes,Yes,6627,2022,9387,69463800
+364,Vellore,Thorapadi,Vellore,12.981408,79.13873,5900,Residential,24,Tar,No,East,1.63,6.99,6.94,1.0,3.44,1.85,2.37,Yes,Yes,Yes,2990,2019,4017,23700300
+365,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.801305,78.660521,8600,Residential,33,Tar,No,East,0.25,19.23,1.65,5.56,1.99,4.07,4.73,Yes,Yes,Yes,6965,2018,9949,85561400
+366,Karur,Thanthonimalai,Karur,10.966079,78.104733,7500,Residential,20,Tar,No,West,1.1,18.92,1.72,2.29,4.08,6.6,4.46,No,Yes,No,1507,2024,1806,13545000
+367,Chennai,Adyar,Chennai,12.927352,80.240003,7600,Residential,20,Tar,Yes,West,3.27,4.4,0.82,10.41,0.64,1.12,4.47,Yes,Yes,Yes,9599,2025,9670,73492000
+368,Chennai,Adyar,Chennai,13.083261,80.171184,13900,Agricultural,12,Mud,No,West,2.91,19.98,0.45,0.4,1.82,3.12,5.31,No,Yes,Yes,1256,2019,1958,27216200
+369,Salem,Ammapet,Salem,11.713765,78.138993,11000,Residential,60,Tar,No,North,0.22,5.62,1.88,7.8,0.65,5.12,5.26,Yes,Yes,Yes,2706,2016,3238,35618000
+370,Madurai,Thirunagar,Madurai,9.995708,78.068598,6800,Residential,18,Tar,No,South,2.89,9.26,2.65,6.67,3.4,2.47,5.5,Yes,Yes,No,6080,2016,6342,43125600
+371,Nagercoil,Vadasery,Kanyakumari,8.182615,77.410522,3200,Residential,24,Tar,No,West,0.11,19.26,5.59,9.14,3.04,4.54,1.81,No,Yes,Yes,1136,2024,1273,4073600
+372,Dindigul,Begampur,Dindigul,10.366006,77.97898,6200,Commercial,20,Tar,Yes,North,4.65,7.72,1.19,2.95,4.67,2.2,4.01,Yes,Yes,No,4868,2016,6609,40975800
+373,Tirunelveli,Vannarpettai,Tirunelveli,8.783272,77.763216,3300,Residential,40,Concrete,No,North,3.52,8.12,3.38,10.87,3.61,7.62,3.46,Yes,Yes,Yes,3098,2021,4238,13985400
+374,Namakkal,Kumarapalayam Road,Namakkal,11.221732,78.188061,1100,Commercial,60,Tar,No,North,0.43,18.02,9.12,8.4,2.83,0.74,3.63,Yes,Yes,Yes,2630,2020,3640,4004000
+375,Pollachi,Coimbatore Road,Coimbatore,10.691518,77.02514,11700,Residential,10,Tar,Yes,West,1.63,13.08,6.22,0.55,3.08,5.96,4.64,Yes,Yes,Yes,2346,2025,2295,26851500
+376,Coimbatore,Saravanampatti,Coimbatore,11.039606,76.893102,3700,Commercial,24,Tar,No,West,4.01,15.83,3.88,9.49,1.21,4.77,0.58,Yes,Yes,No,12920,2023,14881,55059700
+377,Dindigul,Palani Road,Dindigul,10.352357,77.997059,8500,Agricultural,20,Mud,No,North,2.69,3.21,2.26,10.56,1.36,7.17,3.98,No,Yes,No,475,2015,532,4522000
+378,Vellore,Katpadi,Vellore,12.960718,79.130084,10200,Residential,40,Tar,No,East,0.95,11.97,4.32,0.62,0.44,1.8,4.64,No,Yes,Yes,2250,2020,3414,34822800
+379,Vellore,Officers Line,Vellore,12.967116,79.104896,5900,Agricultural,24,Mud,Yes,South,2.73,8.7,9.06,12.65,0.38,5.04,4.66,Yes,No,No,321,2023,432,2548800
+380,Vellore,Katpadi,Vellore,12.961546,79.101863,4200,Residential,10,Concrete,Yes,South,4.02,17.71,6.58,5.11,4.54,2.6,1.73,No,Yes,No,2689,2020,3974,16690800
+381,Vellore,Thorapadi,Vellore,12.950177,79.168644,8200,Residential,16,Concrete,No,West,0.43,4.23,9.55,14.54,4.84,0.58,2.36,Yes,Yes,Yes,2211,2022,2911,23870200
+382,Erode,Diesel Shed Road,Erode,11.378159,77.766586,4600,Residential,60,Tar,Yes,West,2.13,7.62,6.24,5.53,3.76,6.47,5.27,Yes,Yes,Yes,3979,2022,4904,22558400
+383,Coimbatore,Saravanampatti,Coimbatore,11.00801,77.037254,15400,Agricultural,10,Mud,No,North,4.41,16.42,8.16,7.16,4.12,5.62,0.88,Yes,Yes,No,1272,2023,1708,26303200
+384,Karur,Thirumanilaiyur,Karur,10.990246,78.092316,7600,Residential,20,Concrete,No,West,3.56,16.73,0.81,11.42,2.62,0.88,4.11,Yes,Yes,Yes,1786,2019,2778,21112800
+385,Sivakasi,Virudhunagar Road,Virudhunagar,9.484982,77.797388,10400,Agricultural,20,Mud,No,East,1.32,10.84,7.96,10.2,1.56,2.86,3.95,Yes,Yes,No,180,2022,261,2714400
+386,Karur,Thanthonimalai,Karur,10.976263,78.08474,1900,Residential,40,Mud,No,West,1.18,2.63,7.9,14.92,4.33,0.48,1.58,Yes,Yes,Yes,1536,2019,1985,3771500
+387,Chennai,Perambur,Chennai,13.080234,80.188644,10000,Commercial,20,Concrete,No,West,0.73,4.47,6.44,4.63,0.69,1.49,1.08,Yes,Yes,Yes,8095,2022,11104,111040000
+388,Erode,Veerappanchatram,Erode,11.344686,77.709592,6800,Commercial,20,Tar,No,North,4.23,2.34,9.67,8.99,2.64,6.82,0.26,Yes,Yes,No,3364,2025,5247,35679600
+389,Cuddalore,Manjakuppam,Cuddalore,11.756759,79.799104,1400,Commercial,24,Tar,No,East,0.76,19.25,1.23,8.12,1.44,2.33,3.61,Yes,Yes,No,4714,2018,5739,8034600
+390,Thanjavur,Medical College Road,Thanjavur,10.766268,79.158644,8900,Residential,33,Concrete,No,South,0.33,19.85,2.63,4.92,1.32,2.36,3.36,Yes,Yes,Yes,2402,2017,3474,30918600
+391,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.783266,78.721224,2400,Residential,33,Tar,Yes,West,1.8,9.5,4.69,1.07,2.21,5.24,3.32,Yes,Yes,Yes,6216,2022,7841,18818400
+392,Hosur,Denkanikottai Road,Krishnagiri,12.777941,77.845232,6200,Commercial,24,Concrete,No,North,1.99,1.6,5.45,14.93,4.85,2.0,4.56,Yes,Yes,Yes,10556,2016,15744,97612800
+393,Kanchipuram,Vishnu Kanchi,Kanchipuram,12.821758,79.706838,9000,Commercial,60,Tar,No,North,0.63,13.98,9.64,13.66,2.9,3.2,3.53,Yes,Yes,No,6780,2015,8303,74727000
+394,Chennai,Velachery,Chennai,13.135784,80.227254,2500,Residential,18,Concrete,No,South,3.55,0.9,6.34,2.16,0.39,1.5,4.96,Yes,Yes,No,6223,2023,7983,19957500
+395,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.787197,78.753735,7200,Agricultural,12,Mud,Yes,South,2.33,3.1,0.4,14.91,4.4,7.33,1.78,Yes,Yes,No,945,2023,1198,8625600
+396,Coimbatore,Singanallur,Coimbatore,11.003759,76.980678,5100,Residential,33,Concrete,No,West,0.24,1.44,1.51,8.73,4.06,7.13,3.85,Yes,Yes,Yes,6130,2017,10176,51897600
+397,Erode,Surampatti,Erode,11.378775,77.710266,5500,Residential,10,Tar,Yes,East,4.07,10.8,6.33,5.62,0.44,6.89,1.23,Yes,Yes,Yes,3061,2022,2939,16164500
+398,Karur,Thirumanilaiyur,Karur,10.943571,78.096168,4600,Commercial,20,Tar,No,East,1.94,1.96,5.47,9.72,0.78,4.56,1.27,Yes,Yes,Yes,2479,2025,3751,17254600
+399,Karur,Thirumanilaiyur,Karur,10.962869,78.069815,3000,Residential,60,Tar,No,South,3.84,8.16,1.49,13.0,0.1,0.73,2.25,Yes,Yes,Yes,1206,2020,1543,4629000
+400,Coimbatore,Saravanampatti,Coimbatore,11.041364,76.931053,6700,Residential,40,Tar,No,South,4.79,4.38,2.0,6.9,1.03,1.51,0.67,Yes,Yes,Yes,5844,2017,8246,55248200
+401,Thanjavur,Vallam Road,Thanjavur,10.779991,79.127403,13600,Commercial,20,Tar,No,East,2.31,1.53,0.24,14.0,3.48,4.63,2.11,Yes,Yes,Yes,4369,2023,4839,65810400
+402,Vellore,Thorapadi,Vellore,12.930569,79.135207,8600,Residential,20,Mud,No,North,1.86,7.87,4.42,0.94,2.69,6.55,4.0,Yes,Yes,Yes,3120,2022,3438,29566800
+403,Tiruchirappalli,Srirangam,Tiruchirappalli,10.811489,78.642186,1900,Residential,18,Concrete,No,North,0.83,9.58,9.9,7.79,2.54,4.6,1.2,Yes,Yes,Yes,7669,2025,8958,17020200
+404,Thanjavur,Vallam Road,Thanjavur,10.771955,79.11997,1100,Residential,16,Tar,No,South,1.06,9.12,4.56,3.55,2.87,1.42,3.11,Yes,Yes,Yes,3336,2022,3627,3989700
+405,Madurai,Goripalayam,Madurai,9.891561,78.054295,10300,Commercial,20,Tar,No,East,4.21,11.62,6.47,2.99,0.28,6.4,1.09,Yes,Yes,No,12156,2017,15129,155828700
+406,Madurai,Tallakulam,Madurai,9.985553,78.13587,3000,Residential,60,Tar,Yes,East,1.3,17.78,1.56,1.19,3.55,3.79,5.05,Yes,Yes,Yes,5184,2020,8138,24414000
+407,Namakkal,Kumarapalayam Road,Namakkal,11.242085,78.167039,8100,Residential,30,Concrete,No,South,0.39,15.56,2.83,6.09,0.52,6.76,3.41,Yes,Yes,Yes,1297,2020,1977,16013700
+408,Vellore,Sathuvachari,Vellore,12.965344,79.155408,10900,Residential,18,Tar,Yes,South,1.1,10.34,5.31,2.76,3.64,0.98,4.19,Yes,Yes,Yes,3702,2025,4239,46205100
+409,Cuddalore,Manjakuppam,Cuddalore,11.741573,79.802617,14200,Commercial,20,Tar,No,West,1.23,8.01,8.68,2.0,3.03,1.72,5.09,Yes,Yes,Yes,3513,2015,4549,64595800
+410,Thanjavur,Vallam Road,Thanjavur,10.778431,79.119709,6000,Residential,20,Concrete,No,West,4.54,17.7,4.63,4.55,3.23,7.65,4.39,Yes,Yes,Yes,3565,2024,4530,27180000
+411,Erode,Surampatti,Erode,11.380709,77.747387,10100,Residential,20,Tar,Yes,South,3.23,10.74,1.46,13.09,1.86,3.63,1.31,Yes,Yes,No,2453,2018,3506,35410600
+412,Dindigul,Palani Road,Dindigul,10.36509,77.984657,3900,Residential,12,Concrete,No,North,3.33,15.24,1.9,13.21,1.45,1.29,5.86,Yes,Yes,Yes,2398,2024,3060,11934000
+413,Thanjavur,Karanthai,Thanjavur,10.794386,79.15831,14100,Commercial,20,Tar,No,South,0.11,10.83,2.11,10.97,4.81,1.91,3.93,Yes,Yes,Yes,5396,2020,6529,92058900
+414,Madurai,Villapuram,Madurai,9.947659,78.092001,2500,Residential,30,Tar,No,West,3.94,2.25,0.42,2.07,2.04,3.89,0.91,Yes,Yes,Yes,4869,2022,8083,20207500
+415,Nagercoil,Vetturnimadam,Kanyakumari,8.175188,77.420888,8600,Residential,60,Concrete,No,North,4.08,5.05,1.7,10.48,2.4,5.56,4.59,Yes,Yes,Yes,2184,2017,2467,21216200
+416,Thanjavur,Vallam Road,Thanjavur,10.770307,79.153952,6000,Residential,30,Concrete,Yes,West,2.82,17.21,2.65,11.15,4.77,6.97,2.47,Yes,No,Yes,3654,2017,4754,28524000
+417,Erode,Perundurai Road,Erode,11.342506,77.776633,9600,Residential,33,Mud,Yes,East,4.45,5.61,6.66,0.7,4.96,2.31,4.02,Yes,Yes,No,3090,2022,3214,30854400
+418,Namakkal,Kumarapalayam Road,Namakkal,11.232481,78.205546,9900,Agricultural,15,Concrete,No,East,4.72,1.6,5.97,8.8,3.95,1.44,1.16,No,Yes,No,180,2015,218,2158200
+419,Hosur,Denkanikottai Road,Krishnagiri,12.762447,77.843761,5500,Agricultural,16,Tar,Yes,North,1.58,1.21,5.23,1.62,1.44,7.94,4.26,Yes,Yes,Yes,590,2025,772,4246000
+420,Thanjavur,Big Bazaar Street,Thanjavur,10.820947,79.141088,14500,Agricultural,15,Concrete,No,North,0.27,11.5,7.27,4.49,4.33,2.15,5.06,Yes,Yes,Yes,297,2022,383,5553500
+421,Madurai,Tallakulam,Madurai,9.989614,78.105735,3300,Residential,30,Concrete,No,South,2.56,12.6,9.0,10.61,2.71,5.27,3.68,Yes,Yes,Yes,3502,2021,4026,13285800
+422,Tiruchirappalli,Srirangam,Tiruchirappalli,10.791227,78.697332,9100,Residential,15,Tar,No,North,4.84,17.37,5.23,4.11,3.5,3.65,4.84,No,Yes,Yes,8353,2019,11006,100154600
+423,Coimbatore,Saravanampatti,Coimbatore,11.042267,76.903234,900,Residential,12,Concrete,No,South,0.63,0.9,7.21,4.15,2.6,1.16,5.91,Yes,Yes,No,6334,2017,8451,7605900
+424,Erode,Perundurai Road,Erode,11.306287,77.779982,11800,Residential,30,Concrete,No,North,1.09,14.21,6.84,1.28,4.42,4.76,4.78,Yes,Yes,Yes,2675,2015,3512,41441600
+425,Dindigul,Begampur,Dindigul,10.349674,77.967584,9900,Residential,60,Tar,No,South,1.63,13.45,9.89,10.17,2.67,4.31,2.32,Yes,Yes,Yes,2378,2025,2703,26759700
+426,Cuddalore,Kammalar Street,Cuddalore,11.749565,79.807547,19000,Agricultural,20,Mud,No,West,4.24,7.79,3.34,7.85,2.23,5.56,0.91,Yes,Yes,Yes,232,2021,295,5605000
+427,Tiruchirappalli,Srirangam,Tiruchirappalli,10.841505,78.748937,7400,Residential,20,Tar,Yes,South,2.31,1.83,8.95,12.34,2.34,2.45,2.12,Yes,Yes,Yes,5180,2020,7822,57882800
+428,Cuddalore,Kammalar Street,Cuddalore,11.725744,79.793971,7300,Residential,24,Tar,No,East,0.86,17.23,3.25,9.6,3.17,6.76,4.47,Yes,Yes,Yes,1447,2015,1733,12650900
+429,Madurai,Villapuram,Madurai,9.878821,78.150182,2200,Residential,30,Concrete,No,East,2.76,17.18,8.0,1.83,4.89,0.41,3.62,Yes,Yes,Yes,4371,2023,5358,11787600
+430,Coimbatore,RS Puram,Coimbatore,11.015815,76.964892,2000,Residential,30,Tar,No,North,1.43,15.7,9.12,6.8,0.5,6.45,5.32,Yes,Yes,Yes,3922,2021,4772,9544000
+431,Pollachi,Coimbatore Road,Coimbatore,10.691025,77.014333,9000,Agricultural,10,Mud,No,North,2.38,19.56,5.26,6.02,2.04,4.52,2.19,No,Yes,Yes,367,2021,503,4527000
+432,Nagercoil,Kottar,Kanyakumari,8.18287,77.439375,8100,Residential,33,Tar,No,South,3.6,11.93,6.39,8.51,3.89,1.76,3.38,Yes,Yes,Yes,1395,2018,1815,14701500
+433,Thoothukudi,Bryant Nagar,Thoothukudi,8.777378,78.136959,9300,Residential,12,Tar,No,West,1.76,2.74,5.12,3.21,3.21,1.76,0.83,No,Yes,No,3849,2020,5706,53065800
+434,Chennai,Velachery,Chennai,13.102214,80.202505,12800,Agricultural,12,Concrete,No,East,4.87,8.43,1.79,1.22,3.22,7.87,5.39,Yes,No,No,574,2017,689,8819200
+435,Erode,Diesel Shed Road,Erode,11.381568,77.786943,10100,Residential,18,Concrete,No,West,2.1,3.39,3.5,3.81,1.71,1.96,0.76,Yes,Yes,Yes,3510,2020,3994,40339400
+436,Chennai,Anna Nagar,Chennai,13.08267,80.208787,8700,Commercial,20,Tar,No,West,1.21,10.35,0.46,5.19,3.42,1.14,0.47,Yes,Yes,No,15692,2018,17724,154198800
+437,Erode,Surampatti,Erode,11.355074,77.732284,11700,Residential,10,Tar,No,South,0.86,3.09,9.28,0.6,3.05,7.6,2.22,Yes,Yes,Yes,3101,2022,4775,55867500
+438,Vellore,Officers Line,Vellore,12.946707,79.15746,9800,Residential,10,Concrete,Yes,South,4.44,7.44,6.6,4.49,3.01,6.08,4.77,Yes,Yes,Yes,2139,2023,2740,26852000
+439,Hosur,Denkanikottai Road,Krishnagiri,12.776884,77.851553,8200,Agricultural,24,Concrete,No,North,3.56,18.18,5.72,1.39,1.43,5.75,3.02,Yes,Yes,Yes,701,2024,1011,8290200
+440,Sivakasi,Rayagiri,Virudhunagar,9.497133,77.787811,17900,Agricultural,24,Concrete,No,North,2.44,6.26,5.59,5.73,4.55,3.05,1.14,Yes,Yes,Yes,197,2017,240,4296000
+441,Namakkal,Salem Road,Namakkal,11.21102,78.209803,9900,Commercial,40,Tar,No,East,4.12,4.5,7.9,10.7,4.85,7.73,1.72,Yes,Yes,Yes,2195,2015,2908,28789200
+442,Chennai,T. Nagar,Chennai,13.151981,80.204622,9400,Residential,33,Concrete,No,North,3.7,8.25,8.67,11.23,3.74,7.24,3.63,Yes,Yes,Yes,6839,2016,8836,83058400
+443,Coimbatore,RS Puram,Coimbatore,11.040471,76.927516,12300,Agricultural,20,Tar,No,South,0.23,1.22,5.62,14.81,4.9,2.9,2.95,Yes,Yes,No,996,2019,1105,13591500
+444,Chennai,Adyar,Chennai,12.911812,80.174423,6400,Residential,24,Tar,No,South,3.72,17.82,9.28,10.04,1.07,0.96,1.47,No,Yes,Yes,9052,2019,11504,73625600
+445,Erode,Veerappanchatram,Erode,11.315289,77.737236,11700,Residential,40,Concrete,No,North,2.96,8.55,1.87,0.58,1.44,0.78,2.32,Yes,Yes,No,2797,2016,3977,46530900
+446,Erode,Perundurai Road,Erode,11.36902,77.743643,9900,Residential,15,Mud,Yes,North,0.67,19.15,8.13,12.65,4.0,1.9,3.83,Yes,Yes,Yes,2872,2025,4565,45193500
+447,Tiruchirappalli,K.K. Nagar,Tiruchirappalli,10.796849,78.697314,9600,Commercial,20,Tar,Yes,North,0.15,7.25,2.71,8.75,0.41,2.38,0.36,Yes,Yes,Yes,8923,2017,11748,112780800
+448,Salem,Suramangalam,Salem,11.717283,78.150265,5700,Residential,30,Tar,No,South,3.29,8.4,0.27,14.35,4.36,2.54,5.99,Yes,Yes,No,2708,2025,3416,19471200
+449,Madurai,Tallakulam,Madurai,9.85578,78.076629,2200,Residential,33,Concrete,No,South,2.17,14.46,7.7,1.79,4.27,5.87,2.1,Yes,Yes,Yes,4086,2016,6097,13413400
+450,Namakkal,Erode Road,Namakkal,11.250439,78.209993,7700,Commercial,20,Tar,No,East,2.97,9.37,5.79,12.05,4.67,3.51,4.34,Yes,Yes,Yes,4799,2017,6918,53268600
+451,Karur,Thirumanilaiyur,Karur,11.005672,78.118883,8000,Residential,18,Tar,No,West,2.24,14.02,3.7,1.38,2.07,2.31,2.02,Yes,Yes,Yes,1615,2017,1934,15472000
+452,Thoothukudi,Millerpuram,Thoothukudi,8.794499,78.134573,16300,Agricultural,24,Mud,No,North,1.79,0.81,9.83,9.25,2.07,4.49,0.34,Yes,Yes,No,581,2025,651,10611300
+453,Chennai,Velachery,Chennai,12.958209,80.176954,13200,Commercial,20,Tar,Yes,North,2.67,3.32,6.66,1.93,0.23,2.76,1.23,No,Yes,Yes,9288,2017,9633,127155600
+454,Thoothukudi,Millerpuram,Thoothukudi,8.779527,78.138633,11400,Residential,24,Tar,No,North,3.55,16.53,4.76,14.81,4.41,1.82,4.74,Yes,Yes,Yes,3324,2018,4562,52006800
+455,Madurai,Goripalayam,Madurai,9.841704,78.168895,4700,Agricultural,24,Concrete,Yes,South,0.21,11.55,0.73,5.08,3.18,7.33,2.21,No,Yes,Yes,779,2021,862,4051400
+456,Karur,Thanthonimalai,Karur,10.988759,78.103767,1700,Commercial,20,Tar,Yes,North,0.75,18.7,9.15,12.04,0.67,4.72,1.2,Yes,Yes,No,3921,2020,4430,7531000
+457,Coimbatore,RS Puram,Coimbatore,11.006896,77.000885,14800,Agricultural,24,Concrete,No,South,2.7,9.43,0.91,11.89,0.72,3.34,2.38,Yes,Yes,No,1056,2020,1280,18944000
+458,Vellore,Katpadi,Vellore,12.895402,79.099324,6200,Residential,18,Mud,No,South,3.68,7.44,9.69,6.66,1.46,3.58,1.35,No,Yes,Yes,3628,2025,4750,29450000
+459,Cuddalore,Thirupapuliyur,Cuddalore,11.730877,79.811091,11700,Agricultural,16,Mud,No,East,2.73,7.26,4.87,4.26,0.74,0.58,1.03,No,Yes,No,213,2018,293,3428100
+460,Erode,Veerappanchatram,Erode,11.366895,77.778954,6300,Commercial,40,Tar,Yes,West,0.55,3.97,7.88,13.74,4.63,2.6,5.06,Yes,Yes,Yes,5064,2015,7123,44874900
+461,Karur,Thanthonimalai,Karur,11.003638,78.055085,5500,Residential,15,Tar,No,South,2.79,3.18,0.54,3.67,1.38,0.41,1.37,Yes,Yes,No,1487,2023,1736,9548000
+462,Thanjavur,Karanthai,Thanjavur,10.777296,79.140935,3200,Residential,20,Tar,Yes,East,4.8,11.81,5.97,3.49,3.85,5.98,0.66,Yes,Yes,No,2962,2016,4583,14665600
+463,Coimbatore,Singanallur,Coimbatore,11.012037,77.01658,1800,Residential,30,Tar,No,South,0.89,12.27,9.3,12.55,3.27,5.81,0.89,Yes,Yes,Yes,6620,2025,9829,17692200
+464,Tirunelveli,Melapalayam,Tirunelveli,8.705068,77.719113,12000,Commercial,30,Tar,No,North,1.91,9.82,4.99,3.9,1.64,3.52,3.66,No,Yes,Yes,6927,2024,8690,104280000
+465,Namakkal,Erode Road,Namakkal,11.256737,78.155111,6100,Residential,10,Tar,No,North,3.93,12.24,1.94,12.28,1.83,3.85,2.39,Yes,Yes,Yes,1248,2016,1567,9558700
+466,Vellore,Sathuvachari,Vellore,12.918141,79.16889,5200,Residential,15,Tar,No,North,0.89,1.12,9.48,15.0,3.83,1.13,5.4,Yes,Yes,Yes,3171,2020,4084,21236800
+467,Dindigul,Begampur,Dindigul,10.400859,78.006571,9000,Residential,33,Concrete,Yes,West,2.96,12.34,5.54,1.27,3.52,5.82,3.12,No,Yes,Yes,2256,2021,3332,29988000
+468,Madurai,K.K. Nagar,Madurai,9.871383,78.154235,8500,Residential,33,Tar,No,East,0.94,2.84,1.05,6.11,0.32,2.87,5.77,Yes,Yes,Yes,3752,2020,4918,41803000
+469,Vellore,Sathuvachari,Vellore,12.940163,79.100966,8000,Residential,30,Tar,No,East,4.43,13.66,3.12,3.63,3.45,7.38,1.86,Yes,Yes,No,2681,2015,3059,24472000
+470,Madurai,K.K. Nagar,Madurai,9.839334,78.133461,2200,Residential,40,Mud,No,South,3.29,19.03,0.94,5.65,0.14,7.86,5.43,Yes,Yes,Yes,4781,2022,6551,14412200
+471,Nagercoil,Vadasery,Kanyakumari,8.192909,77.427365,9600,Residential,10,Tar,No,North,4.54,16.55,8.15,9.4,4.45,2.6,4.25,Yes,Yes,No,1668,2019,2098,20140800
+472,Vellore,Sathuvachari,Vellore,12.897038,79.125707,16300,Agricultural,24,Concrete,No,South,3.74,13.59,4.27,6.29,4.06,2.56,4.14,No,Yes,Yes,405,2020,529,8622700
+473,Chennai,Velachery,Chennai,12.888824,80.232006,10500,Agricultural,24,Mud,No,North,4.45,11.84,1.34,0.44,2.53,7.61,3.48,Yes,Yes,No,865,2022,1046,10983000
+474,Erode,Surampatti,Erode,11.330656,77.762985,8500,Residential,40,Tar,No,North,2.69,1.48,2.3,11.52,3.99,6.28,0.94,Yes,Yes,No,3026,2022,3980,33830000
+475,Thoothukudi,Millerpuram,Thoothukudi,8.780631,78.1428,5800,Residential,33,Tar,No,South,2.07,9.73,5.38,4.27,4.82,7.32,5.84,No,Yes,Yes,3214,2025,4245,24621000
+476,Nagercoil,Vadasery,Kanyakumari,8.166534,77.396519,2200,Commercial,20,Tar,No,East,1.2,5.47,5.92,5.04,4.17,1.16,3.51,Yes,Yes,Yes,1648,2015,2086,4589200
+477,Madurai,K.K. Nagar,Madurai,9.90526,78.154069,2800,Residential,15,Tar,No,East,1.44,1.57,5.49,12.53,3.87,3.67,1.26,No,Yes,Yes,5259,2017,7023,19664400
+478,Erode,Diesel Shed Road,Erode,11.357682,77.741725,2400,Residential,16,Tar,No,South,4.13,8.36,7.44,6.83,0.55,3.69,3.1,Yes,Yes,No,2860,2022,3498,8395200
+479,Erode,Veerappanchatram,Erode,11.326662,77.779417,10600,Commercial,60,Concrete,Yes,West,4.55,3.02,0.47,5.48,2.87,3.01,5.66,Yes,Yes,Yes,4611,2019,6816,72249600
+480,Vellore,Thorapadi,Vellore,12.899573,79.104061,11100,Commercial,60,Tar,No,North,2.2,4.57,8.76,3.34,3.56,6.18,1.84,Yes,Yes,Yes,6339,2019,8998,99877800
+481,Erode,Perundurai Road,Erode,11.319432,77.739638,9100,Commercial,20,Tar,No,South,1.29,17.61,3.92,4.36,1.06,6.49,2.19,Yes,Yes,Yes,5599,2023,8299,75520900
+482,Chennai,T. Nagar,Chennai,13.088939,80.181668,9800,Residential,24,Tar,No,North,2.82,13.43,9.73,7.05,3.28,4.75,1.97,Yes,No,Yes,7124,2019,8837,86602600
+483,Vellore,Sathuvachari,Vellore,12.955059,79.151646,3700,Commercial,20,Tar,No,North,3.62,15.01,3.41,13.19,1.42,0.84,3.64,Yes,Yes,Yes,6082,2017,7174,26543800
+484,Nagercoil,Vetturnimadam,Kanyakumari,8.171349,77.408596,16500,Agricultural,24,Mud,Yes,South,1.29,16.94,7.46,9.35,0.29,1.28,3.05,No,Yes,Yes,252,2024,299,4933500
+485,Chennai,T. Nagar,Chennai,13.040032,80.17079,1100,Residential,10,Concrete,No,North,4.86,19.0,2.88,0.83,1.71,5.76,0.45,Yes,Yes,Yes,3918,2023,5413,5954300
+486,Vellore,Gandhi Nagar,Vellore,12.926443,79.15647,6000,Residential,24,Tar,No,East,4.8,6.59,3.72,9.5,4.73,5.4,5.73,Yes,Yes,No,2857,2016,3163,18978000
+487,Madurai,Tallakulam,Madurai,9.995587,78.169016,6200,Agricultural,24,Mud,No,North,2.2,13.28,4.06,12.28,2.92,6.81,1.24,Yes,Yes,Yes,570,2025,688,4265600
+488,Coimbatore,Saravanampatti,Coimbatore,10.987579,76.922465,9400,Residential,15,Tar,No,West,3.15,3.94,3.75,10.44,2.62,4.9,1.58,No,Yes,Yes,2768,2025,2820,26508000
+489,Chennai,Adyar,Chennai,12.984227,80.182154,18000,Agricultural,16,Mud,No,North,0.8,5.71,6.97,10.77,0.89,6.57,3.11,No,Yes,Yes,1055,2025,1412,25416000
+490,Chennai,Anna Nagar,Chennai,13.131103,80.24229,7200,Commercial,40,Tar,No,West,2.05,18.0,9.28,14.6,3.86,1.86,5.68,No,Yes,No,12309,2023,18364,132220800
+491,Chennai,T. Nagar,Chennai,13.020768,80.180089,10400,Residential,60,Mud,No,West,4.5,6.07,0.45,11.72,3.54,4.5,4.91,Yes,Yes,No,6429,2021,8714,90625600
+492,Chennai,Adyar,Chennai,13.091535,80.18855,7200,Residential,24,Tar,No,West,1.39,18.98,4.25,3.98,2.49,3.28,4.4,No,Yes,Yes,6868,2016,8642,62222400
+493,Tirunelveli,Vannarpettai,Tirunelveli,8.698404,77.774472,800,Residential,10,Tar,No,South,4.22,9.54,9.33,3.46,3.6,7.83,3.34,Yes,Yes,Yes,2615,2019,3750,3000000
+494,Namakkal,Erode Road,Namakkal,11.240947,78.205805,1800,Residential,30,Tar,Yes,East,2.77,15.29,9.41,2.69,0.72,3.48,0.84,No,Yes,Yes,1275,2019,1541,2773800
+495,Chennai,T. Nagar,Chennai,13.177165,80.178225,6200,Residential,16,Concrete,No,South,2.93,3.13,8.22,14.12,0.95,3.86,0.7,Yes,Yes,Yes,4956,2015,6028,37373600
+496,Coimbatore,Gandhipuram,Coimbatore,11.067835,76.919703,9000,Residential,12,Concrete,No,East,3.66,14.19,0.46,4.2,4.22,4.93,3.65,Yes,Yes,No,5069,2025,7331,65979000
+497,Kanchipuram,Vishnu Kanchi,Kanchipuram,12.838753,79.716352,7300,Residential,40,Concrete,No,North,4.73,7.57,4.31,10.6,3.08,3.69,3.93,No,Yes,No,1696,2017,2313,16884900
+498,Chennai,Anna Nagar,Chennai,12.960489,80.182406,6100,Commercial,20,Tar,No,North,3.06,11.96,2.71,3.41,4.15,1.01,3.13,Yes,Yes,No,8853,2018,13964,85180400
+499,Erode,Veerappanchatram,Erode,11.349526,77.725043,3200,Residential,60,Tar,No,North,3.39,13.98,9.77,3.36,2.03,7.73,4.17,Yes,Yes,Yes,3007,2019,3882,12422400
+500,Nagercoil,Vetturnimadam,Kanyakumari,8.182747,77.42166,3300,Residential,10,Tar,No,West,4.65,7.92,4.25,9.51,4.03,5.45,5.12,Yes,Yes,No,1578,2022,1984,6547200
